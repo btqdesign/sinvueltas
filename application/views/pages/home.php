@@ -25,10 +25,12 @@
                 <button class="btn-red">
                     ¿Qué buscas?
                 </button>
-                <button class="btn-item active">
-                    <span class="dot"></span>
-                    RENTAR
-                </button>
+                <form method="post" action="buscar/rentar">
+                    <button class="btn-item active">
+                        <span class="dot"></span>
+                        RENTAR
+                    </button>
+                </form>
                 <button class="btn-item">
                     <span class="dot"></span>
                     COMPRAR
