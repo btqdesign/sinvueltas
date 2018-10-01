@@ -56,7 +56,7 @@
     </section>
     <section class="detalles">
         <div class="main-wrapper">
-            <form action="">
+            <form method="post" action="amenidades">
                 <div class="row">
                     <div class="col-xs-12 col-sm-4">
                         <div class="check-item">
