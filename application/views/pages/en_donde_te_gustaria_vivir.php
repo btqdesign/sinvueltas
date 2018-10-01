@@ -133,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <form method="post" action="buscar/lugares">
+        <form method="post" action="lugares">
             <div class="text-center">
                 <button class="btn-1">SIGUIENTE</button>
             </div>

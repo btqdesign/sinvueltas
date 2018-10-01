@@ -30,7 +30,7 @@
             Nuestro propósito es ayudarte a conectar con el mejor espacio disponible en el mercado, que se adapte a tus gustos y necesidades, es por eso que te haremos unas breves preguntas para conocerte mejor ¿estás listo? 
         </p>
         <h1 class="topic text-center">¿Qué tipo de propiedad necesitas?</h1>
-        <form method="post" action="buscar/propiedad">
+        <form method="post" action="propiedad">
             <div class="items">
                 <div class="item-type">
                     <input class="radio casa" name="propiedad" type="radio" value="casa">

@@ -25,7 +25,7 @@
                 <button class="btn-red">
                     ¿Qué buscas?
                 </button>
-                <form method="post" action="buscar/rentar">
+                <form method="post" action="rentar">
                     <button class="btn-item active">
                         <span class="dot"></span>
                         RENTAR

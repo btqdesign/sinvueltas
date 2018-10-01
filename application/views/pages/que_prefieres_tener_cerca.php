@@ -88,7 +88,7 @@
                 </div>
             </div>
         </div>
-        <form method="post" action="buscar/conocerte">
+        <form method="post" action="conocerte">
             <div class="text-center mr-bottom-20">
                 <button class="btn-1">SIGUIENTE</button>
             </div>

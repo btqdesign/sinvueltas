@@ -33,7 +33,7 @@
     <article class="map">
         
     </article>
-    <form method="post" action="buscar/cerca">
+    <form method="post" action="cerca">
         <div class="text-center mr-bottom-20">
             <button class="btn-1">SIGUIENTE</button>
         </div>
