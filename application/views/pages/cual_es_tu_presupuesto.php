@@ -27,7 +27,7 @@
     </section>
     <section class="main-wrapper">
         <h1 class="topic text-center">¿Cuál es tu presupuesto?</h1>
-        <form class="tipo" method="post" action="/presupuesto">
+        <form class="tipo" method="post" action="../presupuesto">
             <div class="items">
                 <div class="item-type-number">
                     <input class="" name="propiedad" type="number" placeholder="MIN.$">
