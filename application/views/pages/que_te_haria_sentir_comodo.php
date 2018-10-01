@@ -132,10 +132,10 @@
                         <label for="styled-radio-4">| + 30 años</label>
                     </div>
                 </div>
-            </form>
             <div class="text-center">
                 <button class="btn-1">SIGUIENTE</button>
             </div>
+        </form>
         </div>
         </section>
     <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>
