@@ -33,9 +33,11 @@
     <article class="map">
         
     </article>
+    <form method="post" action="buscar/cerca">
         <div class="text-center mr-bottom-20">
             <button class="btn-1">SIGUIENTE</button>
         </div>
+    </form>
         
     </section>
     <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>

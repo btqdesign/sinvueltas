@@ -27,7 +27,7 @@
     </section>
     <section class="main-wrapper">
         <h1 class="topic text-center">¿Qué te haría sentir cómodo?</h1>
-        <form class="tipo" action="">
+        <form class="tipo" method="post" action="buscar/amenidades">
             <div class="items width">
                 <div class="quantity">
                     <div class="head-icon">

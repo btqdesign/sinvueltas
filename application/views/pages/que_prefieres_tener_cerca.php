@@ -88,12 +88,14 @@
                 </div>
             </div>
         </div>
-        <div class="text-center mr-bottom-20">
-            <button class="btn-1">SIGUIENTE</button>
-        </div>
-        <div class="text-center">
-            <button><p class="text-details">OMITIR ESTE PASO ></p></button>
-        </div>
+        <form method="post" action="buscar/conocerte">
+            <div class="text-center mr-bottom-20">
+                <button class="btn-1">SIGUIENTE</button>
+            </div>
+            <div class="text-center">
+                <button><p class="text-details">OMITIR ESTE PASO ></p></button>
+            </div>
+        </form>
     </section>
     <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
