@@ -20,7 +20,7 @@ class Buscar extends CI_Controller {
 		
     }
 
-    public function presupuesto()
+    public function _presupuesto()
 	{
 		$this->load->view('pages/que_te_haria_sentir_comodo');
 		
