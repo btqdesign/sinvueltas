@@ -67,9 +67,11 @@
         </form>
     </section>
     <section class="main-wrapper">
-        <div class="text-center mr-bottom-20">
-            <button class="btn-1">SIGUIENTE</button>
-        </div>
+        <form method="post" action="llamarte">
+            <div class="text-center mr-bottom-20">
+                <button class="btn-1">SIGUIENTE</button>
+            </div>
+        </form>
     </section>
     <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
