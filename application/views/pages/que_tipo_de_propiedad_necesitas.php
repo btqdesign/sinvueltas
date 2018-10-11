@@ -26,7 +26,7 @@
             Nuestro propósito es ayudarte a conectar con el mejor espacio disponible en el mercado, que se adapte a tus gustos y necesidades, es por eso que te haremos unas breves preguntas para conocerte mejor ¿estás listo? 
         </p>
         <h1 class="topic text-center xs-mr-40-lg-75">¿Qué tipo de propiedad necesitas?</h1>
-        <form class="tipo" action="">
+        <form class="tipo" method="post" action="propiedad">
             <div class="items xs-mr-40-lg-75">
                 <div class="item-type">
                     <input class="radio casa" name="propiedad" type="radio" value="casa">
@@ -47,11 +47,9 @@
                     <p class="type-propiedad">OFICINA</p>
                 </div>
             </div>
-            <form method="post" action="propiedad">
                 <div class="text-center">
                     <button class="btn-1">SIGUIENTE</button>
                 </div>
-            </form>
         </form>
     </section>
     <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>
