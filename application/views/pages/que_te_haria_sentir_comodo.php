@@ -12,11 +12,7 @@
 
 <body class="bg-gray">
     <section class="top">
-        <div class="line-color">
-            <div class="item-color-1"></div>
-            <div class="item-color-2"></div>
-            <div class="item-color-3"></div>
-        </div>
+        <progress class="component-progress" max="100" value="15"></progress>
         <div class="pleca-roja">
             <div class="main-wrapper">
                 <figure class="col-12">
@@ -26,26 +22,26 @@
         </div>
     </section>
     <section class="main-wrapper">
-        <h1 class="topic text-center">¿Qué te haría sentir cómodo?</h1>
-        <form class="tipo" method="post" action="amenidades">
+        <h1 class="topic text-center mr-bottom-30">¿Qué te haría sentir cómodo?</h1>
+        <form class="tipo" action="">
             <div class="items width">
                 <div class="quantity">
                     <div class="head-icon">
-                        <i class="icon-departamento icon-size-35"></i>
+                        <i class="icon-habitaciones icon-size-35 mr-right-20"></i>
                         <p class="text">| Habitaciones</p>
                     </div>
                     <input type="number" min="1" max="9" step="1" value="1">
                 </div>
                 <div class="quantity">
                     <div class="head-icon">
-                        <i class="icon-departamento icon-size-35"></i>
+                        <i class="icon-bano icon-size-35 mr-right-20"></i>
                         <p class="text">| Baño</p>
                     </div>
                     <input type="number" min="1" max="9" step="1" value="1">
                 </div>
                 <div class="quantity">
                     <div class="head-icon">
-                        <i class="icon-departamento icon-size-35"></i>
+                        <i class="icon-garage icon-size-35 mr-right-20"></i>
                         <p class="text">| Estacionamiento</p>
                     </div>
                     <input type="number" min="1" max="9" step="1" value="1">
@@ -53,10 +49,17 @@
             </div>
         </form>
         <p class="text-center text-details">Entre más detalles tengamos de tu parte, mejores resultados</p>
+        <hr class="white">
     </section>
-    <section class="detalles">
+    
+    <div class="text-center">
+        <button class="btn btn-secondary btn-collapse" type="button" data-toggle="collapse" data-target="#details" aria-expanded="false" aria-controls="detail">
+            SELECCIONAR MÁS DETALLES
+        </button>
+    </div>
+    <section class="detalles collapse" id="details">
         <div class="main-wrapper">
-            <form method="post" action="amenidades">
+            <form action="">
                 <div class="row">
                     <div class="col-xs-12 col-sm-4">
                         <div class="check-item">
@@ -109,12 +112,12 @@
                         </div>
                         <div class="check-item">
                             <div class="item-type-number">
-                                <input class="" name="propiedad" type="number" placeholder="MIN.$">
+                                <input class="" name="propiedad" type="number" placeholder="MIN">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="detalles inline-elements">
+                <div class="detalles inline-elements ">
                     <div class="item-antiguedad">
                         <input class="styled-checkbox" id="styled-radio-1" name="1" type="radio" value="1" checked>
                         <label for="styled-radio-1">| NUEVO</label>
@@ -132,12 +135,14 @@
                         <label for="styled-radio-4">| + 30 años</label>
                     </div>
                 </div>
-            <div class="text-center">
-                <button class="btn-1">SIGUIENTE</button>
-            </div>
-        </form>
+            </form>
         </div>
-        </section>
+    </section>
+    <form method="post" action="amenidades">
+        <div class="text-center  xs-mrT-40-lg-75 xs-mr-40-lg-75">
+            <button class="btn-1">SIGUIENTE</button>
+        </div>
+    </form>
     <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="/dist/js/bundle.js"></script>

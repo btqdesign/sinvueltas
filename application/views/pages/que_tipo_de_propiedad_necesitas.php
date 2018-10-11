@@ -12,11 +12,7 @@
 
 <body class="bg-gray">
     <section class="top">
-        <div class="line-color">
-            <div class="item-color-1"></div>
-            <div class="item-color-2"></div>
-            <div class="item-color-3"></div>
-        </div>
+        <progress class="component-progress" max="100" value="2"></progress>
         <div class="pleca-roja">
             <div class="main-wrapper">
                 <figure class="col-12">
@@ -26,32 +22,36 @@
         </div>
     </section>
     <section class="main-wrapper">
-        <p class="text text-center">
+        <p class="text text-center xs-mr-40-lg-75">
             Nuestro propósito es ayudarte a conectar con el mejor espacio disponible en el mercado, que se adapte a tus gustos y necesidades, es por eso que te haremos unas breves preguntas para conocerte mejor ¿estás listo? 
         </p>
-        <h1 class="topic text-center">¿Qué tipo de propiedad necesitas?</h1>
-        <form method="post" action="propiedad">
-            <div class="items">
+        <h1 class="topic text-center xs-mr-40-lg-75">¿Qué tipo de propiedad necesitas?</h1>
+        <form class="tipo" action="">
+            <div class="items xs-mr-40-lg-75">
                 <div class="item-type">
                     <input class="radio casa" name="propiedad" type="radio" value="casa">
                     <i class="icon-house"></i>
                     <span class="dot"></span>
+                    <p class="type-propiedad">CASA</p>
                 </div>
                 <div class="item-type">
                     <input class="radio departamento" name="propiedad"  type="radio" value="departamento">
                     <i class="icon-departamento"></i>
                     <span class="dot"></span>
+                    <p class="type-propiedad">DEPARAMENTO</p>
                 </div>
                 <div class="item-type">
                     <input class="radio oficina" name="propiedad"  type="radio" value="oficina">
                     <i class="icon-oficina"></i>
                     <span class="dot"></span>
+                    <p class="type-propiedad">OFICINA</p>
                 </div>
             </div>
-
-            <div class="text-center">
-                <button class="btn-1">SIGUIENTE</button>
-            </div>
+            <form method="post" action="propiedad">
+                <div class="text-center">
+                    <button class="btn-1">SIGUIENTE</button>
+                </div>
+            </form>
         </form>
     </section>
     <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>

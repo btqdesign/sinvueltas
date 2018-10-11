@@ -12,11 +12,7 @@
 
 <body class="bg-gray">
     <section class="top">
-        <div class="line-color">
-            <div class="item-color-1"></div>
-            <div class="item-color-2"></div>
-            <div class="item-color-3"></div>
-        </div>
+        <progress class="component-progress" max="100" value="5"></progress>
         <div class="pleca-roja">
             <div class="main-wrapper">
                 <figure class="col-12">
@@ -26,13 +22,13 @@
         </div>
     </section>
     <section class="main-wrapper">
-        <h1 class="topic text-center">¿Cuál es tu presupuesto?</h1>
+        <h1 class="topic text-center xs-mr-40-lg-75">¿Cuál es tu presupuesto?</h1>
         <form class="tipo" method="post" action="presupuesto">
-            <div class="items">
-                <div class="item-type-number">
+            <div class="items ">
+                <div class="item-type-number xs-mr-40-lg-75">
                     <input class="" name="propiedad" type="number" placeholder="MIN.$">
                 </div>
-                <div class="item-type-number">
+                <div class="item-type-number xs-mr-40-lg-75">
                     <input class="" name="propiedad" type="number" placeholder="MAX.$">
                 </div>
             </div>

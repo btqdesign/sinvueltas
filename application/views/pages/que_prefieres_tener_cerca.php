@@ -12,11 +12,7 @@
 
 <body class="bg-gray">
     <section class="top">
-        <div class="line-color">
-            <div class="item-color-1"></div>
-            <div class="item-color-2"></div>
-            <div class="item-color-3"></div>
-        </div>
+        <progress class="component-progress" max="100" value="60"></progress>
         <div class="pleca-roja">
             <div class="main-wrapper">
                 <figure class="col-12">
@@ -26,62 +22,62 @@
         </div>
     </section>
     <section class="main-wrapper">
-        <h1 class="topic text-center">¿Qué prefieres tener cerca?</h1>
+        <h1 class="topic text-center mr-bottom-20">¿Qué prefieres tener cerca?</h1>
         <p class="text-center text">Sólo puedes seleccionar 3 opciones</p>
     </section>
     <section class="main-wrapper">
         <div class="grid-less space">
             <div class="choose">
-                <i class="icon-departamento icon-size-35"></i>
+                <i class="icon-parques icon-size-35"></i>
                 <div class="footer">
                     <input class="btn-choose" type="checkbox">
                     <label>PARQUES</label>
                 </div>
             </div>
             <div class="choose">
-                <i class="icon-departamento icon-size-35"></i>
+                <i class="icon-restaurantes icon-size-35"></i>
                 <div class="footer">
                     <input class="btn-choose" type="checkbox">
                     <label>RESTAURANTES</label>
                 </div>
             </div>
             <div class="choose">
-                <i class="icon-departamento icon-size-35"></i>
+                <i class="icon-centro-comercial icon-size-35"></i>
                 <div class="footer">
                     <input class="btn-choose" type="checkbox">
                     <label>CENTRO COMERCIAL</label>
                 </div>
             </div>
             <div class="choose">
-                <i class="icon-departamento icon-size-35"></i>
+                <i class="icon-tiendas icon-size-35"></i>
                 <div class="footer">
                     <input class="btn-choose" type="checkbox">
                     <label>TIENDAS OXXO/7ELEVEN</label>
                 </div>
             </div>
             <div class="choose">
-                <i class="icon-departamento icon-size-35"></i>
+                <i class="icon-gym icon-size-35"></i>
                 <div class="footer">
                     <input class="btn-choose" type="checkbox">
                     <label>GYM</label>
                 </div>
             </div>
             <div class="choose">
-                <i class="icon-departamento icon-size-35"></i>
+                <i class="icon-super-mercado icon-size-35"></i>
                 <div class="footer">
                     <input class="btn-choose" type="checkbox">
                     <label>SUPERMERCADOS</label>
                 </div>
             </div>
             <div class="choose">
-                <i class="icon-departamento icon-size-35"></i>
+                <i class="icon-poco-transito icon-size-35"></i>
                 <div class="footer">
                     <input class="btn-choose" type="checkbox">
                     <label>ZONA DE POCO TRÁFICO</label>
                 </div>
             </div>
             <div class="choose">
-                <i class="icon-departamento icon-size-35"></i>
+                <i class="icon-trasporte icon-size-35"></i>
                 <div class="footer">
                     <input class="btn-choose" type="checkbox">
                     <label>TRANSPORTE PÚBLICO</label>

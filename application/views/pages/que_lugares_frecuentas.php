@@ -12,11 +12,7 @@
 
 <body class="bg-gray">
     <section class="top">
-        <div class="line-color">
-            <div class="item-color-1"></div>
-            <div class="item-color-2"></div>
-            <div class="item-color-3"></div>
-        </div>
+        <progress class="component-progress" max="100" value="40"></progress>
         <div class="pleca-roja">
             <div class="main-wrapper">
                 <figure class="col-12">
@@ -26,19 +22,44 @@
         </div>
     </section>
     <section class="main-wrapper">
-        <h1 class="topic text-center">¿Qué lugares frecuentas?</h1>
+        <h1 class="topic text-center mr-bottom-20">¿Qué lugares frecuentas?</h1>
         <p class="text-center text">Queremos asegurarnos que la propiedad que buscas esté cerca de tus actividades principales. GYM, Oficina, escuela, etc.</p>
     </section>
     <section class="main-wrapper">
-    <article class="map">
-        
-    </article>
-    <form method="post" action="cerca">
-        <div class="text-center mr-bottom-20">
-            <button class="btn-1">SIGUIENTE</button>
+        <article class="map">
+            
+        </article>
+        <div>
+            <p class="text-center text-legal">
+                *Puedes agregar hasta 3 direcciones distintas
+            </p>
         </div>
-    </form>
-        
+        <div class="add input-group col-12 col-sm-8 offset-sm-2">
+            <input type="search" class="form-control" placeholder="Ingresa una dirección" aria-label="Ingresa una dirección"
+                aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="agergar-btn input-group-text">+ agregar</button>
+            </div>
+        </div>
+        <form class="tipo mr-bottom-40" action="">
+            <div class="row">
+                <div class="col-12 col-sm-4 item-type-number">
+                    <input class="" name="direccion-1" type="text" placeholder="Dirección">
+                </div>
+                <div class="col-12 col-sm-4 item-type-number">
+                    <input class="" name="direccion-2" type="text" placeholder="Dirección">
+                </div>
+                <div class="col-12 col-sm-4 item-type-number">
+                    <input class="" name="direccion-3" type="text" placeholder="Dirección">
+                </div>
+            </div>
+        </form>    
+        <form method="post" action="cerca">
+            <div class="text-center mr-bottom-20">
+                <button class="btn-1">SIGUIENTE</button>
+            </div>
+        </form>
+
     </section>
     <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
