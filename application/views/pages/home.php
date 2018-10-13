@@ -17,7 +17,7 @@
     <div class="main-wrapper">
         <div class="row">
             <div class="col-12">
-                <h1 class="title cr-white font-b">espacios <br>que conectan contigo.</h1>
+                <h1 class="title cr-white font-b">Espacios <br>que conectan contigo.</h1>
                 <p class="text-center text cr-white subtitle inicio ">Nuestros asesores y tecnología te ayudarán a encontrar el espacio
                     que mejor conecta con tus necesidades.</p>
             </div>
