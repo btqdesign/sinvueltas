@@ -18,7 +18,7 @@
             </figure>
         </div>
         <div class="bienvenido">
-            <p class="title-bienvenido">BIENVENIDO</p>
+            <p class="title-bienvenido">BIENVENIDO!</p>
         </div>
     </header>
     <section class="container-fluid main-wrapper">
