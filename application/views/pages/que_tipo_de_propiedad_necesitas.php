@@ -674,49 +674,194 @@
         document.getElementById("contacto").style.display = "none";
         document.getElementById("telefono").style.display = "none";
 
-    </script>
-    <script >
-    $("#Formtipo").on("submit", function(e){
-       e.preventDefault();
-       document.getElementById("tipo_propiedad").style.display = "none";
-       document.getElementById("presupuesto").style.display = "block";
-     });
-    $("#presupuestoForm").on("submit", function(e){
-       e.preventDefault();
-       document.getElementById("presupuesto").style.display = "none";
-       document.getElementById("comodo").style.display = "block";
-     });
-    $("#comodoform").on("submit", function(e){
-       e.preventDefault();
-       document.getElementById("comodo").style.display = "none";
-       document.getElementById("gustaria").style.display = "block";
-     });
-    $("#gustariaForm").on("submit", function(e){
-       e.preventDefault();
-       document.getElementById("gustaria").style.display = "none";
-       document.getElementById("actividades").style.display = "block";
-     });
-    $("#formActividades").on("submit", function(e){
-       e.preventDefault();
-       document.getElementById("actividades").style.display = "none";
-       document.getElementById("cercano").style.display = "block";
-     });
-    $("#cercanoForm").on("submit", function(e){
-       e.preventDefault();
-       document.getElementById("cercano").style.display = "none";
-       document.getElementById("usuario").style.display = "block";
-     });
-    $("#usuarioForm").on("submit", function(e){
-       e.preventDefault();
-       document.getElementById("usuario").style.display = "none";
-       document.getElementById("contacto").style.display = "block";
-     });
-    $("#contactoForm").on("submit", function(e){
-       e.preventDefault();
-       document.getElementById("contacto").style.display = "none";
-       document.getElementById("telefono").style.display = "block";
-     });
+    
+        var id=Math.random().toString(36).substr(2, 9);
+        $("#Formtipo").on("submit", function(e){           
+           e.preventDefault();
+            var formData = new FormData($('#Formtipo')[0]);
+            $.ajax({
+                url: 'https://sinvueltas.idevol.net/rentar/agregarTipo/'+id,
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData:false,
+                dataType:"JSON",
+                success:function(data) {
+                   e.preventDefault();
+                   document.getElementById("tipo_propiedad").style.display = "none";
+                   document.getElementById("presupuesto").style.display = "block";
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    e.preventDefault();
+                    alert("1234");               
+                }
+            });
+         });
+        $("#comodoform").on("submit", function(e){
+            e.preventDefault();
+            var formData = new FormData($('#comodoform')[0]);
+            $.ajax({
+                url: 'http://localhost/codeigniter/index.php/welcome/agregarAmenidades',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData:false,
+                dataType:"JSON",
+                success:function(data) {
+                    e.preventDefault();
+                   document.getElementById("comodo").style.display = "none";
+                   document.getElementById("gustaria").style.display = "block";
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    e.preventDefault();
+                    alert("1234");               
+                }
+            });
+           
+         });
+        $("#gustariaForm").on("submit", function(e){
+           e.preventDefault();
+           document.getElementById("gustaria").style.display = "none";
+           document.getElementById("actividades").style.display = "block";
+         });
 
+
+
+        $("#presupuestoForm").on("submit", function(e){
+           e.preventDefault();
+            var formData = new FormData($('#presupuestoForm')[0]);
+            $.ajax({
+                url: 'http://localhost/codeigniter/index.php/welcome/agregarPresupuesto',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData:false,
+                dataType:"JSON",
+                success:function(data) {
+                    e.preventDefault();
+                    document.getElementById("presupuesto").style.display = "none";
+                    document.getElementById("comodo").style.display = "block";
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    e.preventDefault();
+                    alert("1234");               
+                }
+            });
+         });
+
+        $("#formActividades").on("submit", function(e){
+            e.preventDefault();
+            var formData = new FormData($('#formActividades')[0]);
+            $.ajax({
+                url: 'http://localhost/codeigniter/index.php/welcome/agregarLugar',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData:false,
+                dataType:"JSON",
+                success:function(data) {
+                    e.preventDefault();
+                   document.getElementById("actividades").style.display = "none";
+                   document.getElementById("cercano").style.display = "block";
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    e.preventDefault();
+                    alert("1234");               
+                }
+            });
+           
+         });
+
+        $("#cercanoForm").on("submit", function(e){
+            e.preventDefault();
+            var formData = new FormData($('#cercanoForm')[0]);
+            $.ajax({
+                url: 'http://localhost/codeigniter/index.php/welcome/agregarCercano',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData:false,
+                dataType:"JSON",
+                success:function(data) {
+                    e.preventDefault();
+                   document.getElementById("cercano").style.display = "none";
+                   document.getElementById("usuario").style.display = "block";
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    e.preventDefault();
+                    alert("1234");               
+                }
+            });
+           
+         });
+
+
+        $("#usuarioForm").on("submit", function(e){
+            e.preventDefault();
+            var formData = new FormData($('#usuarioForm')[0]);
+            $.ajax({
+                url: 'http://localhost/codeigniter/index.php/welcome/agregarUsuario',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData:false,
+                dataType:"JSON",
+                success:function(data) {
+                    e.preventDefault();                   
+                   document.getElementById("usuario").style.display = "none";
+                   document.getElementById("contacto").style.display = "block";
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    e.preventDefault();
+                    alert("1234");               
+                }
+            });
+           
+         });
+
+        $("#FormContacto").on("submit", function(e){
+           e.preventDefault();
+            var formData = new FormData($('#FormContacto')[0]);
+            $.ajax({
+                url: 'http://localhost/codeigniter/index.php/welcome/agregarContacto',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData:false,
+                dataType:"JSON",
+                success:function(data) {
+                    e.preventDefault();
+                    document.getElementById("contacto").style.display = "none";
+                    document.getElementById("telefono").style.display = "block";
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    e.preventDefault();
+                    alert("1234");               
+                }
+            });
+         });
+
+        $("#formTel").on("submit", function(e){
+           e.preventDefault();
+            var formData = new FormData($('#formTel')[0]);
+            $.ajax({
+                url: 'http://localhost/codeigniter/index.php/welcome/agregarTelefono',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData:false,
+                dataType:"JSON",
+                success:function(data) {
+                    e.preventDefault();
+                    document.getElementById("contacto").style.display = "none";
+                    document.getElementById("telefono").style.display = "block";
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    e.preventDefault();
+                    alert("1234");               
+                }
+            });
+         });
     </script>
 </body>
 
