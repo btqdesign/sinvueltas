@@ -46,11 +46,12 @@ class Rentar extends CI_Controller {
 		echo json_encode(array("status" => TRUE));		
 	}
 
-	public function agregarLugar(){
+	public function agregarLugar($identificador){
 		$lugar = array(
-			'presupuestomin' => $this->input->post('direccion-1'),
+			'direccioncompleta' => $this->input->post('direccion-1'),
+			'id_usuario' => $identificador,
 		);
-		$this->m->agregar($lugar);
+		$this->m->agregarLugar($lugar);
 		echo json_encode(array("status" => TRUE));		
 	}
 

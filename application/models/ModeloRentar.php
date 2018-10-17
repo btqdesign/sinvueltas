@@ -29,5 +29,8 @@ class ModeloRentar extends CI_Model
 		$this->db->update($this->caracteristicas , $data, $where);
 		return $this->db->affected_rows();
 	}
+	public function agregarLugar($data){
+		$this->db->insert('sinv_lugar_frecuente', $data);
+	}
 }
  ?>

@@ -747,7 +747,7 @@
             e.preventDefault();
             var formData = new FormData($('#formActividades')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/agregarLugar',
+                url: 'https://sinvueltas.idevol.net/rentar/agregarLugar/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
