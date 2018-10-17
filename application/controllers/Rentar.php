@@ -86,6 +86,7 @@ class Rentar extends CI_Controller {
 		$contacto = array(
 			'id_usuario'=>$identificador,
 			'telefono'=>$this->input->post('numero'),
+			'telefonovalidado'=>$this->input->post('confirmacion'),
 		);		
 		$this->m->agregarContacto($contacto);
 		echo json_encode(array("status" => TRUE));	
