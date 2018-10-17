@@ -14,10 +14,14 @@ class Rentar extends CI_Controller {
 		$this->load->view('pages/que_tipo_de_propiedad_necesitas');
 		
     }
-    public function agregarTipo(){
+    public function agregarTipo($identificador){
 		$tipo = array(
-			'presupuestomin' => $this->input->post('propiedad'),
+			'id' => "1",
+			'sinv_usuario_id'=> $identificador,
+			'tipopropiedad' => $this->input->post('propiedad'),
 		);
+		$user= array('id' => $identificador );
+		$this->m->agregarUser($user);		
 		$this->m->agregar($tipo);		
 		echo json_encode(array("status" => TRUE));		
 	}	
