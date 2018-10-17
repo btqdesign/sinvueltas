@@ -18,7 +18,7 @@ class Rentar extends CI_Controller {
 		$tipo = array(
 			'id' => $identificador,
 			'sinv_usuario_id'=> $identificador,
-			'tipopropiedad' => $this->input->post('propiedad'),
+			'tipo_propiedad' => $this->input->post('propiedad'),
 		);
 		$user= array('id' => $identificador );
 		$this->m->agregarUser($user);		
