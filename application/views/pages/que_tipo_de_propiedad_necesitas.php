@@ -520,7 +520,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 item-type-number">
                     <span class="cr-red">*</span>
-                    <input class="" name="" type="text" placeholder="Apellido" required>
+                    <input class="" name="apellido" id="apellido" type="text" placeholder="Apellido" required>
                     <label class="text-legal cr-red hidden" for=""></label>
                 </div>
                 <div class="col-12 item-type-number mr-bottom-20">

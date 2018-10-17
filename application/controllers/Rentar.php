@@ -73,17 +73,19 @@ class Rentar extends CI_Controller {
 		echo json_encode(array("status" => TRUE));		
 	}
 
-	public function agregarUsuario(){
+	public function agregarUsuario($identificador){
 		$usuario = array(
-			'presupuestomin' => $this->input->post('nombre'),
+			'nombre' => $this->input->post('nombre'),
+			'apaterno' => $this->input->post('apellido'),
 		);
-		$this->m->agregar($usuario);
+		$this->m->updateUsuario(array('id' => $identificador) ,$usuario);		
 		echo json_encode(array("status" => TRUE));		
 	}
 
 	public function agregarContacto(){
 		$contacto = array(
-			'presupuestomin' => $this->input->post('nombre'),
+			'nombre' => $this->input->post('nombre'),
+			'apaterno' => $this->input->post('apellido'),
 		);		
 		$this->m->agregar($contacto);
 		echo json_encode(array("status" => TRUE));	
