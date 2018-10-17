@@ -51,7 +51,17 @@ class Rentar extends CI_Controller {
 			'direccioncompleta' => $this->input->post('direccion-1'),
 			'id_usuario' => $identificador,
 		);
+		$lugar2 = array(
+			'direccioncompleta' => $this->input->post('direccion-2'),
+			'id_usuario' => $identificador,
+		);
+		$lugar3 = array(
+			'direccioncompleta' => $this->input->post('direccion-3'),
+			'id_usuario' => $identificador,
+		);
 		$this->m->agregarLugar($lugar);
+		$this->m->agregarLugar($lugar2);
+		$this->m->agregarLugar($lugar3);
 		echo json_encode(array("status" => TRUE));		
 	}
 
