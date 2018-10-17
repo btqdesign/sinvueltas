@@ -5,7 +5,7 @@ class Rentar extends CI_Controller {
 
 	function __construct(){
 		parent:: __construct();
-		$this->load->model('Modelo', 'm');
+		$this->load->model('ModeloRentar', 'm');
 		$this->load->helper('form');
 	}
 
