@@ -817,7 +817,7 @@
            e.preventDefault();
             var formData = new FormData($('#FormContacto')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/agregarContacto',
+                url: 'https://sinvueltas.idevol.net/rentar/agregarContacto/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,

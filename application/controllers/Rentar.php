@@ -82,12 +82,12 @@ class Rentar extends CI_Controller {
 		echo json_encode(array("status" => TRUE));		
 	}
 
-	public function agregarContacto(){
+	public function agregarContacto($identificador){
 		$contacto = array(
-			'nombre' => $this->input->post('nombre'),
-			'apaterno' => $this->input->post('apellido'),
+			'id_usuario'=>$identificador,
+			'telefono'=>$this->input->post('numero'),
 		);		
-		$this->m->agregar($contacto);
+		$this->m->agregarContacto($contacto);
 		echo json_encode(array("status" => TRUE));	
 	}
 
