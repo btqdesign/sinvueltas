@@ -27,29 +27,29 @@
             Nuestro propósito es ayudarte a conectar con el mejor espacio disponible en el mercado, que se adapte a tus gustos y necesidades, es por eso que te haremos unas breves preguntas para conocerte mejor ¿estás listo? 
         </p>
         <h1 class="topic text-center xs-mr-40-lg-75">¿Qué tipo de propiedad necesitas?</h1>
-        <form class="tipo" method="post" id="Formtipo">
+        <form class="tipo" id="Formtipo">
             <div class="items xs-mr-40-lg-75">
                 <div class="item-type">
-                    <input class="radio casa" name="propiedad" type="radio" value="casa">
+                    <input class="radio casa" name="propiedad"  type="radio" value="casa">
                     <i class="icon-house"></i>
                     <span class="dot"></span>
                     <p class="type-propiedad">CASA</p>
                 </div>
                 <div class="item-type">
-                    <input class="radio departamento" name="propiedad"  type="radio" value="departamento">
+                    <input class="radio departamento" name="propiedad" type="radio" value="departamento">
                     <i class="icon-departamento"></i>
                     <span class="dot"></span>
                     <p class="type-propiedad">DEPARAMENTO</p>
                 </div>
                 <div class="item-type">
-                    <input class="radio oficina" name="propiedad"  type="radio" value="oficina">
+                    <input class="radio oficina" name="propiedad" type="radio" value="oficina">
                     <i class="icon-oficina"></i>
                     <span class="dot"></span>
                     <p class="type-propiedad">OFICINA</p>
                 </div>
             </div>
             <div class="text-center">
-                <button class="btn-1" id="siguiente" name="siguiente">SIGUIENTE</button>
+                <button class="btn-1">SIGUIENTE</button>
             </div>
         </form>
     </section>
@@ -68,13 +68,13 @@
     </section>
     <section class="main-wrapper">
         <h1 class="topic text-center xs-mr-40-lg-75">¿Cuál es tu presupuesto?</h1>
-        <form class="tipo" method="post" id="presupuestoForm">
+        <form class="tipo" id="presupuestoForm" method="POST">
             <div class="items ">
                 <div class="item-type-number xs-mr-40-lg-75">
-                    <input class="" name="propiedad" type="number" placeholder="MIN.$">
+                    <input class="" name="minimo" id="minimo" type="number" placeholder="MIN.$">
                 </div>
                 <div class="item-type-number xs-mr-40-lg-75">
-                    <input class="" name="propiedad" type="number" placeholder="MAX.$">
+                    <input class="" name="maximo" id="maximo" type="number" placeholder="MAX.$">
                 </div>
             </div>
 
@@ -95,124 +95,125 @@
             </div>
         </div>
     </section>
-   <form id="comodoform">        
-        <section class="main-wrapper">
-            <h1 class="topic text-center mr-bottom-30">¿Qué te haría sentir cómodo?</h1>
-                <div class="items width">
-                    <div class="quantity">
-                        <div class="head-icon">
-                            <i class="icon-habitaciones icon-size-35 mr-right-20"></i>
-                            <p class="text">| Habitaciones</p>
-                        </div>
-                        <input type="number" min="1" max="9" step="1" value="1">
+
+    <form action="" id="comodoform">
+    <section class="main-wrapper">
+        <h1 class="topic text-center mr-bottom-30">¿Qué te haría sentir cómodo?</h1>
+            <div class="items width">
+                <div class="quantity">
+                    <div class="head-icon">
+                        <i class="icon-habitaciones icon-size-35 mr-right-20"></i>
+                        <p class="text">| Habitaciones</p>
                     </div>
-                    <div class="quantity">
-                        <div class="head-icon">
-                            <i class="icon-bano icon-size-35 mr-right-20"></i>
-                            <p class="text">| Baño</p>
-                        </div>
-                        <input type="number" min="1" max="9" step="1" value="1">
+                    <input type="number" min="1" max="9" step="1" value="1" name="habitaciones">
+                </div>
+                <div class="quantity">
+                    <div class="head-icon">
+                        <i class="icon-bano icon-size-35 mr-right-20"></i>
+                        <p class="text">| Baño</p>
                     </div>
-                    <div class="quantity">
-                        <div class="head-icon">
-                            <i class="icon-garage icon-size-35 mr-right-20"></i>
-                            <p class="text">| Estacionamiento</p>
+                    <input type="number" min="1" max="9" step="1" value="1">
+                </div>
+                <div class="quantity">
+                    <div class="head-icon">
+                        <i class="icon-garage icon-size-35 mr-right-20"></i>
+                        <p class="text">| Estacionamiento</p>
+                    </div>
+                    <input type="number" min="1" max="9" step="1" value="1">
+                </div>
+            </div>
+        <p class="text-center text-details">Entre más detalles tengamos de tu parte, mejores resultados</p>
+        <hr class="white">
+    </section>
+    
+    <div class="text-center">
+        <button class="btn btn-secondary btn-collapse" type="button" data-toggle="collapse" data-target="#details" aria-expanded="false" aria-controls="detail">
+            SELECCIONAR MÁS DETALLES
+        </button>
+    </div>
+    <section class="detalles collapse" id="details">
+        <div class="main-wrapper">            
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="check-item">
+                            <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1" checked>
+                            <label for="styled-checkbox-1">| Jardin</label>
                         </div>
-                        <input type="number" min="1" max="9" step="1" value="1">
+                        <div class="check-item">
+                            <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2">
+                            <label for="styled-checkbox-2">| Balcones</label>
+                        </div>
+                        <div class="check-item">
+                            <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value3">
+                            <label for="styled-checkbox-3">| Amueblado</label>
+                        </div>
+                        <div class="check-item">
+                            <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value4">
+                            <label for="styled-checkbox-4">| Terraza / Roof garden</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="check-item">
+                            <input class="styled-checkbox" id="styled-checkbox-5" type="checkbox" value="value5">
+                            <label for="styled-checkbox-5">| Tengo mascota</label>
+                        </div>
+                        <div class="check-item">
+                            <input class="styled-checkbox" id="styled-checkbox-6" type="checkbox" value="value6">
+                            <label for="styled-checkbox-6">| Vigilancia</label>
+                        </div>
+                        <div class="check-item">
+                            <input class="styled-checkbox" id="styled-checkbox-7" type="checkbox" value="value7">
+                            <label for="styled-checkbox-7">| GYM</label>
+                        </div>
+                        <div class="check-item">
+                            <input class="styled-checkbox" id="styled-checkbox-8" type="checkbox" value="value8">
+                            <label for="styled-checkbox-8">| Alberca</label>
+                        </div>                    
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                            <div class="check-item">
+                            <input class="styled-checkbox" id="styled-checkbox-9" type="checkbox" value="value9">
+                            <label for="styled-checkbox-9">| Salón de usos multiples</label>
+                        </div>
+                        <div class="check-item">
+                            <input class="styled-checkbox" id="styled-checkbox-10" type="checkbox" value="value10">
+                            <label for="styled-checkbox-10">| Área para niños</label>
+                        </div>
+                        <div class="check-item">
+                            <input class="styled-checkbox" id="styled-checkbox-11" type="checkbox" value="value11">
+                            <label for="styled-checkbox-11">| m2 construidos</label>
+                        </div>
+                        <div class="check-item">
+                            <div class="item-type-number">
+                                <input class="" name="propiedad" type="number" placeholder="MIN">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            <p class="text-center text-details">Entre más detalles tengamos de tu parte, mejores resultados</p>
-            <hr class="white">
-        </section>
-        
-        <div class="text-center">
-            <button class="btn btn-secondary btn-collapse" type="button" data-toggle="collapse" data-target="#details" aria-expanded="false" aria-controls="detail">
-                SELECCIONAR MÁS DETALLES
-            </button>
-        </div>
-        <section class="detalles collapse" id="details">
-            <div class="main-wrapper">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="check-item">
-                                <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1" checked>
-                                <label for="styled-checkbox-1">| Jardin</label>
-                            </div>
-                            <div class="check-item">
-                                <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2">
-                                <label for="styled-checkbox-2">| Balcones</label>
-                            </div>
-                            <div class="check-item">
-                                <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value3">
-                                <label for="styled-checkbox-3">| Amueblado</label>
-                            </div>
-                            <div class="check-item">
-                                <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value4">
-                                <label for="styled-checkbox-4">| Terraza / Roof garden</label>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="check-item">
-                                <input class="styled-checkbox" id="styled-checkbox-5" type="checkbox" value="value5">
-                                <label for="styled-checkbox-5">| Tengo mascota</label>
-                            </div>
-                            <div class="check-item">
-                                <input class="styled-checkbox" id="styled-checkbox-6" type="checkbox" value="value6">
-                                <label for="styled-checkbox-6">| Vigilancia</label>
-                            </div>
-                            <div class="check-item">
-                                <input class="styled-checkbox" id="styled-checkbox-7" type="checkbox" value="value7">
-                                <label for="styled-checkbox-7">| GYM</label>
-                            </div>
-                            <div class="check-item">
-                                <input class="styled-checkbox" id="styled-checkbox-8" type="checkbox" value="value8">
-                                <label for="styled-checkbox-8">| Alberca</label>
-                            </div>                    
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                                <div class="check-item">
-                                <input class="styled-checkbox" id="styled-checkbox-9" type="checkbox" value="value9">
-                                <label for="styled-checkbox-9">| Salón de usos multiples</label>
-                            </div>
-                            <div class="check-item">
-                                <input class="styled-checkbox" id="styled-checkbox-10" type="checkbox" value="value10">
-                                <label for="styled-checkbox-10">| Área para niños</label>
-                            </div>
-                            <div class="check-item">
-                                <input class="styled-checkbox" id="styled-checkbox-11" type="checkbox" value="value11">
-                                <label for="styled-checkbox-11">| m2 construidos</label>
-                            </div>
-                            <div class="check-item">
-                                <div class="item-type-number">
-                                    <input class="" name="propiedad" type="number" placeholder="MIN">
-                                </div>
-                            </div>
-                        </div>
+                <div class="detalles inline-elements ">
+                    <div class="item-antiguedad">
+                        <input class="styled-checkbox" id="styled-radio-1" name="1" type="radio" value="1" checked>
+                        <label for="styled-radio-1">| NUEVO</label>
                     </div>
-                    <div class="detalles inline-elements ">
-                        <div class="item-antiguedad">
-                            <input class="styled-checkbox" id="styled-radio-1" name="1" type="radio" value="1" checked>
-                            <label for="styled-radio-1">| NUEVO</label>
-                        </div>
-                        <div class="item-antiguedad">
-                            <input class="styled-checkbox" id="styled-radio-2" name="1" type="radio" value="2">
-                            <label for="styled-radio-2">| 5 a 10 años</label>
-                        </div>
-                        <div class="item-antiguedad">
-                            <input class="styled-checkbox" id="styled-radio-3" name="1" type="radio" value="3">
-                            <label for="styled-radio-3">| 10 a 20 años</label>
-                        </div>
-                        <div class="item-antiguedad">
-                            <input class="styled-checkbox" id="styled-radio-4" name="1" type="radio" value="5">
-                            <label for="styled-radio-4">| + 30 años</label>
-                        </div>
+                    <div class="item-antiguedad">
+                        <input class="styled-checkbox" id="styled-radio-2" name="1" type="radio" value="2">
+                        <label for="styled-radio-2">| 5 a 10 años</label>
                     </div>
-            </div>
-        </section>
-        <div class="text-center  xs-mrT-40-lg-75 xs-mr-40-lg-75">
-                <button class="btn-1">SIGUIENTE</button>
+                    <div class="item-antiguedad">
+                        <input class="styled-checkbox" id="styled-radio-3" name="1" type="radio" value="3">
+                        <label for="styled-radio-3">| 10 a 20 años</label>
+                    </div>
+                    <div class="item-antiguedad">
+                        <input class="styled-checkbox" id="styled-radio-4" name="1" type="radio" value="5">
+                        <label for="styled-radio-4">| + 30 años</label>
+                    </div>
+                </div>          
         </div>
-   </form>
+    </section>
+    <div class="text-center  xs-mrT-40-lg-75 xs-mr-40-lg-75">
+            <button class="btn-1">SIGUIENTE</button>
+    </div>
+     </form>
        
      </div>
      <div id="gustaria">
@@ -372,7 +373,7 @@
                 <button class="agergar-btn input-group-text">+ agregar</button>
             </div>
         </div>
-        <form class="tipo mr-bottom-40" action="">
+        <form class="tipo mr-bottom-40" id="formActividades">
             <div class="row">
                 <div class="col-12 col-sm-4 item-type-number">
                     <input class="" name="direccion-1" type="text" placeholder="Dirección">
@@ -383,13 +384,11 @@
                 <div class="col-12 col-sm-4 item-type-number">
                     <input class="" name="direccion-3" type="text" placeholder="Dirección">
                 </div>
-            </div>
-        </form>    
-        <form method="post" id="formActividades">
+            </div><br>
             <div class="text-center mr-bottom-20">
                 <button class="btn-1">SIGUIENTE</button>
             </div>
-        </form>
+        </form>  
 
     </section>
 
@@ -410,65 +409,66 @@
         <p class="text-center text">Sólo puedes seleccionar 3 opciones</p>
     </section>
     <section class="main-wrapper">
-        <div class="grid-less space">
-            <div class="choose">
-                <i class="icon-parques icon-size-35"></i>
-                <div class="footer">
-                    <input class="btn-choose" type="checkbox">
-                    <label>PARQUES</label>
-                </div>
-            </div>
-            <div class="choose">
-                <i class="icon-restaurantes icon-size-35"></i>
-                <div class="footer">
-                    <input class="btn-choose" type="checkbox">
-                    <label>RESTAURANTES</label>
-                </div>
-            </div>
-            <div class="choose">
-                <i class="icon-centro-comercial icon-size-35"></i>
-                <div class="footer">
-                    <input class="btn-choose" type="checkbox">
-                    <label>CENTRO COMERCIAL</label>
-                </div>
-            </div>
-            <div class="choose">
-                <i class="icon-tiendas icon-size-35"></i>
-                <div class="footer">
-                    <input class="btn-choose" type="checkbox">
-                    <label>TIENDAS OXXO/7ELEVEN</label>
-                </div>
-            </div>
-            <div class="choose">
-                <i class="icon-gym icon-size-35"></i>
-                <div class="footer">
-                    <input class="btn-choose" type="checkbox">
-                    <label>GYM</label>
-                </div>
-            </div>
-            <div class="choose">
-                <i class="icon-super-mercado icon-size-35"></i>
-                <div class="footer">
-                    <input class="btn-choose" type="checkbox">
-                    <label>SUPERMERCADOS</label>
-                </div>
-            </div>
-            <div class="choose">
-                <i class="icon-poco-transito icon-size-35"></i>
-                <div class="footer">
-                    <input class="btn-choose" type="checkbox">
-                    <label>ZONA DE POCO TRÁFICO</label>
-                </div>
-            </div>
-            <div class="choose">
-                <i class="icon-trasporte icon-size-35"></i>
-                <div class="footer">
-                    <input class="btn-choose" type="checkbox">
-                    <label>TRANSPORTE PÚBLICO</label>
-                </div>
-            </div>
-        </div>
         <form method="post" id="cercanoForm">
+            <div class="grid-less space">
+                <div class="choose">
+                    <i class="icon-parques icon-size-35"></i>
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox" name="parque" value="parque">
+                        <label>PARQUES</label>
+                    </div>
+                </div>
+                <div class="choose">
+                    <i class="icon-restaurantes icon-size-35"></i>
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox" value="restaurantes">
+                        <label>RESTAURANTES</label>
+                    </div>
+                </div>
+                <div class="choose">
+                    <i class="icon-centro-comercial icon-size-35"></i>
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox" value="c_comercial">
+                        <label>CENTRO COMERCIAL</label>
+                    </div>
+                </div>
+                <div class="choose">
+                    <i class="icon-tiendas icon-size-35"></i>
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox" value="OXXO/7ELEVEN">
+                        <label>TIENDAS OXXO/7ELEVEN</label>
+                    </div>
+                </div>
+                <div class="choose">
+                    <i class="icon-gym icon-size-35"></i>
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox" value="gym">
+                        <label>GYM</label>
+                    </div>
+                </div>
+                <div class="choose">
+                    <i class="icon-super-mercado icon-size-35"></i>
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox" value="supermercado">
+                        <label>SUPERMERCADOS</label>
+                    </div>
+                </div>
+                <div class="choose">
+                    <i class="icon-poco-transito icon-size-35"></i>
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox" value="poco_trafico">
+                        <label>ZONA DE POCO TRÁFICO</label>
+                    </div>
+                </div>
+                <div class="choose">
+                    <i class="icon-trasporte icon-size-35"></i>
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox" value="trans_pub">
+                        <label>TRANSPORTE PÚBLICO</label>
+                    </div>
+                </div>
+            </div>
+        
             <div class="text-center mr-bottom-20">
                 <button class="btn-1">SIGUIENTE</button>
             </div>
@@ -511,11 +511,11 @@
             <span class="dot gray"></span>
             <div class="line"></div>
         </div>
-        <form action="">
+        <form method="post"  id="usuarioForm">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 item-type-number">
                     <span class="cr-red">*</span>
-                    <input class="" name="" type="text" placeholder="Nombre" required>
+                    <input type="text" placeholder="Nombre" id="nombre"  name="nombre" required>
                     <label class="text-legal cr-red" for="">Este campo debe ser llenado correctamente</label>
                 </div>
                 <div class="col-xs-12 col-sm-6 item-type-number">
@@ -548,26 +548,22 @@
                         Tu número movil jamás será usado, compartido o vendido para usos diferentes a los de Plick.
                     </p>
                     <div class="check-item">
-                        <input class="styled-checkbox" id="styled-checkbox-terminos" type="checkbox" value="value1">
+                        <input class="styled-checkbox" id="styled-checkbox-terminos" type="checkbox" value="value1" required>
                         <label for="styled-checkbox-terminos">He leído y acepto los</label> <a class="link-red" href="">Terminos y condiciones de uso</a>, y <a class="link-red" href="">políticas de privacidad</a>
                     </div>
                 </div>
 
             </div>
+            <section class="main-wrapper">
+                <div class="text-center mr-bottom-20">
+                    <button class="btn-1">SIGUIENTE</button>
+                </div>
+            </section>
         </form>
-    </section>
-    <section class="main-wrapper">
-       <div>
-
-       </div>
-       <form method="post" id="usuarioForm">
-            <div class="text-center mr-bottom-20">
-                <button class="btn-1">SIGUIENTE</button>
-            </div>
-        </form>
-    </section>
-         
+    </section>        
      </div>
+
+
      <div id="contacto">
          <section class="top">
         <progress class="component-progress" max="100" value="80"></progress>
@@ -582,18 +578,17 @@
     <section class="main-wrapper">
         <h1 class="topic text-center mr-bottom-40">¡Queremos conocerte!</h1>
         <p class="text-center text">Recopilaremos las propiedades ideales para ti. Ayúdanos con tus datos de contacto.</p>
-        <div class="row mr-bottom-40">
-            <div class="col-12 col-sm-6 flex-center">
-                <div class="avatar-space mr-bottom-40">
-                    <img src="" alt="">  
+        <form action="" id="FormContacto">
+            <div class="row mr-bottom-40">
+                <div class="col-12 col-sm-6 flex-center">
+                    <div class="avatar-space mr-bottom-40">
+                        <img src="" alt="">  
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 item-type-number flex-center mr-bottom-40">
-                <input class="" name="" type="text" placeholder="Nombre" required>
-            </div>
-        </div>
-        
-        <form action="">
+                <div class="col-xs-12 col-sm-6 item-type-number flex-center mr-bottom-40">
+                    <input class="" name="nombre" id="nombre" type="text" placeholder="Nombre" required>
+                </div>
+            </div>       
             <div class="row">
                 <div class="col-12">
                     <p class="text-center text-legal">
@@ -603,12 +598,12 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 item-type-number">
                     <span class="cr-red">*</span>    
-                    <input class="" name="" type="number" placeholder="Número de celular (10 dígitos)" required>
+                    <input class="" name="numero" type="number" placeholder="Número de celular (10 dígitos)" required>
                     <label class="text-legal cr-red hidden" for=""></label>
                 </div>
                 <div class="col-xs-12 col-sm-6 item-type-number">
                     <span class="cr-red">*</span>
-                    <input class="" name="" type="number" placeholder="Confirmar" required>
+                    <input class="" name="confirmacion" type="number" placeholder="Confirmar" required>
                     <label class="text-legal cr-red hidden" for=""></label>
                 </div>
                 <div class="col-12">
@@ -622,15 +617,15 @@
                 </div>
 
             </div>
+            <br>
+             <section class="main-wrapper">
+                <div class="text-center mr-bottom-20">
+                    <button class="btn-1">SIGUIENTE</button>
+                </div>
+            </section>
         </form>
     </section>
-    <section class="main-wrapper">
-        <form method="post" id="contactoForm">
-            <div class="text-center mr-bottom-20">
-                <button class="btn-1">SIGUIENTE</button>
-            </div>
-        </form>
-    </section>
+   
      </div>
      <div id="telefono">
              <section class="top">
@@ -646,14 +641,12 @@
     <section class="main-wrapper">
         <h1 class="topic text-center mr-bottom-40">¡Perfecto!Queremos llamarte</h1>
         <p class="text-center text mr-bottom-40">Recuerda que recibirás un código por mensaje de texto, ingresalo para confirmar tu registro.</p> 
-        <form action="">
+        <form action="" id="formTel">
             <div class="row">
                 <div class="col-12 item-type-number mr-bottom-40">     
-                    <input class="" name="" type="text" placeholder="Código SMS" required>
+                    <input class="" name="codigo" type="text" placeholder="Código SMS" required>
                 </div>
             </div>
-        </form>
-        <form method="post" action="bienvenido">
             <div class="text-center mr-bottom-20">
                 <button class="btn-1">ENVIAR</button>
             </div>
@@ -664,7 +657,9 @@
     <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="/dist/js/bundle.js"></script>
     <script type="text/javascript">
+
         document.getElementById("tipo_propiedad").style.display = "block";
+        //Los Formularios permanecen Ocultos        
         document.getElementById("presupuesto").style.display = "none";
         document.getElementById("comodo").style.display = "none";
         document.getElementById("gustaria").style.display = "none";
@@ -674,7 +669,6 @@
         document.getElementById("contacto").style.display = "none";
         document.getElementById("telefono").style.display = "none";
 
-    
         var id=Math.random().toString(36).substr(2, 9);
         $("#Formtipo").on("submit", function(e){           
            e.preventDefault();
@@ -862,6 +856,7 @@
                 }
             });
          });
+
     </script>
 </body>
 
