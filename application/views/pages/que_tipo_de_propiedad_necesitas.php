@@ -725,7 +725,7 @@
            e.preventDefault();
             var formData = new FormData($('#presupuestoForm')[0]);
             $.ajax({
-                url: 'http://localhost/codeigniter/index.php/welcome/agregarPresupuesto',
+                url: 'https://sinvueltas.idevol.net/rentar/agregarPresupuesto',
                 type: 'POST',
                 data: formData,
                 contentType: false,
