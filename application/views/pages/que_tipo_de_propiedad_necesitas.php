@@ -71,10 +71,10 @@
         <form class="tipo" id="presupuestoForm" method="POST">
             <div class="items ">
                 <div class="item-type-number xs-mr-40-lg-75">
-                    <input class="" name="minimo" id="minimo" type="number" placeholder="MIN.$">
+                    <input class="" name="minimo" id="minimo" type="number" placeholder="MIN.$" required>
                 </div>
                 <div class="item-type-number xs-mr-40-lg-75">
-                    <input class="" name="maximo" id="maximo" type="number" placeholder="MAX.$">
+                    <input class="" name="maximo" id="maximo" type="number" placeholder="MAX.$" required>
                 </div>
             </div>
 
