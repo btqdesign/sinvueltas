@@ -15,5 +15,9 @@ class Modelo extends CI_Model
 	public function agregar($data){
 		$this->db->insert(' sinv_caracteristicas_busqueda', $data);
 	}
+
+	public function agregarUser($data){
+		$this->db->insert(' sinv_usuario', $data);
+	}
 }
  ?>
