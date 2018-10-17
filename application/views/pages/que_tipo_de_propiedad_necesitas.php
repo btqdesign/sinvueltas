@@ -30,19 +30,19 @@
         <form class="tipo" id="Formtipo">
             <div class="items xs-mr-40-lg-75">
                 <div class="item-type">
-                    <input class="radio casa" name="propiedad"  type="radio" value="casa">
+                    <input class="radio casa" name="propiedad"  type="radio" value="casa" required>
                     <i class="icon-house"></i>
                     <span class="dot"></span>
                     <p class="type-propiedad">CASA</p>
                 </div>
                 <div class="item-type">
-                    <input class="radio departamento" name="propiedad" type="radio" value="departamento">
+                    <input class="radio departamento" name="propiedad" type="radio" value="departamento required">
                     <i class="icon-departamento"></i>
                     <span class="dot"></span>
                     <p class="type-propiedad">DEPARAMENTO</p>
                 </div>
                 <div class="item-type">
-                    <input class="radio oficina" name="propiedad" type="radio" value="oficina">
+                    <input class="radio oficina" name="propiedad" type="radio" value="oficina" required>
                     <i class="icon-oficina"></i>
                     <span class="dot"></span>
                     <p class="type-propiedad">OFICINA</p>
@@ -839,7 +839,7 @@
            e.preventDefault();
             var formData = new FormData($('#formTel')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/agregarTelefono',
+                url: 'https://sinvueltas.idevol.net/rentar/agregarCodigo',
                 type: 'POST',
                 data: formData,
                 contentType: false,
