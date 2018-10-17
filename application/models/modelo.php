@@ -13,11 +13,11 @@ class Modelo extends CI_Model
 		$this->load->database();
 	}
 	public function agregar($data){
-		$this->db->insert(' sinv_caracteristicas_busqueda', $data);
+		$this->db->insert('sinv_caracteristicas_busqueda', $data);
 	}
 
 	public function agregarUser($data){
-		$this->db->insert(' sinv_usuario', $data);
+		$this->db->insert('sinv_usuario', $data);
 	}
 }
  ?>

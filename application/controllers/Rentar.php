@@ -16,7 +16,7 @@ class Rentar extends CI_Controller {
     }
     public function agregarTipo($identificador){
 		$tipo = array(
-			'id' => "1",
+			'id' => $identificador,
 			'sinv_usuario_id'=> $identificador,
 			'tipopropiedad' => $this->input->post('propiedad'),
 		);
