@@ -669,7 +669,7 @@
         document.getElementById("contacto").style.display = "none";
         document.getElementById("telefono").style.display = "none";
 
-        var id=Math.random().toString(36).substr(2, 9);
+        var id=Math.floor(Math.random() * 10000);
         $("#Formtipo").on("submit", function(e){           
            e.preventDefault();
             var formData = new FormData($('#Formtipo')[0]);
