@@ -31,7 +31,7 @@ class Rentar extends CI_Controller {
 			'presupuestomin' => $this->input->post('minimo'),
 			'presupuestomax' => $this->input->post('maximo')
 		);
-		$this->m->updatePresupuesto($identificador,$presupuesto);		
+		$this->m->updatePresupuesto(array('id' => $identificador) ,$presupuesto);		
 		echo json_encode(array("status" => TRUE));		
 	}
 

@@ -8,6 +8,7 @@ class ModeloRentar extends CI_Model
 {
 	/*Regresara los registros de 
 	la base de datos*/
+	var $caracteristicas='sinv_caracteristicas_busqueda'
 	public function __construct()
 	{
 		parent::__construct();
@@ -22,7 +23,7 @@ class ModeloRentar extends CI_Model
 	}
 
 	public function updatePresupuesto($where, $data){
-		$this->db->update('sinv_caracteristicas_busqueda', $data, $where);
+		$this->db->update($this->caracteristicas , $data, $where);
 		return $this->db->affected_rows();
 	}
 }
