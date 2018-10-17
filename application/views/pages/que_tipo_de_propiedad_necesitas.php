@@ -747,7 +747,7 @@
             e.preventDefault();
             var formData = new FormData($('#formActividades')[0]);
             $.ajax({
-                url: 'http://localhost/codeigniter/index.php/welcome/agregarLugar',
+                url: 'https://sinvueltas.idevol.net/rentar/agregarLugar',
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -770,7 +770,7 @@
             e.preventDefault();
             var formData = new FormData($('#cercanoForm')[0]);
             $.ajax({
-                url: 'http://localhost/codeigniter/index.php/welcome/agregarCercano',
+                url: 'https://sinvueltas.idevol.net/rentar/agregarCercano',
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -794,7 +794,7 @@
             e.preventDefault();
             var formData = new FormData($('#usuarioForm')[0]);
             $.ajax({
-                url: 'http://localhost/codeigniter/index.php/welcome/agregarUsuario',
+                url: 'https://sinvueltas.idevol.net/rentar/agregarUsuario',
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -817,7 +817,7 @@
            e.preventDefault();
             var formData = new FormData($('#FormContacto')[0]);
             $.ajax({
-                url: 'http://localhost/codeigniter/index.php/welcome/agregarContacto',
+                url: 'https://sinvueltas.idevol.net/rentar/agregarContacto',
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -839,7 +839,7 @@
            e.preventDefault();
             var formData = new FormData($('#formTel')[0]);
             $.ajax({
-                url: 'http://localhost/codeigniter/index.php/welcome/agregarTelefono',
+                url: 'https://sinvueltas.idevol.net/rentar/agregarTelefono',
                 type: 'POST',
                 data: formData,
                 contentType: false,
