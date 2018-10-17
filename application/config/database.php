@@ -80,7 +80,7 @@ $db['default'] = array(
 	'password' => 'AK9rDqpPmvuXoa7V',
 	'database' => 'sinv_db',
 	'dbdriver' => 'mysqli',
-	'dbprefix' => 'sinv_',
+	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
