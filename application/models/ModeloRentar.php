@@ -21,6 +21,9 @@ class ModeloRentar extends CI_Model
 	public function agregarUser($data){
 		$this->db->insert('sinv_usuario', $data);
 	}
+	public function agregarPropiedad($data){
+		$this->db->insert('sinv_propiedad', $data);
+	}
 
 	public function updatePresupuesto($where, $data){
 		$this->db->update($this->caracteristicas , $data, $where);

@@ -35,11 +35,12 @@ class Rentar extends CI_Controller {
 		echo json_encode(array("status" => TRUE));		
 	}
 
-	public function agregarAmenidades(){
-		$amenidad = array(
-			'presupuestomin' => $this->input->post('habitaciones'),
+	public function agregarAmenidades($identificador){
+		$propiedad = array(
+			'id' => $identificador,
+			'habitaciones' => $this->input->post('habitaciones'),
 		);
-		$this->m->agregar($amenidad);
+		$this->m->agregarPropiedad($propiedad);
 		echo json_encode(array("status" => TRUE));		
 	}
 
