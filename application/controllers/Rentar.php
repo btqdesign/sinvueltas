@@ -26,12 +26,12 @@ class Rentar extends CI_Controller {
 		echo json_encode(array("status" => TRUE));		
 	}	
 
-	public function agregarPresupuesto(){
+	public function agregarPresupuesto($identificador){
 		$presupuesto = array(
 			'presupuestomin' => $this->input->post('minimo'),
 			'presupuestomax' => $this->input->post('maximo')
 		);
-		$this->m->agregar($presupuesto);		
+		$this->m->updatePresupuesto($identificador,$presupuesto);		
 		echo json_encode(array("status" => TRUE));		
 	}
 
