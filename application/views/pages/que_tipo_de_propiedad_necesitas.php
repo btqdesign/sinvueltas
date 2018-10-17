@@ -794,7 +794,7 @@
             e.preventDefault();
             var formData = new FormData($('#usuarioForm')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/agregarUsuario',
+                url: 'https://sinvueltas.idevol.net/rentar/agregarUsuario/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
