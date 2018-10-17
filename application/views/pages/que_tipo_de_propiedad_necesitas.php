@@ -695,7 +695,7 @@
             e.preventDefault();
             var formData = new FormData($('#comodoform')[0]);
             $.ajax({
-                url: 'http://localhost/codeigniter/index.php/welcome/agregarAmenidades',
+                url: 'https://sinvueltas.idevol.net/rentar/agregarAmenidades',
                 type: 'POST',
                 data: formData,
                 contentType: false,
