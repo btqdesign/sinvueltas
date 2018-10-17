@@ -39,6 +39,8 @@ class Rentar extends CI_Controller {
 		$propiedad = array(
 			'id' => $identificador,
 			'habitaciones' => $this->input->post('habitaciones'),
+			'banos' => $this->input->post('bano'),
+			'estacionamientos' => $this->input->post('estacionamiento'),
 		);
 		$this->m->agregarPropiedad($propiedad);
 		echo json_encode(array("status" => TRUE));		

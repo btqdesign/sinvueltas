@@ -112,14 +112,14 @@
                         <i class="icon-bano icon-size-35 mr-right-20"></i>
                         <p class="text">| Baño</p>
                     </div>
-                    <input type="number" min="1" max="9" step="1" value="1">
+                    <input type="number" min="1" max="9" step="1" value="1" name="bano">
                 </div>
                 <div class="quantity">
                     <div class="head-icon">
                         <i class="icon-garage icon-size-35 mr-right-20"></i>
                         <p class="text">| Estacionamiento</p>
                     </div>
-                    <input type="number" min="1" max="9" step="1" value="1">
+                    <input type="number" min="1" max="9" step="1" value="1" name="estacionamiento">
                 </div>
             </div>
         <p class="text-center text-details">Entre más detalles tengamos de tu parte, mejores resultados</p>
