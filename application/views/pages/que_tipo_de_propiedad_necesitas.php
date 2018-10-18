@@ -278,6 +278,7 @@ label {
         <h1 class="topic text-center mr-bottom-20">¿En dónde te gustaría vivir?</h1>
         <p class="text-center text">Entre más detalles tengamos de tu parte, mejores resultados</p>
     </section>
+    <form method="post" id="gustariaForm">
     <section class="main-wrapper">
         <div class="row">
             <div class="col-xs-12 col-sm-4">
@@ -352,7 +353,6 @@ label {
         </div>
         <hr>
         <p class="text-center text-details">Otras colonias próximamente</p>
-        <form method="post" id="gustariaForm">
             <div class="text-center" >
                 <button class="btn-1">SIGUIENTE</button>
             </div>
