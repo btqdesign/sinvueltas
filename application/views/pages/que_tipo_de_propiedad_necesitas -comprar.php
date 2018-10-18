@@ -36,7 +36,7 @@
                     <p class="type-propiedad">CASA</p>
                 </div>
                 <div class="item-type">
-                    <input class="radio departamento" name="propiedad" type="radio" value="departamento required">
+                    <input class="radio departamento" name="propiedad" type="radio" value="departamento" required>
                     <i class="icon-departamento"></i>
                     <span class="dot"></span>
                     <p class="type-propiedad">DEPARAMENTO</p>
