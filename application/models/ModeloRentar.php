@@ -43,6 +43,9 @@ class ModeloRentar extends CI_Model
 	public function agregarAmenidad($data){
 		$this->db->insert('sinv_amenidades_elegidas', $data);
 	}
+	public function agregarColonia($data){
+		$this->db->insert('sinv_lugar_preferido_vivir', $data);
+	}
 	public function agregarContacto($data){
 		$this->db->insert('sinv_contacto_usuario', $data);
 	}

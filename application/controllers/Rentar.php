@@ -248,4 +248,82 @@ class Rentar extends CI_Controller {
 		$this->m->agregar($telefono);
 		echo json_encode(array("status" => TRUE));	
 	}
+
+	public function agregarColonia($identificador){
+		$fecha = date("Y-m-d H:i:s");
+		if($this->input->post('checkbox-1')>0){
+			$colonia = array(
+				'id_usuario' => $identificador,
+				'id_colonia' => $this->input->post('checkbox-1'),
+				'ultima_modificacion' => $fecha,
+			);
+			$this->m->agregarColonia($colonia);
+		};	
+		if($this->input->post('checkbox-2')>0){
+			$colonia = array(
+				'id_usuario' => $identificador,
+				'id_colonia' => $this->input->post('checkbox-2'),
+				'ultima_modificacion' => $fecha,
+			);
+			$this->m->agregarColonia($colonia);
+		};	
+		if($this->input->post('checkbox-3')>0){
+			$colonia = array(
+				'id_usuario' => $identificador,
+				'id_colonia' => $this->input->post('checkbox-3'),
+				'ultima_modificacion' => $fecha,
+			);
+			$this->m->agregarColonia($colonia);
+		};	
+		if($this->input->post('checkbox-4')>0){
+			$colonia = array(
+				'id_usuario' => $identificador,
+				'id_colonia' => $this->input->post('checkbox-4'),
+				'ultima_modificacion' => $fecha,
+			);
+			$this->m->agregarColonia($colonia);
+		};	
+		if($this->input->post('checkbox-5')>0){
+			$colonia = array(
+				'id_usuario' => $identificador,
+				'id_colonia' => $this->input->post('checkbox-5'),
+				'ultima_modificacion' => $fecha,
+			);
+			$this->m->agregarColonia($colonia);
+		};	
+		if($this->input->post('checkbox-6')>0){
+			$colonia = array(
+				'id_usuario' => $identificador,
+				'id_colonia' => $this->input->post('checkbox-6'),
+				'ultima_modificacion' => $fecha,
+			);
+			$this->m->agregarColonia($colonia);
+		};	
+		if($this->input->post('checkbox-7')>0){
+			$colonia = array(
+				'id_usuario' => $identificador,
+				'id_colonia' => $this->input->post('checkbox-7'),
+				'ultima_modificacion' => $fecha,
+			);
+			$this->m->agregarColonia($colonia);
+		};	
+		if($this->input->post('checkbox-8')>0){
+			$colonia = array(
+				'id_usuario' => $identificador,
+				'id_colonia' => $this->input->post('checkbox-8'),
+				'ultima_modificacion' => $fecha,
+			);
+			$this->m->agregarColonia($colonia);
+		};	
+		if($this->input->post('checkbox-9')>0){
+			$colonia = array(
+				'id_usuario' => $identificador,
+				'id_colonia' => $this->input->post('checkbox-9'),
+				'ultima_modificacion' => $fecha,
+			);
+			$this->m->agregarColonia($colonia);
+		};	
+
+		echo json_encode(array("status" => TRUE));		
+	}
 }

@@ -285,21 +285,21 @@ label {
                     <input type="text" class="form-control" disabled placeholder="Cuahutémoc" aria-label="Cuahutémoc"
                         aria-describedby="basic-addon2">
                     <label class="formui-checkbox option" >
-                        <input type="checkbox" name="checkbox[]" value="a"/>
+                        <input type="checkbox" name="checkbox-1" value="5"/>
                     </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Polanco" aria-label="Polanco"
                         aria-describedby="basic-addon2">
                     <label class="formui-checkbox option" >
-                        <input type="checkbox" name="checkbox[]" value="a"/>
+                        <input type="checkbox" name="checkbox-2" value="7"/>
                     </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Roma" aria-label="Roma"
                         aria-describedby="basic-addon2">
                     <label class="formui-checkbox option" >
-                        <input type="checkbox" name="checkbox[]" value="a"/>
+                        <input type="checkbox" name="checkbox-3" value="1"/>
                     </label>
                 </div>
             </div>
@@ -308,21 +308,21 @@ label {
                     <input type="text" class="form-control" disabled placeholder="Anzures" aria-label="Anzures"
                         aria-describedby="basic-addon2">
                     <label class="formui-checkbox option" >
-                        <input type="checkbox" name="checkbox[]" value="a"/>
+                        <input type="checkbox" name="checkbox-4" value="6"/>
                     </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Irrigación" aria-label="Irrigación"
                         aria-describedby="basic-addon2">
                     <label class="formui-checkbox option" >
-                        <input type="checkbox" name="checkbox[]" value="a"/>
+                        <input type="checkbox" name="checkbox-5" value="8"/>
                     </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Condesa" aria-label="Condesa"
                         aria-describedby="basic-addon2">
                     <label class="formui-checkbox option" >
-                        <input type="checkbox" name="checkbox[]" value="a"/>
+                        <input type="checkbox" name="checkbox-6" value="2"/>
                     </label>
                 </div>
             </div>
@@ -331,21 +331,21 @@ label {
                     <input type="text" class="form-control" disabled placeholder="Juárez" aria-label="Juárez"
                         aria-describedby="basic-addon2">
                     <label class="formui-checkbox option" >
-                        <input type="checkbox" name="checkbox[]" value="a"/>
+                        <input type="checkbox" name="checkbox-7" value="4"/>
                     </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Granada" aria-label="Granada"
                         aria-describedby="basic-addon2">
                     <label class="formui-checkbox option" >
-                        <input type="checkbox" name="checkbox[]" value="a"/>
+                        <input type="checkbox" name="checkbox-8" value="9"/>
                     </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="San Miguel Chapultepec" aria-label="San Miguel Chapultepec"
                         aria-describedby="basic-addon2">
                     <label class="formui-checkbox option" >
-                        <input type="checkbox" name="checkbox[]" value="a"/>
+                        <input type="checkbox" name="checkbox-9" value="3"/>
                     </label>
                 </div>
             </div>
@@ -732,8 +732,25 @@ label {
          });
         $("#gustariaForm").on("submit", function(e){
            e.preventDefault();
-           document.getElementById("gustaria").style.display = "none";
-           document.getElementById("actividades").style.display = "block";
+            var formData = new FormData($('#gustariaForm')[0]);
+            $.ajax({
+                url: 'https://sinvueltas.idevol.net/rentar/agregarColonia/'+id,
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData:false,
+                dataType:"JSON",
+                success:function(data) {
+                    e.preventDefault();
+                   document.getElementById("gustaria").style.display = "none";
+                    document.getElementById("actividades").style.display = "block";
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    e.preventDefault();
+                    alert("1234");               
+                }
+            });
+           
          });
 
 
