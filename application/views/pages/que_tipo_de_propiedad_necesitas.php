@@ -144,39 +144,39 @@
                             <label for="styled-checkbox-2">| Balcones</label>
                         </div>
                         <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value3">
+                            <input class="styled-checkbox" id="styled-checkbox-3" name="styled-checkbox-3" type="checkbox" value="3">
                             <label for="styled-checkbox-3">| Amueblado</label>
                         </div>
                         <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value4">
+                            <input class="styled-checkbox" id="styled-checkbox-4" name="styled-checkbox-4" type="checkbox" value="13">
                             <label for="styled-checkbox-4">| Terraza / Roof garden</label>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-5" type="checkbox" value="value5">
+                            <input class="styled-checkbox" id="styled-checkbox-5" name="styled-checkbox-5" type="checkbox" value="11">
                             <label for="styled-checkbox-5">| Tengo mascota</label>
                         </div>
                         <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-6" type="checkbox" value="value6">
+                            <input class="styled-checkbox" id="styled-checkbox-6" name="styled-checkbox-6" type="checkbox" value="14">
                             <label for="styled-checkbox-6">| Vigilancia</label>
                         </div>
                         <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-7" type="checkbox" value="value7">
+                            <input class="styled-checkbox" id="styled-checkbox-7" name="styled-checkbox-7" type="checkbox" value="9">
                             <label for="styled-checkbox-7">| GYM</label>
                         </div>
                         <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-8" type="checkbox" value="value8">
+                            <input class="styled-checkbox" id="styled-checkbox-8" name="styled-checkbox-8" type="checkbox" value="2">
                             <label for="styled-checkbox-8">| Alberca</label>
                         </div>                    
                     </div>
                     <div class="col-xs-12 col-sm-4">
                             <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-9" type="checkbox" value="value9">
+                            <input class="styled-checkbox" id="styled-checkbox-9" name="styled-checkbox-9" type="checkbox" value="12">
                             <label for="styled-checkbox-9">| Salón de usos multiples</label>
                         </div>
                         <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-10" type="checkbox" value="value10">
+                            <input class="styled-checkbox" id="styled-checkbox-10" name="styled-checkbox-10" type="checkbox" value="4">
                             <label for="styled-checkbox-10">| Área para niños</label>
                         </div>
                         <div class="check-item">

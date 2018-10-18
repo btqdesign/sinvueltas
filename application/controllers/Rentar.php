@@ -60,6 +60,62 @@ class Rentar extends CI_Controller {
 			);
 			$this->m->agregarAmenidad($amenidad);
 		};	
+		if($this->input->post('styled-checkbox-3')>0){
+			$amenidad = array(
+				'id_propiedad' => $identificador,
+				'id_amenidad' => $this->input->post('styled-checkbox-3'),
+			);
+			$this->m->agregarAmenidad($amenidad);
+		};	
+		if($this->input->post('styled-checkbox-4')>0){
+			$amenidad = array(
+				'id_propiedad' => $identificador,
+				'id_amenidad' => $this->input->post('styled-checkbox-4'),
+			);
+			$this->m->agregarAmenidad($amenidad);
+		};	
+		if($this->input->post('styled-checkbox-5')>0){
+			$amenidad = array(
+				'id_propiedad' => $identificador,
+				'id_amenidad' => $this->input->post('styled-checkbox-5'),
+			);
+			$this->m->agregarAmenidad($amenidad);
+		};	
+		if($this->input->post('styled-checkbox-6')>0){
+			$amenidad = array(
+				'id_propiedad' => $identificador,
+				'id_amenidad' => $this->input->post('styled-checkbox-6'),
+			);
+			$this->m->agregarAmenidad($amenidad);
+		};	
+		if($this->input->post('styled-checkbox-7')>0){
+			$amenidad = array(
+				'id_propiedad' => $identificador,
+				'id_amenidad' => $this->input->post('styled-checkbox-7'),
+			);
+			$this->m->agregarAmenidad($amenidad);
+		};	
+		if($this->input->post('styled-checkbox-8')>0){
+			$amenidad = array(
+				'id_propiedad' => $identificador,
+				'id_amenidad' => $this->input->post('styled-checkbox-8'),
+			);
+			$this->m->agregarAmenidad($amenidad);
+		};	
+		if($this->input->post('styled-checkbox-9')>0){
+			$amenidad = array(
+				'id_propiedad' => $identificador,
+				'id_amenidad' => $this->input->post('styled-checkbox-9'),
+			);
+			$this->m->agregarAmenidad($amenidad);
+		};	
+		if($this->input->post('styled-checkbox-10')>0){
+			$amenidad = array(
+				'id_propiedad' => $identificador,
+				'id_amenidad' => $this->input->post('styled-checkbox-10'),
+			);
+			$this->m->agregarAmenidad($amenidad);
+		};	
 		echo json_encode(array("status" => TRUE));		
 	}
 
