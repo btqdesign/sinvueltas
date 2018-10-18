@@ -47,7 +47,7 @@ class Rentar extends CI_Controller {
 		if($this->input->post('styled-checkbox-1')>0){
 			$amenidad = array(
 				'id_propiedad' => $identificador,
-				'id_amenidad' => $this->input->post('styled-checkbox-1'),
+				'id_amenidad' => "1",
 			);
 			$this->m->agregarAmenidad($amenidad);
 		};
