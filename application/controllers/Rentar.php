@@ -127,11 +127,10 @@ class Rentar extends CI_Controller {
 		};	
 
 		$antiguedad = array(
-			'id_usuario' => $identificador,
-			'descripcion' => $this->input->post('antiguedad'),
+			'id_antiguedad' => $this->input->post('antiguedad'),
 			'ultima_modificacion' => $fecha,
 		);
-		$this->m->agregarAntiguedad($antiguedad);	
+		$this->m->agregarAntiguedad(array('id' => $identificador) ,$antiguedad);
 
 		echo json_encode(array("status" => TRUE));		
 	}
