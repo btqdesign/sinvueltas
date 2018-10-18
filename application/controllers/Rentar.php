@@ -152,10 +152,12 @@ class Rentar extends CI_Controller {
 	}
 
 	public function agregarCercano($identificador){
+		$fecha = date("Y-m-d H:i:s");
 		if($this->input->post('parque')>0){
 			$cercano = array(
 				'id_usuario' => $identificador,
 				'id_lugar_cercano' => $this->input->post('parque'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarCercano($cercano);
 		};	
@@ -163,6 +165,7 @@ class Rentar extends CI_Controller {
 			$cercano = array(
 				'id_usuario' => $identificador,
 				'id_lugar_cercano' => $this->input->post('restaurante'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarCercano($cercano);
 		};	
@@ -170,6 +173,7 @@ class Rentar extends CI_Controller {
 			$cercano = array(
 				'id_usuario' => $identificador,
 				'id_lugar_cercano' => $this->input->post('c_comercial'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarCercano($cercano);
 		};	
@@ -177,6 +181,7 @@ class Rentar extends CI_Controller {
 			$cercano = array(
 				'id_usuario' => $identificador,
 				'id_lugar_cercano' => $this->input->post('oxxo'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarCercano($cercano);
 		};	
@@ -184,6 +189,7 @@ class Rentar extends CI_Controller {
 			$cercano = array(
 				'id_usuario' => $identificador,
 				'id_lugar_cercano' => $this->input->post('gym'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarCercano($cercano);
 		};	
@@ -191,6 +197,7 @@ class Rentar extends CI_Controller {
 			$cercano = array(
 				'id_usuario' => $identificador,
 				'id_lugar_cercano' => $this->input->post('supermercado'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarCercano($cercano);
 		};	
@@ -198,6 +205,7 @@ class Rentar extends CI_Controller {
 			$cercano = array(
 				'id_usuario' => $identificador,
 				'id_lugar_cercano' => $this->input->post('poco_trafico'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarCercano($cercano);
 		};	
@@ -205,6 +213,7 @@ class Rentar extends CI_Controller {
 			$cercano = array(
 				'id_usuario' => $identificador,
 				'id_lugar_cercano' => $this->input->post('trans_pub'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarCercano($cercano);
 		};	
@@ -212,9 +221,11 @@ class Rentar extends CI_Controller {
 	}
 
 	public function agregarUsuario($identificador){
+		$fecha = date("Y-m-d H:i:s");
 		$usuario = array(
 			'nombre' => $this->input->post('nombre'),
 			'apaterno' => $this->input->post('apellido'),
+			'ultima_modificacion' => $fecha,
 		);
 		$this->m->updateUsuario(array('id' => $identificador) ,$usuario);		
 		echo json_encode(array("status" => TRUE));		
