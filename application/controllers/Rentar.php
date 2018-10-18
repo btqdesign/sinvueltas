@@ -15,10 +15,12 @@ class Rentar extends CI_Controller {
 		
     }
     public function agregarTipo($identificador){
+    	$fecha = date("Y-m-d H:i:s");
 		$tipo = array(
 			'id' => $identificador,
 			'id_usuario'=> $identificador,
 			'tipo_propiedad' => $this->input->post('propiedad'),
+			'ultima_modificacion' => $fecha,
 		);
 		$user= array('id' => $identificador );
 		$this->m->agregarUser($user);		
