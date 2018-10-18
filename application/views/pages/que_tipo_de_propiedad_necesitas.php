@@ -140,7 +140,7 @@
                             <label for="styled-checkbox-1">| Jardin</label>
                         </div>
                         <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2">
+                            <input class="styled-checkbox" id="styled-checkbox-2" name="styled-checkbox-2" type="checkbox" value="5">
                             <label for="styled-checkbox-2">| Balcones</label>
                         </div>
                         <div class="check-item">
