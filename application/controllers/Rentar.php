@@ -109,13 +109,7 @@ class Rentar extends CI_Controller {
 			);
 			$this->m->agregarAmenidad($amenidad);
 		};	
-		if($this->input->post('styled-checkbox-10')>0){
-			$amenidad = array(
-				'id_propiedad' => $identificador,
-				'id_amenidad' => $this->input->post('styled-checkbox-10'),
-			);
-			$this->m->agregarAmenidad($amenidad);
-		};	
+
 		echo json_encode(array("status" => TRUE));		
 	}
 
@@ -138,11 +132,14 @@ class Rentar extends CI_Controller {
 		echo json_encode(array("status" => TRUE));		
 	}
 
-	public function agregarCercano(){
-		$cercano = array(
-			'presupuestomin' => $this->input->post('parque'),
-		);
-		$this->m->agregar($cercano);
+	public function agregarCercano($identificador){
+		if($this->input->post('parque')>0){
+			$cercano = array(
+				'id_propiedad' => $identificador,
+				'id_lugar_cercano' => $this->input->post('parque'),
+			);
+			$this->m->agregarCercano($cercano);
+		};	
 		echo json_encode(array("status" => TRUE));		
 	}
 

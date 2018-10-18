@@ -37,6 +37,9 @@ class ModeloRentar extends CI_Model
 	public function agregarLugar($data){
 		$this->db->insert('sinv_lugar_frecuente', $data);
 	}
+	public function agregarCercano($data){
+		$this->db->insert('sinv_preferencia_sitio', $data);
+	}
 	public function agregarAmenidad($data){
 		$this->db->insert('sinv_amenidades_elegidas', $data);
 	}
