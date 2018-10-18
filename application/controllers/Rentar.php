@@ -29,21 +29,25 @@ class Rentar extends CI_Controller {
 	}	
 
 	public function agregarPresupuesto($identificador){
+		$fecha = date("Y-m-d H:i:s");
 		$presupuesto = array(
 			'presupuestomin' => $this->input->post('minimo'),
-			'presupuestomax' => $this->input->post('maximo')
+			'presupuestomax' => $this->input->post('maximo'),
+			'ultima_modificacion' => $fecha,
 		);
 		$this->m->updatePresupuesto(array('id' => $identificador) ,$presupuesto);		
 		echo json_encode(array("status" => TRUE));		
 	}
 
 	public function agregarAmenidades($identificador){
+		$fecha = date("Y-m-d H:i:s");
 		$propiedad = array(
 			'id' => $identificador,
 			'habitaciones' => $this->input->post('habitaciones'),
 			'banos' => $this->input->post('bano'),
 			'estacionamientos' => $this->input->post('estacionamiento'),
 			'id_usuario' => $identificador,
+			'ultima_modificacion' => $fecha,
 		);
 		
 		$this->m->agregarPropiedad($propiedad);	
@@ -52,6 +56,7 @@ class Rentar extends CI_Controller {
 			$amenidad = array(
 				'id_propiedad' => $identificador,
 				'id_amenidad' => $this->input->post('styled-checkbox-1'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarAmenidad($amenidad);
 		};	
@@ -59,6 +64,7 @@ class Rentar extends CI_Controller {
 			$amenidad = array(
 				'id_propiedad' => $identificador,
 				'id_amenidad' => $this->input->post('styled-checkbox-2'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarAmenidad($amenidad);
 		};	
@@ -66,6 +72,7 @@ class Rentar extends CI_Controller {
 			$amenidad = array(
 				'id_propiedad' => $identificador,
 				'id_amenidad' => $this->input->post('styled-checkbox-3'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarAmenidad($amenidad);
 		};	
@@ -73,6 +80,7 @@ class Rentar extends CI_Controller {
 			$amenidad = array(
 				'id_propiedad' => $identificador,
 				'id_amenidad' => $this->input->post('styled-checkbox-4'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarAmenidad($amenidad);
 		};	
@@ -80,6 +88,7 @@ class Rentar extends CI_Controller {
 			$amenidad = array(
 				'id_propiedad' => $identificador,
 				'id_amenidad' => $this->input->post('styled-checkbox-5'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarAmenidad($amenidad);
 		};	
@@ -87,6 +96,7 @@ class Rentar extends CI_Controller {
 			$amenidad = array(
 				'id_propiedad' => $identificador,
 				'id_amenidad' => $this->input->post('styled-checkbox-6'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarAmenidad($amenidad);
 		};	
@@ -94,6 +104,7 @@ class Rentar extends CI_Controller {
 			$amenidad = array(
 				'id_propiedad' => $identificador,
 				'id_amenidad' => $this->input->post('styled-checkbox-7'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarAmenidad($amenidad);
 		};	
@@ -101,6 +112,7 @@ class Rentar extends CI_Controller {
 			$amenidad = array(
 				'id_propiedad' => $identificador,
 				'id_amenidad' => $this->input->post('styled-checkbox-8'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarAmenidad($amenidad);
 		};	
@@ -108,6 +120,7 @@ class Rentar extends CI_Controller {
 			$amenidad = array(
 				'id_propiedad' => $identificador,
 				'id_amenidad' => $this->input->post('styled-checkbox-9'),
+				'ultima_modificacion' => $fecha,
 			);
 			$this->m->agregarAmenidad($amenidad);
 		};	
@@ -116,17 +129,21 @@ class Rentar extends CI_Controller {
 	}
 
 	public function agregarLugar($identificador){
+		$fecha = date("Y-m-d H:i:s");
 		$lugar = array(
 			'direccioncompleta' => $this->input->post('direccion-1'),
 			'id_usuario' => $identificador,
+			'ultima_modificacion' => $fecha,
 		);
 		$lugar2 = array(
 			'direccioncompleta' => $this->input->post('direccion-2'),
 			'id_usuario' => $identificador,
+			'ultima_modificacion' => $fecha,
 		);
 		$lugar3 = array(
 			'direccioncompleta' => $this->input->post('direccion-3'),
 			'id_usuario' => $identificador,
+			'ultima_modificacion' => $fecha,
 		);
 		$this->m->agregarLugar($lugar);
 		$this->m->agregarLugar($lugar2);
