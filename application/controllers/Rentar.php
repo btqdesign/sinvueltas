@@ -135,7 +135,7 @@ class Rentar extends CI_Controller {
 	public function agregarCercano($identificador){
 		if($this->input->post('parque')>0){
 			$cercano = array(
-				'id_propiedad' => $identificador,
+				'id_usuario' => $identificador,
 				'id_lugar_cercano' => $this->input->post('parque'),
 			);
 			$this->m->agregarCercano($cercano);
