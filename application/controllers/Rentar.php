@@ -19,7 +19,7 @@ class Rentar extends CI_Controller {
 		$tipo = array(
 			'id' => $identificador,
 			'id_usuario'=> $identificador,
-			'tipo_busqueda'=>'Renta'
+			'tipo_busqueda'=>'Renta',
 			'tipo_propiedad' => $this->input->post('propiedad'),
 			'ultima_modificacion' => $fecha,
 		);
