@@ -43,6 +43,14 @@ class Rentar extends CI_Controller {
 			'estacionamientos' => $this->input->post('estacionamiento'),
 			'id_usuario' => $identificador,
 		);
+
+		if($this->input->post('styled-checkbox-1')>0){
+			$amenidad = array(
+				'id_propiedad' => $identificador,
+				'id_amenidad' => $this->input->post('styled-checkbox-1'),
+			);
+			$this->m->agregarAmenidad($amenidad);
+		};
 		$this->m->agregarPropiedad($propiedad);		
 		echo json_encode(array("status" => TRUE));		
 	}
