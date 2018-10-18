@@ -136,7 +136,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-4">
                         <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="10" checked>
+                            <input class="styled-checkbox" id="styled-checkbox-1" name="styled-checkbox-1" type="checkbox" value="10" checked>
                             <label for="styled-checkbox-1">| Jardin</label>
                         </div>
                         <div class="check-item">
