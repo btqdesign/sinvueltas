@@ -140,6 +140,55 @@ class Rentar extends CI_Controller {
 			);
 			$this->m->agregarCercano($cercano);
 		};	
+		if($this->input->post('restaurante')>0){
+			$cercano = array(
+				'id_usuario' => $identificador,
+				'id_lugar_cercano' => $this->input->post('restaurante'),
+			);
+			$this->m->agregarCercano($cercano);
+		};	
+		if($this->input->post('c_comercial')>0){
+			$cercano = array(
+				'id_usuario' => $identificador,
+				'id_lugar_cercano' => $this->input->post('c_comercial'),
+			);
+			$this->m->agregarCercano($cercano);
+		};	
+		if($this->input->post('oxxo')>0){
+			$cercano = array(
+				'id_usuario' => $identificador,
+				'id_lugar_cercano' => $this->input->post('oxxo'),
+			);
+			$this->m->agregarCercano($cercano);
+		};	
+		if($this->input->post('gym')>0){
+			$cercano = array(
+				'id_usuario' => $identificador,
+				'id_lugar_cercano' => $this->input->post('gym'),
+			);
+			$this->m->agregarCercano($cercano);
+		};	
+		if($this->input->post('supermercado')>0){
+			$cercano = array(
+				'id_usuario' => $identificador,
+				'id_lugar_cercano' => $this->input->post('supermercado'),
+			);
+			$this->m->agregarCercano($cercano);
+		};	
+		if($this->input->post('poco_trafico')>0){
+			$cercano = array(
+				'id_usuario' => $identificador,
+				'id_lugar_cercano' => $this->input->post('poco_trafico'),
+			);
+			$this->m->agregarCercano($cercano);
+		};	
+		if($this->input->post('trans_pub')>0){
+			$cercano = array(
+				'id_usuario' => $identificador,
+				'id_lugar_cercano' => $this->input->post('trans_pub'),
+			);
+			$this->m->agregarCercano($cercano);
+		};	
 		echo json_encode(array("status" => TRUE));		
 	}
 
