@@ -131,6 +131,11 @@ class Rentar extends CI_Controller {
 		);
 		$this->m->agregarAntiguedad(array('id' => $identificador) ,$antiguedad);
 
+		$tamano = array(
+			'metros_construidos_min' => $this->input->post('tamano'),
+		);
+		$this->m->agregarTamano(array('id' => $identificador) ,$tamano);
+
 		echo json_encode(array("status" => TRUE));		
 	}
 

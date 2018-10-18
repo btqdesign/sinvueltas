@@ -41,6 +41,10 @@ class ModeloRentar extends CI_Model
 		$this->db->update('sinv_propiedad' , $data, $where);
 		return $this->db->affected_rows();
 	}
+	public function agregarTamano($where,$data){
+		$this->db->update('sinv_propiedad' , $data, $where);
+		return $this->db->affected_rows();
+	}
 	public function agregarCercano($data){
 		$this->db->insert('sinv_preferencia_sitio', $data);
 	}

@@ -232,7 +232,7 @@ label {
                         </div>
                         <div class="check-item">
                             <div class="item-type-number">
-                                <input class="" name="propiedad" type="number" placeholder="MIN">
+                                <input class="" name="tamano" type="number" placeholder="MIN">
                             </div>
                         </div>
                     </div>
