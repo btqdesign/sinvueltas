@@ -41,8 +41,17 @@ class Rentar extends CI_Controller {
 			'habitaciones' => $this->input->post('habitaciones'),
 			'banos' => $this->input->post('bano'),
 			'estacionamientos' => $this->input->post('estacionamiento'),
+			'id_amenidad' => $this->input->post('styled-checkbox-1');
 		);
-		$this->m->agregarPropiedad($propiedad);
+
+		if($this->input->post('styled-checkbox-1')>0){
+			$amenidad = array(
+				'id_propiedad' => $identificador,
+				'id_amenidad' => $this->input->post('styled-checkbox-1');
+			);
+			$this->m->agregarAmenidad($amenidad);
+		};
+		$this->m->agregarPropiedad($propiedad);		
 		echo json_encode(array("status" => TRUE));		
 	}
 
@@ -92,7 +101,7 @@ class Rentar extends CI_Controller {
 		echo json_encode(array("status" => TRUE));	
 	}
 
-	public function agregarTelefono(){
+	public function agregarCodigo(){
 		$telefono = array(
 			'presupuestomin' => $this->input->post('codigo'),
 		);		
