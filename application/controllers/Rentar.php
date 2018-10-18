@@ -19,6 +19,7 @@ class Rentar extends CI_Controller {
 		$tipo = array(
 			'id' => $identificador,
 			'id_usuario'=> $identificador,
+			'tipo_busqueda'=>'Renta'
 			'tipo_propiedad' => $this->input->post('propiedad'),
 			'ultima_modificacion' => $fecha,
 		);
@@ -124,6 +125,13 @@ class Rentar extends CI_Controller {
 			);
 			$this->m->agregarAmenidad($amenidad);
 		};	
+
+		$antiguedad = array(
+			'id_usuario' => $identificador,
+			'descripcion' => $this->input->post('antiguedad'),
+			'ultima_modificacion' => $fecha,
+		);
+		$this->m->agregarAntiguedad($antiguedad);	
 
 		echo json_encode(array("status" => TRUE));		
 	}
