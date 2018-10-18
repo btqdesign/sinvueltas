@@ -31,10 +31,12 @@
                         RENTAR
                     </button>
                 </form>
-                <button class="btn-item">
+                <form method="post" action="rentar">
+                    <button class="btn-item">
                     <span class="dot"></span>
-                    COMPRAR
-                </button>
+                        COMPRAR
+                    </button>
+                </form>                
                 <button class="btn-item">
                     <span class="dot"></span>
                     SOY PROPIETARIO
