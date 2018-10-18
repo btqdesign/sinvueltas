@@ -38,7 +38,7 @@ class ModeloRentar extends CI_Model
 		$this->db->insert('sinv_lugar_frecuente', $data);
 	}
 	public function agregarAntiguedad($where,$data){
-		$this->db->update('sinv_antiguedad' , $data, $where);
+		$this->db->update('sinv_propiedad' , $data, $where);
 		return $this->db->affected_rows();
 	}
 	public function agregarCercano($data){
