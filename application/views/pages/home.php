@@ -31,7 +31,7 @@
                         RENTAR
                     </button>
                 </form>
-                <form method="post" action="rentar">
+                <form method="post" action="comprar">
                     <button class="btn-item">
                     <span class="dot"></span>
                         COMPRAR
