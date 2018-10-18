@@ -770,7 +770,7 @@
             e.preventDefault();
             var formData = new FormData($('#cercanoForm')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/agregarCercano/'+$id,
+                url: 'https://sinvueltas.idevol.net/rentar/agregarCercano/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
