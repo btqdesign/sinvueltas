@@ -8,6 +8,53 @@
     <title></title>
     <link rel="stylesheet" href="/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/dist/css/style.css">
+    <style type="text/css">
+        [class*=formui] {
+  border: 0;
+  font-size: 16px;
+  border: 2px solid #cccccc;
+  position: relative;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.formui-checkbox {
+  border: 0;
+  padding: 0;
+}
+.formui-checkbox input {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+.formui-checkbox:before {
+  content: '\2b';
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  background-color: #60C8F7;
+}
+.formui-checkbox:hover:before,
+.formui-checkbox:focus:before {
+  background: #008ff5;
+  border-color: #999999;
+}
+.formui-checkbox.checked:before {
+  background: #FF004B;
+  border-color: #008ff5;
+  content: "\d7";
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+}
+    </style>
 </head>
 
 <body class="bg-gray">    
@@ -237,104 +284,74 @@
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Cuahutémoc" aria-label="Cuahutémoc"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox[]" value="a"/>
+                    </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Polanco" aria-label="Polanco"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox[]" value="a"/>
+                    </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Roma" aria-label="Roma"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox[]" value="a"/>
+                    </label>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4">
                 <div class="add input-group mb-3">
-                    <input type="checkbox" class="form-control" disabled placeholder="Anzures" aria-label="Anzures"
+                    <input type="text" class="form-control" disabled placeholder="Anzures" aria-label="Anzures"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox[]" value="a"/>
+                    </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Irrigación" aria-label="Irrigación"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox[]" value="a"/>
+                    </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Condesa" aria-label="Condesa"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox[]" value="a"/>
+                    </label>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4">
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Juárez" aria-label="Juárez"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox[]" value="a"/>
+                    </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Granada" aria-label="Granada"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox[]" value="a"/>
+                    </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="San Miguel Chapultepec" aria-label="San Miguel Chapultepec"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox[]" value="a"/>
+                    </label>
                 </div>
             </div>
         </div>
         <hr>
         <p class="text-center text-details">Otras colonias próximamente</p>
-        <div class="grid-less">
-            <div class="add input-group mb-3">
-                <input type="text" class="form-control" disabled placeholder="San Miguel Chapultepec" aria-label="San Miguel Chapultepec"
-                    aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="less input-group-text" id="basic-addon2">+</button>
-                </div>
-            </div>
-            <div class="add input-group mb-3">
-                <input type="text" class="form-control" disabled placeholder="San Miguel Chapultepec" aria-label="San Miguel Chapultepec"
-                    aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="less input-group-text" id="basic-addon2">+</button>
-                </div>
-            </div>
-            <div class="add input-group mb-3">
-                <input type="text" class="form-control" disabled placeholder="San Miguel Chapultepec" aria-label="San Miguel Chapultepec"
-                    aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="less input-group-text" id="basic-addon2">+</button>
-                </div>
-            </div>
-            <div class="add input-group mb-3">
-                <input type="text" class="form-control" disabled placeholder="San Miguel Chapultepec" aria-label="San Miguel Chapultepec"
-                    aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="less input-group-text" id="basic-addon2">+</button>
-                </div>
-            </div>
-        </div>
         <form method="post" id="gustariaForm">
             <div class="text-center" >
                 <button class="btn-1">SIGUIENTE</button>
@@ -857,6 +874,12 @@
             });
          });
 
+    </script>
+    <script type="text/javascript">
+        $('body').on('change', '.formui-checkbox input[type="checkbox"]', function () {
+            var $opt = $(this);
+            $opt.parent('.option').toggleClass('checked');
+        });
     </script>
 </body>
 
