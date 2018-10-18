@@ -41,6 +41,7 @@ class Rentar extends CI_Controller {
 			'habitaciones' => $this->input->post('habitaciones'),
 			'banos' => $this->input->post('bano'),
 			'estacionamientos' => $this->input->post('estacionamiento'),
+			'id_usuario' => $identificador,
 		);
 
 		if($this->input->post('styled-checkbox-1')>0){
