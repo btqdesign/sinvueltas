@@ -250,9 +250,11 @@ class Rentar extends CI_Controller {
 	}
 
 	public function updateContacto($identificador){
+		$fecha = date("Y-m-d H:i:s");
 		$contacto = array(
 			'telefono'=>$this->input->post('numero'),
 			'telefonovalidado'=>$this->input->post('confirmacion'),
+			'ultimamodificacion' => $fecha,
 		);		
 		$this->m->updateContacto(array('id' => $identificador) , $contacto);
 		echo json_encode(array("status" => TRUE));	
