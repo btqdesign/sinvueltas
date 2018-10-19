@@ -654,6 +654,7 @@ label {
     </section>
      </div>
     <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
     <script>
         // Initialize Firebase
         var config = {
@@ -688,7 +689,7 @@ label {
     <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="/dist/js/bundle.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    
     
     <script type="text/javascript">
 
