@@ -71,7 +71,7 @@ class ModeloRentar extends CI_Model
         if($query->num_rows() > 0 )
         {
         	$this->db->update('sinv_valida_telefono' , $data, $where);
-            return "TRUE";
+            return $query->row();
         }
 	}
 }
