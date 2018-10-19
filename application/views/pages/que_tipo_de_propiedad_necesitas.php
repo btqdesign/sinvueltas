@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/dist/css/style.css">
     <style type="text/css">
-        [class*=formui] {
+[class*=formui] {
   border: 0;
   font-size: 16px;
   border: 2px solid #cccccc;

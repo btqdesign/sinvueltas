@@ -8,7 +8,6 @@ class Rentar extends CI_Controller {
 		$this->load->model('ModeloRentar', 'm');
 		$this->load->helper('form');
 	}
-
 	public function index()
 	{
 		$this->load->view('pages/que_tipo_de_propiedad_necesitas');
@@ -25,7 +24,8 @@ class Rentar extends CI_Controller {
 		);
 		$user= array('id' => $identificador );
 		$this->m->agregarUser($user);		
-		$this->m->agregar($tipo);		
+		$this->m->agregar($tipo);	
+
 		echo json_encode(array("status" => TRUE));		
 	}	
 
@@ -257,6 +257,9 @@ class Rentar extends CI_Controller {
 			'ultimamodificacion' => $fecha,
 		);		
 		$this->m->updateContacto(array('id' => $identificador) , $contacto);
+
+		$verificacion = file_get_contents('https://platform.clickatell.com/messages/http/send?apiKey=SdY3C9dnQCunvXzk2ulX0A==&to=521'.$this->input->post('numero').'&content=Tu+codigo+Sinvueltas+es:+123123');
+
 		echo json_encode(array("status" => TRUE));	
 	}
 
