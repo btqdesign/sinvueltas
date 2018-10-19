@@ -57,7 +57,7 @@
                 </p>-->
             </div>
             <div class="col-6 terminos">
-                <a haref="/aviso_de_privacidad" class="cr-white text legal text-right">
+                <a href="/aviso_de_privacidad" class="cr-white text legal text-right">
                     AVISO DE PRIVACIDAD
                 </a>
             </div>
