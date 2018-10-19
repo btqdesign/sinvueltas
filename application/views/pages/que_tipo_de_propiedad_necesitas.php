@@ -654,10 +654,6 @@ label {
     </section>
      </div>
     <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="/dist/js/bundle.js"></script>
-
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
     <script>
         // Initialize Firebase
         var config = {
@@ -675,7 +671,10 @@ label {
         document.getElementById('loginfacebook').addEventListener('click', function() {
             firebase.auth().signInWithPopup(provider).then(function(result) {
               if (result.user) {
-                var user = result.additionalUserInfo.profile;     
+                var user = result.additionalUserInfo.profile;          
+                document.getElementById("email").value=user.email;
+                document.getElementById("nombre").value=user.first_name;
+                document.getElementById("apellido").value=user.last_name;
                 console.log(result.additionalUserInfo.profile);
 
               }
@@ -686,6 +685,11 @@ label {
 
         });
     </script>
+    <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bundle.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    
     <script type="text/javascript">
 
         document.getElementById("tipo_propiedad").style.display = "block";
