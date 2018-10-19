@@ -251,11 +251,10 @@ class Rentar extends CI_Controller {
 
 	public function updateContacto($identificador){
 		$contacto = array(
-			'id_usuario'=>$identificador,
 			'telefono'=>$this->input->post('numero'),
 			'telefonovalidado'=>$this->input->post('confirmacion'),
 		);		
-		$this->m->agregarContacto($contacto);
+		$this->m->updateContacto(array('id' => $identificador) $contacto);
 		echo json_encode(array("status" => TRUE));	
 	}
 
