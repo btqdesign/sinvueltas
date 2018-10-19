@@ -653,9 +653,42 @@ label {
         </form>
     </section>
      </div>
-    <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>
+    
     <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="/dist/js/bundle.js"></script>
+    <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCLx6-K5j_jByYqV55mGjh-JBs2T9r1J18",
+            authDomain: "plick-front-end.firebaseapp.com",
+            databaseURL: "https://plick-front-end.firebaseio.com",
+            projectId: "plick-front-end",
+            storageBucket: "plick-front-end.appspot.com",
+            messagingSenderId: "518089985158"
+        };
+       firebase.initializeApp(config);
+        var provider = new firebase.auth.FacebookAuthProvider();
+        provider.addScope('email');   
+        var authService = firebase.auth();
+        document.getElementById('loginfacebook').addEventListener('click', function() {
+            firebase.auth().signInWithPopup(provider).then(function(result) {
+              if (result.user) {
+                var user = result.additionalUserInfo.profile;          
+                document.getElementById("email").value=user.email;
+                document.getElementById("nombre").value=user.first_name;
+                document.getElementById("apellido").value=user.last_name;
+                console.log(result.additionalUserInfo.profile);
+
+              }
+              else{
+                alert("Error");
+              }
+            });
+
+        });
+    </script>
     <script type="text/javascript">
 
         document.getElementById("tipo_propiedad").style.display = "block";
@@ -880,38 +913,7 @@ label {
             $opt.parent('.option').toggleClass('checked');
         });
     </script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyCLx6-K5j_jByYqV55mGjh-JBs2T9r1J18",
-            authDomain: "plick-front-end.firebaseapp.com",
-            databaseURL: "https://plick-front-end.firebaseio.com",
-            projectId: "plick-front-end",
-            storageBucket: "plick-front-end.appspot.com",
-            messagingSenderId: "518089985158"
-        };
-       firebase.initializeApp(config);
-        var provider = new firebase.auth.FacebookAuthProvider();
-        provider.addScope('email');   
-        var authService = firebase.auth();
-        document.getElementById('loginfacebook').addEventListener('click', function() {
-            firebase.auth().signInWithPopup(provider).then(function(result) {
-              if (result.user) {
-                var user = result.additionalUserInfo.profile;          
-                document.getElementById("email").value=user.email;
-                document.getElementById("nombre").value=user.first_name;
-                document.getElementById("apellido").value=user.last_name;
-                console.log(result.additionalUserInfo.profile);
-
-              }
-              else{
-                alert("Error");
-              }
-            });
-
-        });
-    </script>
+    
 </body>
 
 </html>
