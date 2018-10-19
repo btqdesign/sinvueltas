@@ -352,11 +352,10 @@ class Rentar extends CI_Controller {
 	public function validaCodigo($identificador){
 		$fecha = date("Y-m-d H:i:s");
 		$codigo = array(
-			'ultima_modificacion' => $fecha,
+			'ultimamodificacion' => $fecha,
 			'estado' =>'activado'
 		);
 		$this->m->validaCodigo(array('codigo' => $this->input->post('codigo')) ,$codigo);	
-
 		echo json_encode(array("status" => TRUE));		
 	}
 }
