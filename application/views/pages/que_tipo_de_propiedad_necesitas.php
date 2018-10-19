@@ -687,7 +687,7 @@ label {
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");               
                 }
             });
          });
@@ -708,7 +708,7 @@ label {
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");               
                 }
             });
            
@@ -730,7 +730,7 @@ label {
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");               
                 }
             });
            
@@ -755,7 +755,7 @@ label {
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");               
                 }
             });
          });
@@ -777,7 +777,7 @@ label {
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");               
                 }
             });
            
@@ -800,7 +800,7 @@ label {
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");               
                 }
             });
            
@@ -824,7 +824,7 @@ label {
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");               
                 }
             });
            
@@ -847,7 +847,7 @@ label {
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");              
                 }
             });
          });
@@ -864,12 +864,11 @@ label {
                 dataType:"JSON",
                 success:function(data) {
                     e.preventDefault();
-                    document.getElementById("contacto").style.display = "none";
-                    document.getElementById("telefono").style.display = "block";
+                    window.location.href = "https://sinvueltas.idevol.net/Bienvenido";
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");               
                 }
             });
          });
