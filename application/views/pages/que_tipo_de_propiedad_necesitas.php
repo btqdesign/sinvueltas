@@ -675,8 +675,7 @@ label {
         document.getElementById('loginfacebook').addEventListener('click', function() {
             firebase.auth().signInWithPopup(provider).then(function(result) {
               if (result.user) {
-                var user = result.additionalUserInfo.profile;          
-                document.getElementById("email").value=user.email;
+                var user = result.additionalUserInfo.profile;     
                 console.log(result.additionalUserInfo.profile);
 
               }
