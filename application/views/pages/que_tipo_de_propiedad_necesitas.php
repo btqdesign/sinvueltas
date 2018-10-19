@@ -517,6 +517,7 @@ label {
                     </p>
                     <div class="circle">
                         <i class="icon-facebook"></i>
+                        <button id="loginfacebook"><i class="icon-facebook"></i></button>
                     </div>
 
                 </div>
