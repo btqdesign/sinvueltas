@@ -679,7 +679,6 @@ label {
                 document.getElementById("email").value=user.email;
                 document.getElementById("nombre").value=user.first_name;
                 document.getElementById("apellido").value=user.last_name;
-                e.preventDefault();
                 var formData = new FormData($('#usuarioForm')[0]);
                 $.ajax({
                     url: 'https://sinvueltas.idevol.net/rentar/agregarUsuario/'+id,
