@@ -259,15 +259,15 @@ class Rentar extends CI_Controller {
 		$this->m->updateContacto(array('id' => $identificador) ,$contacto);
 		echo json_encode(array("status" => TRUE));	
 		$cod_ver=rand(1000,999999);
-		$verificacion = file_get_contents('https://platform.clickatell.com/messages/http/send?apiKey=SdY3C9dnQCunvXzk2ulX0A==&to=521'.$this->input->post('numero').'&content=Tu+codigo+Sinvueltas+es:+'.$cod_ver.'');
-	}
 
-	public function agregarCodigo(){
-		$telefono = array(
-			'presupuestomin' => $this->input->post('codigo'),
-		);		
-		$this->m->agregar($telefono);
-		echo json_encode(array("status" => TRUE));	
+		$codigo = array(			
+			'id' => $identificador,
+			'codigo' => $cod_ver,
+			'id_usuario'=>$identificador,
+		);
+
+		$this->m->agregarCodigo($codigo);
+		$verificacion = file_get_contents('https://platform.clickatell.com/messages/http/send?apiKey=SdY3C9dnQCunvXzk2ulX0A==&to=521'.$this->input->post('numero').'&content=Tu+codigo+Sinvueltas+es:+'.$cod_ver.'');
 	}
 
 	public function agregarColonia($identificador){

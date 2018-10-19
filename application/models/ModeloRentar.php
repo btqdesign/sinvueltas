@@ -62,5 +62,8 @@ class ModeloRentar extends CI_Model
 	public function agregarContacto($data){
 		$this->db->insert('sinv_contacto_usuario', $data);
 	}
+	public function agregarUser($data){
+		$this->db->insert('sinv_valida_telefono', $data);
+	}
 }
  ?>
