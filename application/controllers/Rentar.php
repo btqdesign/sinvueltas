@@ -258,7 +258,8 @@ class Rentar extends CI_Controller {
 		);		
 		$this->m->updateContacto(array('id' => $identificador) , $contacto);
 
-		$verificacion = file_get_contents('https://platform.clickatell.com/messages/http/send?apiKey=SdY3C9dnQCunvXzk2ulX0A==&to=521'.$this->input->post('numero').'&content=Tu+codigo+Sinvueltas+es:+123123');
+		$cod_ver=rand(1000,999999);
+		$verificacion = file_get_contents('https://platform.clickatell.com/messages/http/send?apiKey=SdY3C9dnQCunvXzk2ulX0A==&to=521'.$this->input->post('numero').'&content=Tu+codigo+Sinvueltas+es:+'.$cod_ver.');
 
 		echo json_encode(array("status" => TRUE));	
 	}
