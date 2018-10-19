@@ -238,7 +238,13 @@ class Rentar extends CI_Controller {
 			'apaterno' => $this->input->post('apellido'),
 			'ultimamodificacion' => $fecha,
 		);
-		$this->m->updateUsuario(array('id' => $identificador) ,$usuario);		
+
+		$correo = array(
+			'correo' => $this->input->post('email'),
+		);
+
+		$this->m->updateUsuario(array('id' => $identificador) ,$usuario);
+		$this->m->updateCorreo(array('id_usuario' => $identificador) ,$correo);		
 		echo json_encode(array("status" => TRUE));		
 	}
 

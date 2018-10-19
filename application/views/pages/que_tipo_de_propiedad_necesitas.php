@@ -542,7 +542,7 @@ label {
                 </div>
                 <div class="col-12 item-type-number mr-bottom-20">
                     <span class="cr-red">*</span>
-                    <input class="" name="" type="email" placeholder="Dirección de correo electrónico" required>
+                    <input class="" name="email" type="email" placeholder="Dirección de correo electrónico" required>
                     <label class="text-legal cr-red hidden" for=""></label>
                 </div>
                 <div class="col-12">

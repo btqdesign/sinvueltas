@@ -34,6 +34,11 @@ class ModeloRentar extends CI_Model
 		$this->db->update('sinv_usuario' , $data, $where);
 		return $this->db->affected_rows();
 	}
+	public function updateCorreo($where, $data){
+		$this->db->update('sinv_contacto_usuario' , $data, $where);
+		return $this->db->affected_rows();
+	}
+
 	public function agregarLugar($data){
 		$this->db->insert('sinv_lugar_frecuente', $data);
 	}
