@@ -355,7 +355,16 @@ class Rentar extends CI_Controller {
 			'ultimamodificacion' => $fecha,
 			'estado' =>'activado'
 		);
-		$this->m->validaCodigo(array('codigo' => $this->input->post('codigo')) ,$codigo);	
-		echo json_encode(array("status" => TRUE));		
+		$resultado=$this->m->validaCodigo(array('codigo' => $this->input->post('codigo')) ,$codigo);	
+		if($resultado > 0 )
+        {
+        	$this->db->update('sinv_valida_telefono' , $data, $where);
+            return $query->row();
+            echo json_encode(array("status" => TRUE));
+        }
+        else{
+        	echo json_encode(array("status" => FALSE));
+        }
+				
 	}
 }
