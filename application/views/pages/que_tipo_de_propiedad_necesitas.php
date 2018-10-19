@@ -856,7 +856,7 @@ label {
            e.preventDefault();
             var formData = new FormData($('#formTel')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/agregarCodigo',
+                url: 'https://sinvueltas.idevol.net/rentar/validaCodigo/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,

@@ -65,5 +65,14 @@ class ModeloRentar extends CI_Model
 	public function agregarCodigo($data){
 		$this->db->insert('sinv_valida_telefono', $data);
 	}
+
+	public function validaCodigo($where, $data){
+		$query = $this->db->get_where('sinv_valida_telefono',$where);
+        if($query->num_rows() > 0 )
+        {
+        	$this->db->update('sinv_valida_telefono' , $data, $where);
+            return $query->row();
+        }
+	}
 }
  ?>
