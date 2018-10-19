@@ -545,25 +545,8 @@ label {
                     <input class="" name="email" type="email" placeholder="Dirección de correo electrónico" required>
                     <label class="text-legal cr-red hidden" for=""></label>
                 </div>
+                
                 <div class="col-12">
-                    <p class="text-center text-legal">
-                        Compartenos tu número de celular, nos ayudará a estar en contacto ya que recibirás un código de confirmación vía SMS. 
-                    </p>
-                </div>
-                <div class="col-xs-12 col-sm-6 item-type-number">
-                    <span class="cr-red">*</span>    
-                    <input class="" name="" type="number" placeholder="Número de celular (10 dígitos)" required>
-                    <label class="text-legal cr-red hidden" for=""></label>
-                </div>
-                <div class="col-xs-12 col-sm-6 item-type-number">
-                    <span class="cr-red">*</span>
-                    <input class="" name="" type="number" placeholder="Confirmar" required>
-                    <label class="text-legal cr-red hidden" for=""></label>
-                </div>
-                <div class="col-12">
-                    <p class="text-legal">
-                        Tu número movil jamás será usado, compartido o vendido para usos diferentes a los de Plick.
-                    </p>
                     <div class="check-item">
                         <input class="styled-checkbox" id="styled-checkbox-terminos" type="checkbox" value="value1" required>
                         <label for="styled-checkbox-terminos">He leído y acepto los</label> <a class="link-red" href="">Terminos y condiciones de uso</a>, y <a class="link-red" href="">políticas de privacidad</a>
