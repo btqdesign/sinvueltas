@@ -586,7 +586,7 @@ label {
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 item-type-number flex-center mr-bottom-40">
-                    <input class="" name="nombre" id="nombre" type="text" placeholder="Nombre" required>
+                    <input class="" name="nombre2" id="nombre2" type="text" placeholder="Nombre" required>
                 </div>
             </div>       
             <div class="row">
