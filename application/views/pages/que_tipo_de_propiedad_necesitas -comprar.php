@@ -8,6 +8,53 @@
     <title></title>
     <link rel="stylesheet" href="/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/dist/css/style.css">
+    <style type="text/css">
+[class*=formui] {
+  border: 0;
+  font-size: 16px;
+  border: 2px solid #cccccc;
+  position: relative;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.formui-checkbox {
+  border: 0;
+  padding: 0;
+}
+.formui-checkbox input {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+.formui-checkbox:before {
+  content: '\2b';
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  background-color: #60C8F7;
+}
+.formui-checkbox:hover:before,
+.formui-checkbox:focus:before {
+  background: #008ff5;
+  border-color: #999999;
+}
+.formui-checkbox.checked:before {
+  background: #FF004B;
+  border-color: #008ff5;
+  content: "\d7";
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+}
+    </style>
 </head>
 
 <body class="bg-gray">    
@@ -185,26 +232,26 @@
                         </div>
                         <div class="check-item">
                             <div class="item-type-number">
-                                <input class="" name="propiedad" type="number" placeholder="MIN">
+                                <input class="" name="tamano" type="number" placeholder="MIN">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="detalles inline-elements ">
                     <div class="item-antiguedad">
-                        <input class="styled-checkbox" id="styled-radio-1" name="1" type="radio" value="1" checked>
+                        <input class="styled-checkbox" id="styled-radio-1" name="antiguedad" type="radio" value="5" checked>
                         <label for="styled-radio-1">| NUEVO</label>
                     </div>
                     <div class="item-antiguedad">
-                        <input class="styled-checkbox" id="styled-radio-2" name="1" type="radio" value="2">
+                        <input class="styled-checkbox" id="styled-radio-2" name="antiguedad" type="radio" value="3">
                         <label for="styled-radio-2">| 5 a 10 años</label>
                     </div>
                     <div class="item-antiguedad">
-                        <input class="styled-checkbox" id="styled-radio-3" name="1" type="radio" value="3">
+                        <input class="styled-checkbox" id="styled-radio-3" name="antiguedad" type="radio" value="1">
                         <label for="styled-radio-3">| 10 a 20 años</label>
                     </div>
                     <div class="item-antiguedad">
-                        <input class="styled-checkbox" id="styled-radio-4" name="1" type="radio" value="5">
+                        <input class="styled-checkbox" id="styled-radio-4" name="antiguedad" type="radio" value="6">
                         <label for="styled-radio-4">| + 30 años</label>
                     </div>
                 </div>          
@@ -231,111 +278,81 @@
         <h1 class="topic text-center mr-bottom-20">¿En dónde te gustaría vivir?</h1>
         <p class="text-center text">Entre más detalles tengamos de tu parte, mejores resultados</p>
     </section>
+    <form method="post" id="gustariaForm">
     <section class="main-wrapper">
         <div class="row">
             <div class="col-xs-12 col-sm-4">
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Cuahutémoc" aria-label="Cuahutémoc"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox-1" value="5"/>
+                    </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Polanco" aria-label="Polanco"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox-2" value="7"/>
+                    </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Roma" aria-label="Roma"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox-3" value="1"/>
+                    </label>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4">
                 <div class="add input-group mb-3">
-                    <input type="checkbox" class="form-control" disabled placeholder="Anzures" aria-label="Anzures"
+                    <input type="text" class="form-control" disabled placeholder="Anzures" aria-label="Anzures"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox-4" value="6"/>
+                    </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Irrigación" aria-label="Irrigación"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox-5" value="8"/>
+                    </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Condesa" aria-label="Condesa"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox-6" value="2"/>
+                    </label>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4">
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Juárez" aria-label="Juárez"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox-7" value="4"/>
+                    </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="Granada" aria-label="Granada"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox-8" value="9"/>
+                    </label>
                 </div>
                 <div class="add input-group mb-3">
                     <input type="text" class="form-control" disabled placeholder="San Miguel Chapultepec" aria-label="San Miguel Chapultepec"
                         aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2">+</button>
-                    </div>
+                    <label class="formui-checkbox option" >
+                        <input type="checkbox" name="checkbox-9" value="3"/>
+                    </label>
                 </div>
             </div>
         </div>
         <hr>
         <p class="text-center text-details">Otras colonias próximamente</p>
-        <div class="grid-less">
-            <div class="add input-group mb-3">
-                <input type="text" class="form-control" disabled placeholder="San Miguel Chapultepec" aria-label="San Miguel Chapultepec"
-                    aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="less input-group-text" id="basic-addon2">+</button>
-                </div>
-            </div>
-            <div class="add input-group mb-3">
-                <input type="text" class="form-control" disabled placeholder="San Miguel Chapultepec" aria-label="San Miguel Chapultepec"
-                    aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="less input-group-text" id="basic-addon2">+</button>
-                </div>
-            </div>
-            <div class="add input-group mb-3">
-                <input type="text" class="form-control" disabled placeholder="San Miguel Chapultepec" aria-label="San Miguel Chapultepec"
-                    aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="less input-group-text" id="basic-addon2">+</button>
-                </div>
-            </div>
-            <div class="add input-group mb-3">
-                <input type="text" class="form-control" disabled placeholder="San Miguel Chapultepec" aria-label="San Miguel Chapultepec"
-                    aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="less input-group-text" id="basic-addon2">+</button>
-                </div>
-            </div>
-        </div>
-        <form method="post" id="gustariaForm">
             <div class="text-center" >
                 <button class="btn-1">SIGUIENTE</button>
             </div>
@@ -499,7 +516,7 @@
                         Registrate con:
                     </p>
                     <div class="circle">
-                        <i class="icon-facebook"></i>
+                        <i id="loginfacebook"  class="icon-facebook"></i>
                     </div>
 
                 </div>
@@ -525,28 +542,11 @@
                 </div>
                 <div class="col-12 item-type-number mr-bottom-20">
                     <span class="cr-red">*</span>
-                    <input class="" name="" type="email" placeholder="Dirección de correo electrónico" required>
+                    <input class="" name="email" type="email" placeholder="Dirección de correo electrónico" required>
                     <label class="text-legal cr-red hidden" for=""></label>
                 </div>
+                
                 <div class="col-12">
-                    <p class="text-center text-legal">
-                        Compartenos tu número de celular, nos ayudará a estar en contacto ya que recibirás un código de confirmación vía SMS. 
-                    </p>
-                </div>
-                <div class="col-xs-12 col-sm-6 item-type-number">
-                    <span class="cr-red">*</span>    
-                    <input class="" name="" type="number" placeholder="Número de celular (10 dígitos)" required>
-                    <label class="text-legal cr-red hidden" for=""></label>
-                </div>
-                <div class="col-xs-12 col-sm-6 item-type-number">
-                    <span class="cr-red">*</span>
-                    <input class="" name="" type="number" placeholder="Confirmar" required>
-                    <label class="text-legal cr-red hidden" for=""></label>
-                </div>
-                <div class="col-12">
-                    <p class="text-legal">
-                        Tu número movil jamás será usado, compartido o vendido para usos diferentes a los de Plick.
-                    </p>
                     <div class="check-item">
                         <input class="styled-checkbox" id="styled-checkbox-terminos" type="checkbox" value="value1" required>
                         <label for="styled-checkbox-terminos">He leído y acepto los</label> <a class="link-red" href="">Terminos y condiciones de uso</a>, y <a class="link-red" href="">políticas de privacidad</a>
@@ -603,7 +603,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 item-type-number">
                     <span class="cr-red">*</span>
-                    <input class="" name="confirmacion" type="number" placeholder="Confirmar" required>
+                    <input class="" name="confirmacion" id="confirmacion" type="number" placeholder="Confirmar" required>
                     <label class="text-legal cr-red hidden" for=""></label>
                 </div>
                 <div class="col-12">
@@ -674,7 +674,7 @@
            e.preventDefault();
             var formData = new FormData($('#Formtipo')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/agregarTipo/'+id,
+                url: 'https://sinvueltas.idevol.net/rentar/agregarTipo/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -687,7 +687,7 @@
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");               
                 }
             });
          });
@@ -695,7 +695,7 @@
             e.preventDefault();
             var formData = new FormData($('#comodoform')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/agregarAmenidades/'+id,
+                url: 'https://sinvueltas.idevol.net/rentar/agregarAmenidades/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -708,15 +708,32 @@
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");               
                 }
             });
            
          });
         $("#gustariaForm").on("submit", function(e){
            e.preventDefault();
-           document.getElementById("gustaria").style.display = "none";
-           document.getElementById("actividades").style.display = "block";
+            var formData = new FormData($('#gustariaForm')[0]);
+            $.ajax({
+                url: 'https://sinvueltas.idevol.net/rentar/agregarColonia/'+id,
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData:false,
+                dataType:"JSON",
+                success:function(data) {
+                    e.preventDefault();
+                   document.getElementById("gustaria").style.display = "none";
+                    document.getElementById("actividades").style.display = "block";
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    e.preventDefault();
+                    alert("Algo Salió Mal");               
+                }
+            });
+           
          });
 
 
@@ -725,7 +742,7 @@
            e.preventDefault();
             var formData = new FormData($('#presupuestoForm')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/agregarPresupuesto/'+id,
+                url: 'https://sinvueltas.idevol.net/rentar/agregarPresupuesto/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -738,7 +755,7 @@
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");               
                 }
             });
          });
@@ -747,7 +764,7 @@
             e.preventDefault();
             var formData = new FormData($('#formActividades')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/agregarLugar/'+id,
+                url: 'https://sinvueltas.idevol.net/rentar/agregarLugar/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -760,7 +777,7 @@
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");               
                 }
             });
            
@@ -770,7 +787,7 @@
             e.preventDefault();
             var formData = new FormData($('#cercanoForm')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/agregarCercano/'+id,
+                url: 'https://sinvueltas.idevol.net/rentar/agregarCercano/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -783,7 +800,7 @@
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");               
                 }
             });
            
@@ -794,7 +811,7 @@
             e.preventDefault();
             var formData = new FormData($('#usuarioForm')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/agregarUsuario/'+id,
+                url: 'https://sinvueltas.idevol.net/rentar/agregarUsuario/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -807,7 +824,7 @@
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");               
                 }
             });
            
@@ -817,7 +834,7 @@
            e.preventDefault();
             var formData = new FormData($('#FormContacto')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/agregarContacto/'+id,
+                url: 'https://sinvueltas.idevol.net/rentar/updateContacto/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -830,7 +847,7 @@
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");              
                 }
             });
          });
@@ -839,7 +856,7 @@
            e.preventDefault();
             var formData = new FormData($('#formTel')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/agregarCodigo',
+                url: 'https://sinvueltas.idevol.net/rentar/validaCodigo/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -847,16 +864,51 @@
                 dataType:"JSON",
                 success:function(data) {
                     e.preventDefault();
-                    document.getElementById("contacto").style.display = "none";
-                    document.getElementById("telefono").style.display = "block";
+                    window.location.href = "https://sinvueltas.idevol.net/Bienvenido";
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    alert("1234");               
+                    alert("Algo Salió Mal");               
                 }
             });
          });
 
+    </script>
+    <script type="text/javascript">
+        $('body').on('change', '.formui-checkbox input[type="checkbox"]', function () {
+            var $opt = $(this);
+            $opt.parent('.option').toggleClass('checked');
+        });
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyBkp9WBCwNv7vhYhnpRQYRu0NmPlazSPsc",
+        authDomain: "premium-node-136523.firebaseapp.com",
+        databaseURL: "https://premium-node-136523.firebaseio.com",
+        projectId: "premium-node-136523",
+        storageBucket: "premium-node-136523.appspot.com",
+        messagingSenderId: "605712374642"
+      };
+       firebase.initializeApp(config);
+        var provider = new firebase.auth.FacebookAuthProvider();
+        provider.addScope('email');   
+        var authService = firebase.auth();
+        document.getElementById('loginfacebook').addEventListener('click', function() {
+            firebase.auth().signInWithPopup(provider).then(function(result) {
+              if (result.user) {
+                var user = result.additionalUserInfo.profile;          
+                document.getElementById("email").value=user.email;
+                document.getElementById("nombre").value=user.first_name;
+                document.getElementById("apellido").value=user.last_name;
+
+              }
+              else{
+                alert("Error");
+              }
+            });
+
+        });
     </script>
 </body>
 
