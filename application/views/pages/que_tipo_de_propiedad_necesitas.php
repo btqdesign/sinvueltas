@@ -902,6 +902,7 @@ label {
                 document.getElementById("email").value=user.email;
                 document.getElementById("nombre").value=user.first_name;
                 document.getElementById("apellido").value=user.last_name;
+                console.log(result.additionalUserInfo.profile);
 
               }
               else{
