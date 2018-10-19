@@ -356,7 +356,7 @@ class Rentar extends CI_Controller {
 			'estado' =>'activado'
 		);
 		$resultado=$this->m->validaCodigo(array('codigo' => $this->input->post('codigo')) ,$codigo);	
-		if($resultado > 0 )
+		if($resultado == TRUE )
         {
         	$this->db->update('sinv_valida_telefono' , $data, $where);
             return $query->row();
