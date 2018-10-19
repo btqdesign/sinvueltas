@@ -677,8 +677,6 @@ label {
               if (result.user) {
                 var user = result.additionalUserInfo.profile;          
                 document.getElementById("email").value=user.email;
-                document.getElementById("nombre").value=user.first_name;
-                document.getElementById("apellido").value=user.last_name;
                 console.log(result.additionalUserInfo.profile);
 
               }
