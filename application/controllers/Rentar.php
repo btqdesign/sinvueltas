@@ -363,7 +363,7 @@ class Rentar extends CI_Controller {
             echo json_encode(array("status" => TRUE));
         }
         else{
-        	echo json_encode(array("status" => FALSE));
+        	echo "ERROR";
         }
 				
 	}
