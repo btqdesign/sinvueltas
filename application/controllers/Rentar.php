@@ -239,16 +239,17 @@ class Rentar extends CI_Controller {
 			'ultimamodificacion' => $fecha,
 		);
 
-		$correo = array(
+		$correo = array(			
+			'id' => $identificador,
 			'correo' => $this->input->post('email'),
+			'id_usuario'=>$identificador,
 		);
-
+		$this->m->agregarContacto($correo);		
 		$this->m->updateUsuario(array('id' => $identificador) ,$usuario);
-		$this->m->updateCorreo(array('id_usuario' => $identificador) ,$correo);		
 		echo json_encode(array("status" => TRUE));		
 	}
 
-	public function agregarContacto($identificador){
+	public function updateContacto($identificador){
 		$contacto = array(
 			'id_usuario'=>$identificador,
 			'telefono'=>$this->input->post('numero'),

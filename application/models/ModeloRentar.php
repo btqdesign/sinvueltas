@@ -34,7 +34,7 @@ class ModeloRentar extends CI_Model
 		$this->db->update('sinv_usuario' , $data, $where);
 		return $this->db->affected_rows();
 	}
-	public function updateCorreo($where, $data){
+	public function updateContacto($where, $data){
 		$this->db->update('sinv_contacto_usuario' , $data, $where);
 		return $this->db->affected_rows();
 	}
