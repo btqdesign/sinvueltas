@@ -517,7 +517,6 @@ label {
                     </p>
                     <div class="circle">
                         <i class="icon-facebook"></i>
-                        <button id="loginfacebook">Autenticar con Facebook</button>
                     </div>
 
                 </div>
@@ -897,36 +896,6 @@ label {
         $('body').on('change', '.formui-checkbox input[type="checkbox"]', function () {
             var $opt = $(this);
             $opt.parent('.option').toggleClass('checked');
-        });
-    </script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
-    <script>
-      var config = {
-        apiKey: "AIzaSyBkp9WBCwNv7vhYhnpRQYRu0NmPlazSPsc",
-        authDomain: "premium-node-136523.firebaseapp.com",
-        databaseURL: "https://premium-node-136523.firebaseio.com",
-        projectId: "premium-node-136523",
-        storageBucket: "premium-node-136523.appspot.com",
-        messagingSenderId: "605712374642"
-      };
-       firebase.initializeApp(config);
-        var provider = new firebase.auth.FacebookAuthProvider();
-        provider.addScope('email');   
-        var authService = firebase.auth();
-        document.getElementById('loginfacebook').addEventListener('click', function() {
-            firebase.auth().signInWithPopup(provider).then(function(result) {
-              if (result.user) {
-                var user = result.additionalUserInfo.profile;          
-                document.getElementById("email").value=user.email;
-                document.getElementById("nombre").value=user.first_name;
-                document.getElementById("apellido").value=user.last_name;
-
-              }
-              else{
-                alert("Error");
-              }
-            });
-
         });
     </script>
 </body>
