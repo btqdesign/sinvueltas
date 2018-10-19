@@ -260,7 +260,6 @@ class Rentar extends CI_Controller {
 
 		$cod_ver=rand(1000,999999);
 		$verificacion = file_get_contents('https://platform.clickatell.com/messages/http/send?apiKey=SdY3C9dnQCunvXzk2ulX0A==&to=521'.$this->input->post('numero').'&content=Tu+codigo+Sinvueltas+es:+'.$cod_ver.'');
-		$this->m->agregarCodigo(array('id' => $identificador) , $contacto);
 
 		echo json_encode(array("status" => TRUE));	
 	}
