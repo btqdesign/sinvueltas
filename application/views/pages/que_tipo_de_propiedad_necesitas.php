@@ -679,7 +679,25 @@ label {
                 document.getElementById("email").value=user.email;
                 document.getElementById("nombre").value=user.first_name;
                 document.getElementById("apellido").value=user.last_name;
-                console.log(result.additionalUserInfo.profile);
+                e.preventDefault();
+                var formData = new FormData($('#usuarioForm')[0]);
+                $.ajax({
+                    url: 'https://sinvueltas.idevol.net/rentar/agregarUsuario/'+id,
+                    type: 'POST',
+                    data: formData,
+                    contentType: false,
+                    processData:false,
+                    dataType:"JSON",
+                    success:function(data) {
+                        e.preventDefault();                   
+                       document.getElementById("usuario").style.display = "none";
+                       document.getElementById("contacto").style.display = "block";
+                    },
+                    error: function(jqXHR, textStatus, errorThrown){
+                        e.preventDefault();
+                        alert("Algo Salió Mal");               
+                    }
+                });
 
               }
               else{
