@@ -687,13 +687,11 @@ label {
                     contentType: false,
                     processData:false,
                     dataType:"JSON",
-                    success:function(data) {
-                        e.preventDefault();                   
+                    success:function(data) {            
                        document.getElementById("usuario").style.display = "none";
                        document.getElementById("contacto").style.display = "block";
                     },
                     error: function(jqXHR, textStatus, errorThrown){
-                        e.preventDefault();
                         alert("Algo Salió Mal");               
                     }
                 });
