@@ -516,8 +516,7 @@ label {
                         Registrate con:
                     </p>
                     <div class="circle">
-                        <i class="icon-facebook"></i>
-                        <button></button>
+                        <i id="loginfacebook"  class="icon-facebook"></i>
                     </div>
 
                 </div>
