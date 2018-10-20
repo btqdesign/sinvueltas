@@ -391,6 +391,9 @@ class Rentar extends CI_Controller {
 			                        <p class="text">| Baño</p>
 			                    </div>
 			                    <input type="number" min="1" max="9" step="1" value="1" name="bano">
+			                    <div class="quantity-nav">
+			                        <div class="quantity-button quantity-up">+</div>
+			                    </div>
 			                </div>
 			                <div class="quantity">
 			                    <div class="head-icon">
