@@ -799,6 +799,15 @@ label {
                 success:function(data) {
                     e.preventDefault();
                     document.getElementById("presupuesto").style.display = "none";
+                    $.ajax({
+                        url: 'https://sinvueltas.idevol.net/rentar/tipoAmenidad/'+id,
+                        success: function(respuesta) {
+                            console.log(respuesta);
+                        },
+                        error: function() {
+                            console.log("No se ha podido obtener la información");
+                        }
+                    });
                     document.getElementById("comodo").style.display = "block";
                 },
                 error: function(jqXHR, textStatus, errorThrown){
