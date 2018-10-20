@@ -144,6 +144,9 @@ label {
     </section>
 
     <form action="" id="comodoform">
+        <div id="tipoAmenidad">
+            
+        </div>
      </form>
        
      </div>
@@ -686,7 +689,7 @@ label {
                     $.ajax({
                         url: 'https://sinvueltas.idevol.net/rentar/tipoAmenidad/'+id,
                         success: function(respuesta) {
-                            $("#details").html(respuesta);
+                            $("#tipoAmenidad").html(respuesta);
                         },
                         error: function() {
                             console.log("No se ha podido obtener la información");
