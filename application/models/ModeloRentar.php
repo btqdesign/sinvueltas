@@ -79,7 +79,7 @@ class ModeloRentar extends CI_Model
 		$amenidad = $this->db->query("SELECT * FROM sinv_caracteristicas_busqueda where id=$data");
 		if($amenidad->num_rows() > 0 )
         {
-        	return $query->result();
+        	return $amenidad->result();
         }
 	}
 }
