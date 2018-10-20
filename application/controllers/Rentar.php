@@ -369,10 +369,10 @@ class Rentar extends CI_Controller {
 
 	public function tipoAmenidad($identificador){	
 		$consulta   = $this->m->tipoAmenidad($identificador);
-		$pro_id;
+		$pro_tipo;
 		 foreach($consulta as $key => $val){
-		    $pro_id= $val->id;
+		    $pro_tipo= $val->tipo_propiedad;
 		 }
-		 print_r($pro_id);
+		 print_r($pro_tipo);
 	}
 }
