@@ -368,12 +368,11 @@ class Rentar extends CI_Controller {
 	}
 
 	public function tipoAmenidad($identificador){	
-		$this->data['result']   = $this->m->tipoAmenidad($identificador);
-		$pro_id = [];
-		 foreach($this->data['result'] as $key => $val){
-		    $pro_id[] = $val->id;
+		$consulta   = $this->m->tipoAmenidad($identificador);
+		$pro_id;
+		 foreach($consulta as $key => $val){
+		    $pro_id= $val->id;
 		 }
-
 		 print_r($pro_id);
-			}
+	}
 }
