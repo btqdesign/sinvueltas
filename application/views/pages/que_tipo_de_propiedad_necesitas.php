@@ -802,7 +802,7 @@ label {
                     $.ajax({
                         url: 'https://sinvueltas.idevol.net/rentar/tipoAmenidad/'+id,
                         success: function(respuesta) {
-                            console.log(respuesta);
+                            $("#details").html(respuesta);
                         },
                         error: function() {
                             console.log("No se ha podido obtener la información");
