@@ -542,7 +542,7 @@ label {
                 </div>
                 <div class="col-12 item-type-number mr-bottom-20">
                     <span class="cr-red">*</span>
-                    <input class="" name="email" type="email" placeholder="Dirección de correo electrónico" required>
+                    <input class="" name="email" id="email" type="email" placeholder="Dirección de correo electrónico" required>
                     <label class="text-legal cr-red hidden" for=""></label>
                 </div>
                 
@@ -883,13 +883,13 @@ label {
     <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
     <script>
       var config = {
-        apiKey: "AIzaSyBkp9WBCwNv7vhYhnpRQYRu0NmPlazSPsc",
-        authDomain: "premium-node-136523.firebaseapp.com",
-        databaseURL: "https://premium-node-136523.firebaseio.com",
-        projectId: "premium-node-136523",
-        storageBucket: "premium-node-136523.appspot.com",
-        messagingSenderId: "605712374642"
-      };
+            apiKey: "AIzaSyCLx6-K5j_jByYqV55mGjh-JBs2T9r1J18",
+            authDomain: "plick-front-end.firebaseapp.com",
+            databaseURL: "https://plick-front-end.firebaseio.com",
+            projectId: "plick-front-end",
+            storageBucket: "plick-front-end.appspot.com",
+            messagingSenderId: "518089985158"
+        };
        firebase.initializeApp(config);
         var provider = new firebase.auth.FacebookAuthProvider();
         provider.addScope('email');   
