@@ -10,7 +10,7 @@ class Comprar extends CI_Controller {
 	}
 	public function index()
 	{
-		$this->load->view('pages/que_tipo_de_propiedad_necesitas');
+		$this->load->view('pages/que_tipo_de_propiedad_necesitas-comprar');
 		
     }
     public function agregarTipo($identificador){
