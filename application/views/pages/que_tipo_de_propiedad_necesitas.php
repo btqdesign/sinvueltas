@@ -132,7 +132,18 @@ label {
     </section>
     </div>
     <div id="comodo">
-        
+        <section class="top">
+        <progress class="component-progress" max="100" value="15"></progress>
+        <div class="pleca-roja">
+            <div class="main-wrapper">
+                <figure class="col-12">
+                    <img src="/dist/img/logo.png" alt="">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <div id="tipoAmenidad"></div>
+
        
      </div>
      <div id="gustaria">
@@ -526,8 +537,7 @@ label {
     </section>
      </div>
     <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="/dist/js/bundle.js"></script>
+    
 
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
     <script>
@@ -674,7 +684,7 @@ label {
                     $.ajax({
                         url: 'https://sinvueltas.idevol.net/rentar/tipoAmenidad/'+id,
                         success: function(respuesta) {
-                            $("#comodo").html(respuesta);
+                            $("#tipoAmenidad").html(respuesta);
                         },
                         error: function() {
                             console.log("No se ha podido obtener la información");
@@ -809,6 +819,8 @@ label {
             $opt.parent('.option').toggleClass('checked');
         });
     </script>
+    <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bundle.js"></script>
     
 </body>
 
