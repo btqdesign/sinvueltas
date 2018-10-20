@@ -542,7 +542,7 @@ label {
                 </div>
                 <div class="col-12 item-type-number mr-bottom-20">
                     <span class="cr-red">*</span>
-                    <input class="" name="email" id="email" type="email" placeholder="Dirección de correo electrónico" required>
+                    <input class="" id="email" name="email" type="email" placeholder="Dirección de correo electrónico" required>
                     <label class="text-legal cr-red hidden" for=""></label>
                 </div>
                 
@@ -586,7 +586,7 @@ label {
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 item-type-number flex-center mr-bottom-40">
-                    <input class="" name="nombre" id="nombre" type="text" placeholder="Nombre" required>
+                    <input class="" name="nombre2" id="nombre2" type="text" placeholder="Nombre" required>
                 </div>
             </div>       
             <div class="row">
@@ -656,6 +656,54 @@ label {
     <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="/dist/js/bundle.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCLx6-K5j_jByYqV55mGjh-JBs2T9r1J18",
+            authDomain: "plick-front-end.firebaseapp.com",
+            databaseURL: "https://plick-front-end.firebaseio.com",
+            projectId: "plick-front-end",
+            storageBucket: "plick-front-end.appspot.com",
+            messagingSenderId: "518089985158"
+        };
+       firebase.initializeApp(config);
+        var provider = new firebase.auth.FacebookAuthProvider();
+        provider.addScope('email');   
+        var authService = firebase.auth();
+        document.getElementById('loginfacebook').addEventListener('click', function() {
+            firebase.auth().signInWithPopup(provider).then(function(result) {
+              if (result.user) {
+                var user = result.additionalUserInfo.profile;          
+                document.getElementById("email").value=user.email;
+                document.getElementById("nombre").value=user.first_name;
+                document.getElementById("apellido").value=user.last_name;
+                var formData = new FormData($('#usuarioForm')[0]);
+                $.ajax({
+                    url: 'https://sinvueltas.idevol.net/rentar/agregarUsuario/'+id,
+                    type: 'POST',
+                    data: formData,
+                    contentType: false,
+                    processData:false,
+                    dataType:"JSON",
+                    success:function(data) {            
+                       document.getElementById("usuario").style.display = "none";
+                       document.getElementById("contacto").style.display = "block";
+                    },
+                    error: function(jqXHR, textStatus, errorThrown){
+                        alert("Algo Salió Mal");               
+                    }
+                });
+
+              }
+              else{
+                alert("Error");
+              }
+            });
+
+        });
+    </script>
     <script type="text/javascript">
 
         document.getElementById("tipo_propiedad").style.display = "block";
@@ -674,7 +722,7 @@ label {
            e.preventDefault();
             var formData = new FormData($('#Formtipo')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/agregarTipo/'+id,
+                url: 'https://sinvueltas.idevol.net/rentar/agregarTipo/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -695,7 +743,7 @@ label {
             e.preventDefault();
             var formData = new FormData($('#comodoform')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/agregarAmenidades/'+id,
+                url: 'https://sinvueltas.idevol.net/rentar/agregarAmenidades/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -717,7 +765,7 @@ label {
            e.preventDefault();
             var formData = new FormData($('#gustariaForm')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/agregarColonia/'+id,
+                url: 'https://sinvueltas.idevol.net/rentar/agregarColonia/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -742,7 +790,7 @@ label {
            e.preventDefault();
             var formData = new FormData($('#presupuestoForm')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/agregarPresupuesto/'+id,
+                url: 'https://sinvueltas.idevol.net/rentar/agregarPresupuesto/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -764,7 +812,7 @@ label {
             e.preventDefault();
             var formData = new FormData($('#formActividades')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/agregarLugar/'+id,
+                url: 'https://sinvueltas.idevol.net/rentar/agregarLugar/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -787,7 +835,7 @@ label {
             e.preventDefault();
             var formData = new FormData($('#cercanoForm')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/agregarCercano/'+id,
+                url: 'https://sinvueltas.idevol.net/rentar/agregarCercano/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -811,7 +859,7 @@ label {
             e.preventDefault();
             var formData = new FormData($('#usuarioForm')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/agregarUsuario/'+id,
+                url: 'https://sinvueltas.idevol.net/rentar/agregarUsuario/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -834,7 +882,7 @@ label {
            e.preventDefault();
             var formData = new FormData($('#FormContacto')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/updateContacto/'+id,
+                url: 'https://sinvueltas.idevol.net/rentar/updateContacto/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -856,7 +904,7 @@ label {
            e.preventDefault();
             var formData = new FormData($('#formTel')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/comprar/validaCodigo/'+id,
+                url: 'https://sinvueltas.idevol.net/rentar/validaCodigo/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -880,36 +928,7 @@ label {
             $opt.parent('.option').toggleClass('checked');
         });
     </script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
-    <script>
-      var config = {
-            apiKey: "AIzaSyCLx6-K5j_jByYqV55mGjh-JBs2T9r1J18",
-            authDomain: "plick-front-end.firebaseapp.com",
-            databaseURL: "https://plick-front-end.firebaseio.com",
-            projectId: "plick-front-end",
-            storageBucket: "plick-front-end.appspot.com",
-            messagingSenderId: "518089985158"
-        };
-       firebase.initializeApp(config);
-        var provider = new firebase.auth.FacebookAuthProvider();
-        provider.addScope('email');   
-        var authService = firebase.auth();
-        document.getElementById('loginfacebook').addEventListener('click', function() {
-            firebase.auth().signInWithPopup(provider).then(function(result) {
-              if (result.user) {
-                var user = result.additionalUserInfo.profile;          
-                document.getElementById("email").value=user.email;
-                document.getElementById("nombre").value=user.first_name;
-                document.getElementById("apellido").value=user.last_name;
-
-              }
-              else{
-                alert("Error");
-              }
-            });
-
-        });
-    </script>
+    
 </body>
 
 </html>
