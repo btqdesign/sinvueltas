@@ -494,8 +494,7 @@ class Rentar extends CI_Controller {
         ';
 		 }else{
 		 	if ($pro_tipo=="departamento") {
-		 		echo '
-    <section class="main-wrapper">
+		 		echo '<section class="main-wrapper">
         <h1 class="topic text-center mr-bottom-30">¿Qué te haría sentir cómodo?</h1>
             <div class="items width">
                 <div class="quantity">
