@@ -423,7 +423,7 @@ class Rentar extends CI_Controller {
                         </div>
                         <div class="check-item">
                             <input class="" id="styled-checkbox-11" type="hidden" value="value11" >
-                            //<label for="styled-checkbox-11">| m2 construidos</label>
+                            <!--<label for="styled-checkbox-11">| m2 construidos</label>-->
                         </div>
                         <div class="check-item">
                             <div class="item-type-number">
