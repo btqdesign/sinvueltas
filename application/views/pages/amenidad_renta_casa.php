@@ -95,8 +95,8 @@
                             <label for="styled-checkbox-10">| Área para niños</label>
                         </div>
                         <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-11" type="checkbox" value="value11">
-                            <label for="styled-checkbox-11">| m2 construidos</label>
+                            <!--<input class="styled-checkbox" id="styled-checkbox-11" type="checkbox" value="value11">-->
+                            <!--<label for="styled-checkbox-11">| m2 construidos</label>-->
                         </div>
                         <div class="check-item">
                             <div class="item-type-number">
