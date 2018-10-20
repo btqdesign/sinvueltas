@@ -455,7 +455,8 @@ class Rentar extends CI_Controller {
 		 }else{
 		 	if ($pro_tipo=="departamento") {
 		 		$vista=$this->load->view('pages/amenidad_renta_depto');
-		 		return $this->set_output($vista); 
+		 		$drawn_view=$this->set_output($vista);
+		 		return ; 
 		 	}
 		 }
 	}
