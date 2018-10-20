@@ -494,7 +494,19 @@ class Rentar extends CI_Controller {
         ';
 		 }else{
 		 	if ($pro_tipo=="departamento") {
-		 		echo '<section class="main-wrapper">
+		 		echo '<section class="top">
+        <progress class="component-progress" max="100" value="15"></progress>
+        <div class="pleca-roja">
+            <div class="main-wrapper">
+                <figure class="col-12">
+                    <img src="/dist/img/logo.png" alt="">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <form action="" id="comodoform">
+    <section class="main-wrapper">
         <h1 class="topic text-center mr-bottom-30">¿Qué te haría sentir cómodo?</h1>
             <div class="items width">
                 <div class="quantity">
@@ -609,7 +621,8 @@ class Rentar extends CI_Controller {
     </section>
     <div class="text-center  xs-mrT-40-lg-75 xs-mr-40-lg-75">
             <button class="btn-1">SIGUIENTE</button>
-    </div>';
+    </div>
+     </form>';
 		 	}
 		 }
 	}

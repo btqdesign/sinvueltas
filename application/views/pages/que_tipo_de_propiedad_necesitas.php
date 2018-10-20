@@ -132,20 +132,7 @@ label {
     </section>
     </div>
     <div id="comodo">
-        <section class="top">
-        <progress class="component-progress" max="100" value="15"></progress>
-        <div class="pleca-roja">
-            <div class="main-wrapper">
-                <figure class="col-12">
-                    <img src="/dist/img/logo.png" alt="">
-                </figure>
-            </div>
-        </div>
-    </section>
-
-    <form action="" id="comodoform">
-        <div id="tipoAmenidad"></div>
-     </form>
+        
        
      </div>
      <div id="gustaria">
@@ -687,7 +674,7 @@ label {
                     $.ajax({
                         url: 'https://sinvueltas.idevol.net/rentar/tipoAmenidad/'+id,
                         success: function(respuesta) {
-                            $("#tipoAmenidad").html(respuesta);
+                            $("#comodo").html(respuesta);
                         },
                         error: function() {
                             console.log("No se ha podido obtener la información");
