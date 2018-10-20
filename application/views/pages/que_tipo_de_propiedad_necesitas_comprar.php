@@ -722,7 +722,7 @@ label {
            e.preventDefault();
             var formData = new FormData($('#Formtipo')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/agregarTipo/'+id,
+                url: 'https://sinvueltas.idevol.net/comprar/agregarTipo/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -743,7 +743,7 @@ label {
             e.preventDefault();
             var formData = new FormData($('#comodoform')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/agregarAmenidades/'+id,
+                url: 'https://sinvueltas.idevol.net/comprar/agregarAmenidades/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -765,7 +765,7 @@ label {
            e.preventDefault();
             var formData = new FormData($('#gustariaForm')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/agregarColonia/'+id,
+                url: 'https://sinvueltas.idevol.net/comprar/agregarColonia/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -790,7 +790,7 @@ label {
            e.preventDefault();
             var formData = new FormData($('#presupuestoForm')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/agregarPresupuesto/'+id,
+                url: 'https://sinvueltas.idevol.net/comprar/agregarPresupuesto/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -812,7 +812,7 @@ label {
             e.preventDefault();
             var formData = new FormData($('#formActividades')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/agregarLugar/'+id,
+                url: 'https://sinvueltas.idevol.net/comprar/agregarLugar/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -835,7 +835,7 @@ label {
             e.preventDefault();
             var formData = new FormData($('#cercanoForm')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/agregarCercano/'+id,
+                url: 'https://sinvueltas.idevol.net/comprar/agregarCercano/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -859,7 +859,7 @@ label {
             e.preventDefault();
             var formData = new FormData($('#usuarioForm')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/agregarUsuario/'+id,
+                url: 'https://sinvueltas.idevol.net/comprar/agregarUsuario/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -882,7 +882,7 @@ label {
            e.preventDefault();
             var formData = new FormData($('#FormContacto')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/updateContacto/'+id,
+                url: 'https://sinvueltas.idevol.net/comprar/updateContacto/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -904,7 +904,7 @@ label {
            e.preventDefault();
             var formData = new FormData($('#formTel')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/validaCodigo/'+id,
+                url: 'https://sinvueltas.idevol.net/comprar/validaCodigo/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
