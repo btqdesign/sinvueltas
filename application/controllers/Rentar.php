@@ -432,7 +432,25 @@ class Rentar extends CI_Controller {
                         </div>
                     </div>
                 </div>       
-        </div>';
+        </div>
+        <div class="detalles inline-elements ">
+            <div class="item-antiguedad">
+                <input class="styled-checkbox" id="styled-radio-1" name="antiguedad" type="radio" value="5" checked>
+                <label for="styled-radio-1">| NUEVO</label>
+            </div>
+            <div class="item-antiguedad">
+                <input class="styled-checkbox" id="styled-radio-2" name="antiguedad" type="radio" value="3">
+                <label for="styled-radio-2">| 5 a 10 años</label>
+            </div>
+            <div class="item-antiguedad">
+                <input class="styled-checkbox" id="styled-radio-3" name="antiguedad" type="radio" value="1">
+                <label for="styled-radio-3">| 10 a 20 años</label>
+            </div>
+            <div class="item-antiguedad">
+                <input class="styled-checkbox" id="styled-radio-4" name="antiguedad" type="radio" value="6">
+                <label for="styled-radio-4">| + 30 años</label>
+            </div>
+        </div> ';
 		 }
 	}
 }
