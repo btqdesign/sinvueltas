@@ -373,6 +373,8 @@ class Rentar extends CI_Controller {
 		 foreach($consulta as $key => $val){
 		    $pro_tipo= $val->tipo_propiedad;
 		 }
-		 print_r($pro_tipo);
+		 if ($pro_tipo=="casa") {
+		 	echo "Es una casa";
+		 }
 	}
 }
