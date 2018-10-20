@@ -142,8 +142,49 @@ label {
             </div>
         </div>
     </section>
-    <div id="tipoAmenidad"></div>
 
+    <form action="" id="comodoform">
+    <section class="main-wrapper">
+        <h1 class="topic text-center mr-bottom-30">¿Qué te haría sentir cómodo?</h1>
+            <div class="items width">
+                <div class="quantity">
+                    <div class="head-icon">
+                        <i class="icon-habitaciones icon-size-35 mr-right-20"></i>
+                        <p class="text">| Habitaciones</p>
+                    </div>
+                    <input type="number" min="1" max="9" step="1" value="1" name="habitaciones">
+                </div>
+                <div class="quantity">
+                    <div class="head-icon">
+                        <i class="icon-bano icon-size-35 mr-right-20"></i>
+                        <p class="text">| Baño</p>
+                    </div>
+                    <input type="number" min="1" max="9" step="1" value="1" name="bano">
+                </div>
+                <div class="quantity">
+                    <div class="head-icon">
+                        <i class="icon-garage icon-size-35 mr-right-20"></i>
+                        <p class="text">| Estacionamiento</p>
+                    </div>
+                    <input type="number" min="1" max="9" step="1" value="1" name="estacionamiento">
+                </div>
+            </div>
+        <p class="text-center text-details">Entre más detalles tengamos de tu parte, mejores resultados</p>
+        <hr class="white">
+    </section>
+    
+    <div class="text-center">
+        <button class="btn btn-secondary btn-collapse" type="button" data-toggle="collapse" data-target="#details" aria-expanded="false" aria-controls="detail">
+            SELECCIONAR MÁS DETALLES
+        </button>
+    </div>
+    <section class="detalles collapse" id="details">
+        
+    </section>
+    <div class="text-center  xs-mrT-40-lg-75 xs-mr-40-lg-75">
+            <button class="btn-1">SIGUIENTE</button>
+    </div>
+     </form>
        
      </div>
      <div id="gustaria">
@@ -537,7 +578,8 @@ label {
     </section>
      </div>
     <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>
-    
+    <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bundle.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
     <script>
@@ -684,7 +726,7 @@ label {
                     $.ajax({
                         url: 'https://sinvueltas.idevol.net/rentar/tipoAmenidad/'+id,
                         success: function(respuesta) {
-                            $("#tipoAmenidad").html(respuesta);
+                            $("#details").html(respuesta);
                         },
                         error: function() {
                             console.log("No se ha podido obtener la información");
@@ -819,8 +861,6 @@ label {
             $opt.parent('.option').toggleClass('checked');
         });
     </script>
-    <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="/dist/js/bundle.js"></script>
     
 </body>
 
