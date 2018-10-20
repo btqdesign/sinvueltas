@@ -453,7 +453,7 @@ class Rentar extends CI_Controller {
         </div>
         ';
 		 }else{
-		 	if ($pro_tipo=="casa") {
+		 	if ($pro_tipo=="departamento") {
 		 		echo '<div class="main-wrapper">            
                 <div class="row">
                     <div class="col-xs-12 col-sm-4">
