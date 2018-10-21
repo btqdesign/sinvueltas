@@ -27,17 +27,17 @@
         <h1 class="topic text-center mr-bottom-20">¿Qué necesitas?</h1>
     </section>
     <section class="main-wrapper">
-        <form method="post" action="propietario">
+        <form method="post" action="#" id="eleccion">
             <div class="grid-less space">
                 <div class="choose">
                     <div class="footer">
-                        <input class="btn-choose" name="propietario" type="radio" value="departamento" required>
+                        <input class="btn-choose" name="propietario" type="radio" value="Vender" required>
                         <label>Vender</label>
                     </div>
                 </div>
                 <div class="choose">
                     <div class="footer">
-                        <input class="btn-choose" name="propietario" type="radio" value="departamento" required>
+                        <input class="btn-choose" name="propietario" type="radio" value="Rentar" required>
                         <label>Rentar</label>
                     </div>
                 </div>
@@ -51,6 +51,29 @@
     <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="/dist/js/bundle.js"></script>
+
+    <script type="text/javascript">
+         $("#eleccion").on("submit", function(e){
+           e.preventDefault();
+            var formData = new FormData($('#eleccion')[0]);
+            $.ajax({
+                url: 'https://sinvueltas.idevol.net/propietario/eleccion',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData:false,
+                dataType:"JSON",
+                success:function(data) {
+                    e.preventDefault();
+                    window.location.href = "https://sinvueltas.idevol.net/Bienvenido";
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    e.preventDefault();
+                    window.location.href = "https://sinvueltas.idevol.net/Bienvenidos";               
+                }
+            });
+         });
+    </script>
 </body>
 
 </html>
