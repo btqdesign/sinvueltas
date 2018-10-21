@@ -12,9 +12,6 @@ class Propietario extends CI_Controller {
         {
             echo json_encode(array("status" => TRUE));
         }
-        else{
-        	echo "ERROR";
-        }
 	}
 }
 
