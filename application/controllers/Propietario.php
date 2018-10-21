@@ -9,4 +9,3 @@ class Propietario extends CI_Controller {
     }
 }
 
-}
