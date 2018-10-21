@@ -12,7 +12,7 @@
 
 <body class="bg-gray">
     <section class="top">
-        <progress class="component-progress" max="100" value="60"></progress>
+        <progress class="component-progress" max="100" value="2"></progress>
         <div class="pleca-roja">
             <div class="main-wrapper">
                 <figure class="col-12">
@@ -29,13 +29,13 @@
     <section class="main-wrapper">
         <form method="post" action="propietario">
             <div class="grid-less space">
-                <div class="choose">
+                <div >
                     <div class="footer">
                         <input class="btn-choose" name="propietario" type="radio" value="departamento" required>
                         <label>Vender</label>
                     </div>
                 </div>
-                <div class="choose">
+                <div >
                     <div class="footer">
                         <input class="btn-choose" name="propietario" type="radio" value="departamento" required>
                         <label>Rentar</label>
