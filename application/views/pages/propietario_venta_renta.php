@@ -65,11 +65,11 @@
                 dataType:"JSON",
                 success:function(data) {
                     e.preventDefault();
-                    window.location.href = "https://sinvueltas.idevol.net/Bienvenido";
+                    window.location.href = "https://sinvueltas.idevol.net/Vender_propietario";
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     e.preventDefault();
-                    window.location.href = "https://sinvueltas.idevol.net/Bienvenidos";               
+                    window.location.href = "https://sinvueltas.idevol.net/Rentar_propietario";               
                 }
             });
          });
