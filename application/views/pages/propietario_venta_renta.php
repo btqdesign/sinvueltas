@@ -27,23 +27,22 @@
         <h1 class="topic text-center mr-bottom-20">¿Qué necesitas?</h1>
     </section>
     <section class="main-wrapper">
-        <div class="grid-less space">
-            <div class="choose">
-                <i class="icon-parques icon-size-35"></i>
-                <div class="footer">
-                    <input class="btn-choose" type="checkbox">
-                    <label>PARQUES</label>
+        <form method="post" action="propietario">
+            <div class="grid-less space">
+                <div class="choose">
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox">
+                        <label>Vender</label>
+                    </div>
+                </div>
+                <div class="choose">
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox">
+                        <label>Rentar</label>
+                    </div>
                 </div>
             </div>
-            <div class="choose">
-                <i class="icon-restaurantes icon-size-35"></i>
-                <div class="footer">
-                    <input class="btn-choose" type="checkbox">
-                    <label>RESTAURANTES</label>
-                </div>
-            </div>
-        </div>
-        <form method="post" action="conocerte">
+            
             <div class="text-center mr-bottom-20">
                 <button class="btn-1">SIGUIENTE</button>
             </div>
