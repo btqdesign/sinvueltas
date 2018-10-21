@@ -36,11 +36,14 @@
                     <span class="dot"></span>
                         COMPRAR
                     </button>
+                </form>
+                <form method="post" action="propietario">
+                    <button class="btn-item">
+                        <span class="dot"></span>
+                        SOY PROPIETARIO
+                    </button>
                 </form>                
-                <button class="btn-item">
-                    <span class="dot"></span>
-                    SOY PROPIETARIO
-                </button>
+                
             </div>
         </div>
     </div>
