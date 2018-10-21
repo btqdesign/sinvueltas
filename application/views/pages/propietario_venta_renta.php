@@ -42,55 +42,10 @@
                     <label>RESTAURANTES</label>
                 </div>
             </div>
-            <div class="choose">
-                <i class="icon-centro-comercial icon-size-35"></i>
-                <div class="footer">
-                    <input class="btn-choose" type="checkbox">
-                    <label>CENTRO COMERCIAL</label>
-                </div>
-            </div>
-            <div class="choose">
-                <i class="icon-tiendas icon-size-35"></i>
-                <div class="footer">
-                    <input class="btn-choose" type="checkbox">
-                    <label>TIENDAS OXXO/7ELEVEN</label>
-                </div>
-            </div>
-            <div class="choose">
-                <i class="icon-gym icon-size-35"></i>
-                <div class="footer">
-                    <input class="btn-choose" type="checkbox">
-                    <label>GYM</label>
-                </div>
-            </div>
-            <div class="choose">
-                <i class="icon-super-mercado icon-size-35"></i>
-                <div class="footer">
-                    <input class="btn-choose" type="checkbox">
-                    <label>SUPERMERCADOS</label>
-                </div>
-            </div>
-            <div class="choose">
-                <i class="icon-poco-transito icon-size-35"></i>
-                <div class="footer">
-                    <input class="btn-choose" type="checkbox">
-                    <label>ZONA DE POCO TRÁFICO</label>
-                </div>
-            </div>
-            <div class="choose">
-                <i class="icon-trasporte icon-size-35"></i>
-                <div class="footer">
-                    <input class="btn-choose" type="checkbox">
-                    <label>TRANSPORTE PÚBLICO</label>
-                </div>
-            </div>
-        </div>
+           
         <form method="post" action="conocerte">
             <div class="text-center mr-bottom-20">
                 <button class="btn-1">SIGUIENTE</button>
-            </div>
-            <div class="text-center">
-                <button><p class="text-details">OMITIR ESTE PASO ></p></button>
             </div>
         </form>
     </section>
