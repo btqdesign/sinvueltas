@@ -31,13 +31,13 @@
             <div class="grid-less space">
                 <div class="choose">
                     <div class="footer">
-                        <input class="btn-choose" type="radio">
+                        <input class="btn-choose" name="propietario" type="radio" value="departamento" required>
                         <label>Vender</label>
                     </div>
                 </div>
                 <div class="choose">
                     <div class="footer">
-                        <input class="btn-choose" type="radio">
+                        <input class="btn-choose" name="propietario" type="radio" value="departamento" required>
                         <label>Rentar</label>
                     </div>
                 </div>
