@@ -29,13 +29,13 @@
     <section class="main-wrapper">
         <form method="post" action="propietario">
             <div class="grid-less space">
-                <div >
+                <div class="choose">
                     <div class="footer">
                         <input class="btn-choose" name="propietario" type="radio" value="departamento" required>
                         <label>Vender</label>
                     </div>
                 </div>
-                <div >
+                <div class="choose">
                     <div class="footer">
                         <input class="btn-choose" name="propietario" type="radio" value="departamento" required>
                         <label>Rentar</label>
