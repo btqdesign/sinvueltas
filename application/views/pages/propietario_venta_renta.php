@@ -22,8 +22,9 @@
         </div>
     </section>
     <section class="main-wrapper">
-        <h1 class="topic text-center mr-bottom-20">¿Qué prefieres tener cerca?</h1>
-        <p class="text-center text">Sólo puedes seleccionar 3 opciones</p>
+        
+        <p class="text-center text">Te ayudaremos a mostrar tu propiedad y gestionar el proceso para la venta o renta de la misma</p>
+        <h1 class="topic text-center mr-bottom-20">¿Qué necesitas?</h1>
     </section>
     <section class="main-wrapper">
         <div class="grid-less space">
