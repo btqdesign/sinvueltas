@@ -367,7 +367,7 @@ label {
            e.preventDefault();
             var formData = new FormData($('#Formtipo')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/agregarTipo/'+id,
+                url: 'https://sinvueltas.idevol.net/Rentar_propietario/agregarTipo/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -389,7 +389,7 @@ label {
             e.preventDefault();
             var formData = new FormData($('#formDireccion')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/agregarLugar/'+id,
+                url: 'https://sinvueltas.idevol.net/Rentar_propietario/agregarLugar/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -413,7 +413,7 @@ label {
             e.preventDefault();
             var formData = new FormData($('#usuarioForm')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/agregarUsuario/'+id,
+                url: 'https://sinvueltas.idevol.net/Rentar_propietario/agregarUsuario/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -436,7 +436,7 @@ label {
            e.preventDefault();
             var formData = new FormData($('#FormContacto')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/updateContacto/'+id,
+                url: 'https://sinvueltas.idevol.net/Rentar_propietario/updateContacto/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -458,7 +458,7 @@ label {
            e.preventDefault();
             var formData = new FormData($('#formTel')[0]);
             $.ajax({
-                url: 'https://sinvueltas.idevol.net/rentar/validaCodigo/'+id,
+                url: 'https://sinvueltas.idevol.net/Rentar_propietario/validaCodigo/'+id,
                 type: 'POST',
                 data: formData,
                 contentType: false,
