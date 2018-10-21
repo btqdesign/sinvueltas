@@ -18,7 +18,7 @@ class Vender_propietario extends CI_Controller {
 		$tipo = array(
 			'id' => $identificador,
 			'id_usuario'=> $identificador,
-			'tipo_busqueda'=>'Compra',
+			'tipo_busqueda'=>'Venta',
 			'tipo_propiedad' => $this->input->post('propiedad'),
 			'ultima_modificacion' => $fecha,
 		);
