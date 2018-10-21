@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <form action="" id="comodoform">
         <section class="main-wrapper">
         <h1 class="topic text-center mr-bottom-30">¿Qué te haría sentir cómodo?</h1>
             <div class="items width">
@@ -141,8 +140,6 @@
     <div class="text-center  xs-mrT-40-lg-75 xs-mr-40-lg-75">
             <button class="btn-1">SIGUIENTE</button>
     </div>
-   
-     </form>
        
     <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
