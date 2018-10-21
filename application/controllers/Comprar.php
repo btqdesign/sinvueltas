@@ -373,12 +373,17 @@ class Comprar extends CI_Controller {
 		    $pro_tipo= $val->tipo_propiedad;
 		 }
 		 if ($pro_tipo=="casa") {
-		 	$vista=$this->load->view('pages/amenidad_compra_casa');
+		 	$vista=$this->load->view('pages/amenidad_renta_casa');
 		 	return $vista;
 		 }else{
 		 	if ($pro_tipo=="departamento") {
-		 		$vista=$this->load->view('pages/amenidad_compra_depto');
+		 		$vista=$this->load->view('pages/amenidad_renta_depto');
 		 		return $vista; 
+		 	}else{
+		 		if ($pro_tipo=="oficina") {
+			 		$vista=$this->load->view('pages/amenidad_compra_oficina');
+			 		return $vista; 
+			 	}
 		 	}
 		 }
 	}
