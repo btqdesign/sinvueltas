@@ -10,7 +10,7 @@ class Vender_propietario extends CI_Controller {
 	}
 	public function index()
 	{
-		$this->load->view('pages/que_tipo_de_propiedad_necesitas_comprar');
+		$this->load->view('pages/que_tipo_de_propiedad_ofreces_venta');
 		
     }
     public function agregarTipo($identificador){
