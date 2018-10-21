@@ -141,9 +141,10 @@ label {
                 </figure>
             </div>
         </div>
-    </section>
-
-    <div id="tipoAmenidad"></div>
+    </section>    
+        <form action="" id="comodoform">
+            <div id="tipoAmenidad"></div>
+        </form>
      </div>
      <div id="gustaria">
           <section class="top">

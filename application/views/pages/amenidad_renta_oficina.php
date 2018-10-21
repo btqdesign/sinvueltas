@@ -55,11 +55,11 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-4">
                         <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1" checked>
+                            <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="14" checked>
                             <label for="styled-checkbox-1">| Vigilancia</label>
                         </div>
                         <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2">
+                            <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="7">
                             <label for="styled-checkbox-2">| Elevador</label>
                         </div>
                         <div class="check-item">
@@ -81,11 +81,11 @@
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-5" type="checkbox" value="value5">
+                            <input class="styled-checkbox" id="styled-checkbox-5" type="checkbox" value="6">
                             <label for="styled-checkbox-5">| Cocina</label>
                         </div>
                         <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-6" type="checkbox" value="value6">
+                            <input class="styled-checkbox" id="styled-checkbox-6" type="checkbox" value="8">
                             <label for="styled-checkbox-6">| Interior/Exterior</label>
                         </div>
                         <div class="check-item">
@@ -100,11 +100,11 @@
                     </div>
                     <div class="col-xs-12 col-sm-4">
                             <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-9" type="checkbox" value="value9">
+                            <input class="styled-checkbox" id="styled-checkbox-9" type="checkbox" value="1">
                             <label for="styled-checkbox-9">| Aire Acondicionado</label>
                         </div>
                         <div class="check-item">
-                            <input class="styled-checkbox" id="styled-checkbox-10" type="checkbox" value="value10">
+                            <input class="styled-checkbox" id="styled-checkbox-10" type="checkbox" value="13">
                             <label for="styled-checkbox-10">| Terraza</label>
                         </div>
                         <div class="check-item">
