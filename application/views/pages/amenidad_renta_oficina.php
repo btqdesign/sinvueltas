@@ -37,7 +37,7 @@
                 </div>
                 <div  >
                     <p class="text" style="margin-bottom:  10px; margin-top: 5px; margin-left: 20px">m2 construidos</p>
-                    <input type="text" style="height: 40px;width: 203px;border: none;">
+                    <input name="tamano" type="number"   style="height: 40px;width: 203px;border: none;">
                 </div>
             </div>
         <p class="text-center text-details">Entre más detalles tengamos de tu parte, mejores resultados</p>
