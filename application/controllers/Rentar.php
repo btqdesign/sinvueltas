@@ -380,6 +380,11 @@ class Rentar extends CI_Controller {
 		 	if ($pro_tipo=="departamento") {
 		 		$vista=$this->load->view('pages/amenidad_renta_depto');
 		 		return $vista; 
+		 	}else{
+		 		if ($pro_tipo=="oficina") {
+			 		$vista=$this->load->view('pages/amenidad_renta_oficina');
+			 		return $vista; 
+			 	}
 		 	}
 		 }
 	}
