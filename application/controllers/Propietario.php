@@ -8,7 +8,7 @@ class Propietario extends CI_Controller {
 		
     }
     public function Eleccion(){	
-		if($this->input->post('minimo') == "Vender" )
+		if($this->input->post('propietario') == "Vender" )
         {
             echo json_encode(array("status" => TRUE));
         }
