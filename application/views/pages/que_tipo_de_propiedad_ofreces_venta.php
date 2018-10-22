@@ -114,8 +114,7 @@ label {
         </div>
     </section>
     <section class="main-wrapper">
-        <h1 class="topic text-center mr-bottom-20">¿Qué lugares frecuentas?</h1>
-        <p class="text-center text">Queremos asegurarnos que la propiedad que buscas esté cerca de tus actividades principales. GYM, Oficina, escuela, etc.</p>
+        <h1 class="topic text-center mr-bottom-20">¿En dónde está ubicada tu propiedad?</h1>
     </section>
     <section class="main-wrapper">
         <article class="map">
