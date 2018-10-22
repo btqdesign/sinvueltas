@@ -122,7 +122,7 @@ label {
         </article>
         <div>
             <p class="text-center text-legal">
-                *Puedes agregar hasta 3 direcciones distintas
+                *Puedes agregar una dirección en el campo de búsqueda
             </p>
         </div>
         
