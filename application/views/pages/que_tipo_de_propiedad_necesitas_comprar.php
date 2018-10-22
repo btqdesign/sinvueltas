@@ -142,8 +142,11 @@ label {
             </div>
         </div>
     </section>
+    <form action="" id="comodoform">
+        <div id="tipoAmenidad"></div>
+    </form>
 
-    <div id="tipoAmenidad"></div>
+    
      </div>
      <div id="gustaria">
           <section class="top">
