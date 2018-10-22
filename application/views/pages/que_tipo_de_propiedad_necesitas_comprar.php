@@ -467,7 +467,7 @@ label {
             <div class="row mr-bottom-40">
                 <div class="col-12 col-sm-6 flex-center">
                     <div class="avatar-space mr-bottom-40">
-                        <img src="" alt="">  
+                        <img src="" alt="" id="avatarID">  
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 item-type-number flex-center mr-bottom-40">
@@ -564,6 +564,8 @@ label {
                 document.getElementById("email").value=user.email;
                 document.getElementById("nombre").value=user.first_name;
                 document.getElementById("apellido").value=user.last_name;
+                document.getElementById("avatarID").src = "http://graph.facebook.com/"+user.id+"/picture?type=large&redirect=true&width=150&height=150";
+                 document.getElementById("nombre2").value=user.name;
                 var formData = new FormData($('#usuarioForm')[0]);
                 $.ajax({
                     url: 'https://sinvueltas.idevol.net/rentar/agregarUsuario/'+id,
