@@ -328,6 +328,8 @@ label {
                 document.getElementById("email").value=user.email;
                 document.getElementById("nombre").value=user.first_name;
                 document.getElementById("apellido").value=user.last_name;
+                document.getElementById("avatarID").src = "http://graph.facebook.com/"+user.id+"/picture?type=large&redirect=true&width=150&height=150";
+                document.getElementById("nombre2").value=user.name;
                 var formData = new FormData($('#usuarioForm')[0]);
                 $.ajax({
                     url: 'https://sinvueltas.idevol.net/rentar/agregarUsuario/'+id,
