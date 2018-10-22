@@ -76,19 +76,19 @@ label {
         <h1 class="topic text-center xs-mr-40-lg-75">¿Qué tipo de propiedad necesitas?</h1>
         <form class="tipo" id="Formtipo">
             <div class="items xs-mr-40-lg-75">
-                <div class="item-type">
+                <div class="item-type" style="margin-bottom: 50px;">
                     <input class="radio casa" name="propiedad"  type="radio" value="casa" required>
                     <i class="icon-house"></i>
                     <span class="dot"></span>
                     <p class="type-propiedad">CASA</p>
                 </div>
-                <div class="item-type">
+                <div class="item-type" style="margin-bottom: 50px;">
                     <input class="radio departamento" name="propiedad" type="radio" value="departamento" required>
                     <i class="icon-departamento"></i>
                     <span class="dot"></span>
                     <p class="type-propiedad">DEPARAMENTO</p>
                 </div>
-                <div class="item-type">
+                <div class="item-type" style="margin-bottom: 50px;">
                     <input class="radio oficina" name="propiedad" type="radio" value="oficina" required>
                     <i class="icon-oficina"></i>
                     <span class="dot"></span>
