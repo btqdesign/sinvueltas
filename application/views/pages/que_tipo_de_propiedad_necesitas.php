@@ -553,7 +553,9 @@ label {
         };
        firebase.initializeApp(config);
         var provider = new firebase.auth.FacebookAuthProvider();
-        provider.addScope('email');   
+        provider.addScope('email'); 
+        provider.addScope('user_photos');   
+        
         var authService = firebase.auth();
         document.getElementById('loginfacebook').addEventListener('click', function() {
             firebase.auth().signInWithPopup(provider).then(function(result) {
