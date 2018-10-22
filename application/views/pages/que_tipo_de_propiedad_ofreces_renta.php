@@ -231,7 +231,7 @@ label {
             <div class="row mr-bottom-40">
                 <div class="col-12 col-sm-6 flex-center">
                     <div class="avatar-space mr-bottom-40">
-                        <img src="" alt="">  
+                        <img src="" alt="" id="avatarID" style="border-radius: 90px"> 
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 item-type-number flex-center mr-bottom-40">
