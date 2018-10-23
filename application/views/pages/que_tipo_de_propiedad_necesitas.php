@@ -310,11 +310,8 @@ label {
     </section>
     <section class="main-wrapper">
         <form method="post" id="cercanoForm">
-            <div class="grid-less space">
-                <div id="lugares_cercanos">                    
-                    
-                </div>
-            </div>
+            <div id="lugares_cercanos"></div>
+        
             <div class="text-center mr-bottom-20">
                 <button class="btn-1">SIGUIENTE</button>
             </div>
