@@ -198,13 +198,13 @@ label {
         <form class="tipo mr-bottom-40" id="formActividades">
             <div class="row">
                 <div class="col-12 col-sm-4 item-type-number">
-                    <input class="" name="direccion-1" type="text" placeholder="Dirección">
+                    <input class="" name="direccion-1" type="text" placeholder="Dirección" style="margin-bottom: 50px;">
                 </div>
                 <div class="col-12 col-sm-4 item-type-number">
-                    <input class="" name="direccion-2" type="text" placeholder="Dirección">
+                    <input class="" name="direccion-2" type="text" placeholder="Dirección" style="margin-bottom: 50px;">
                 </div>
                 <div class="col-12 col-sm-4 item-type-number">
-                    <input class="" name="direccion-3" type="text" placeholder="Dirección">
+                    <input class="" name="direccion-3" type="text" placeholder="Dirección" style="margin-bottom: 50px;">
                 </div>
             </div><br>
             <div class="text-center mr-bottom-20">
