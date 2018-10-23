@@ -484,6 +484,15 @@ label {
                 success:function(data) {
                     e.preventDefault();
                    document.getElementById("comodo").style.display = "none";
+                   $.ajax({
+                        url: 'https://sinvueltas.idevol.net/rentar/seleccion_colonia/'+id,
+                        success: function(respuesta) {
+                            $("#seleccion_colonias").html(respuesta);
+                        },
+                        error: function() {
+                            console.log("No se ha podido obtener la información");
+                        }
+                    });
                    document.getElementById("gustaria").style.display = "block";
                 },
                 error: function(jqXHR, textStatus, errorThrown){
@@ -506,15 +515,6 @@ label {
                 success:function(data) {
                     e.preventDefault();
                    document.getElementById("gustaria").style.display = "none";
-                   $.ajax({
-                        url: 'https://sinvueltas.idevol.net/rentar/seleccion_colonia/'+id,
-                        success: function(respuesta) {
-                            $("#seleccion_colonias").html(respuesta);
-                        },
-                        error: function() {
-                            console.log("No se ha podido obtener la información");
-                        }
-                    });
                     document.getElementById("actividades").style.display = "block";
                 },
                 error: function(jqXHR, textStatus, errorThrown){
