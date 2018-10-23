@@ -12,7 +12,7 @@
 
 <body>
     <section class="main-wrapper">
-        <h1 class="topic text-center mr-bottom-20">¿En dónde buscas tu oficina?</h1>
+        <h1 class="topic text-center mr-bottom-20">¿En dónde te gustaría vivir?</h1>
         <p class="text-center text">Entre más detalles tengamos de tu parte, mejores resultados</p>
     </section>    
     <section class="main-wrapper">
