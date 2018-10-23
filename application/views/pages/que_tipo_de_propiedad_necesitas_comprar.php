@@ -191,7 +191,7 @@ label {
             <input type="search" class="form-control" placeholder="Ingresa una dirección" aria-label="Ingresa una dirección"
                 aria-describedby="basic-addon2" id="pac-input">
             <div class="input-group-append">
-                <button class="agergar-btn input-group-text">+ agregar</button>
+                <button class="agergar-btn input-group-text" onclick=AgregaDireccion>+ agregar</button>
             </div>
         </div>
         <form class="tipo mr-bottom-40" id="formActividades">
@@ -759,6 +759,13 @@ label {
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf2bTKLZ2zOMi5LFzf2qvle68kcD6fbUk&libraries=places&callback=initAutocomplete"
          async defer></script>
+
+    <script type="text/javascript">
+        function AgregaDireccion()
+        {
+        document.getElementById("Text2").value = document.getElementById("Text1").value;
+        }
+    </script>
     
 </body>
 
