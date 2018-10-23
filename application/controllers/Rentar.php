@@ -388,4 +388,26 @@ class Rentar extends CI_Controller {
 		 	}
 		 }
 	}
+
+	public function tipoAmenidad($identificador){	
+		$consulta   = $this->m->tipoAmenidad($identificador);
+		$pro_tipo;
+		 foreach($consulta as $key => $val){
+		    $pro_tipo= $val->tipo_propiedad;
+		 }
+		 if ($pro_tipo=="casa") {
+		 	$vista=$this->load->view('pages/lugares_cercanos');
+		 	return $vista;
+		 }else{
+		 	if ($pro_tipo=="departamento") {
+		 		$vista=$this->load->view('pages/lugares_cercanos');
+		 		return $vista; 
+		 	}else{
+		 		if ($pro_tipo=="oficina") {
+			 		$vista=$this->load->view('pages/lugares_cercanos_oficina');
+			 		return $vista; 
+			 	}
+		 	}
+		 }
+	}
 }
