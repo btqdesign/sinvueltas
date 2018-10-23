@@ -269,6 +269,7 @@ class Comprar extends CI_Controller {
 
 		$this->m->agregarCodigo($codigo);
 		$verificacion = file_get_contents('https://platform.clickatell.com/messages/http/send?apiKey=SdY3C9dnQCunvXzk2ulX0A==&to=521'.$this->input->post('numero').'&content=Tu+codigo+Sinvueltas+es:+'.$cod_ver.'');
+		error_log($verificacion);
 	}
 
 	public function agregarColonia($identificador){
@@ -387,7 +388,7 @@ class Comprar extends CI_Controller {
 		 	}
 		 }
 	}
-	
+
 	public function lugaresCercanos($identificador){	
 		$consulta   = $this->m->tipoAmenidad($identificador);
 		$pro_tipo;
