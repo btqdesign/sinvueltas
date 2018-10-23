@@ -294,31 +294,11 @@ label {
 
      </div>
      <div id="cercano">
-          <section class="top">
-        <progress class="component-progress" max="100" value="60"></progress>
-        <div class="pleca-roja">
-            <div class="main-wrapper">
-                <figure class="col-12">
-                    <img src="/dist/img/logo.png" alt="">
-                </figure>
-            </div>
-        </div>
-    </section>
-    <section class="main-wrapper">
-        <h1 class="topic text-center mr-bottom-20">¿Qué prefieres tener cerca?</h1>
-        <p class="text-center text">Sólo puedes seleccionar 3 opciones</p>
-    </section>
-    <section class="main-wrapper">
-        <form method="post" id="cercanoForm">
-            <div id="lugares_cercanos"></div>
-        
-            <div class="text-center mr-bottom-20">
-                <button class="btn-1">SIGUIENTE</button>
-            </div>
-            <div class="text-center">
-                <button><p class="text-details">OMITIR ESTE PASO ></p></button>
-            </div>
-        </form>
+            <form method="post" id="cercanoForm">
+                 <div id="lugares_cercanos">
+                     
+                 </div> 
+            </form>
      </div>
 
      <div id="usuario">
