@@ -410,4 +410,25 @@ class Rentar extends CI_Controller {
 		 	}
 		 }
 	}
+	public function seleccion_colonia($identificador){	
+		$consulta   = $this->m->tipoAmenidad($identificador);
+		$pro_tipo;
+		 foreach($consulta as $key => $val){
+		    $pro_tipo= $val->tipo_propiedad;
+		 }
+		 if ($pro_tipo=="casa") {
+		 	$vista=$this->load->view('pages/seleccion_colonias');
+		 	return $vista;
+		 }else{
+		 	if ($pro_tipo=="departamento") {
+		 		$vista=$this->load->view('pages/seleccion_colonias');
+		 		return $vista; 
+		 	}else{
+		 		if ($pro_tipo=="oficina") {
+			 		$vista=$this->load->view('pages/seleccion_colonias_oficina');
+			 		return $vista; 
+			 	}
+		 	}
+		 }
+	}
 }
