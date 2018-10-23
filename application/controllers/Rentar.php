@@ -389,7 +389,7 @@ class Rentar extends CI_Controller {
 		 }
 	}
 
-	public function tipoAmenidad($identificador){	
+	public function lugaresCercanos($identificador){	
 		$consulta   = $this->m->tipoAmenidad($identificador);
 		$pro_tipo;
 		 foreach($consulta as $key => $val){
