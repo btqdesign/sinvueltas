@@ -23,7 +23,7 @@
     </section>
     <section class="main-wrapper">
         <h1 class="topic text-center mr-bottom-20">¿Qué prefieres tener cerca?</h1>
-        <p class="text-center text">Sólo puedes seleccionar 3 opciones</p>
+        <p class="text-center text">Sólo puedes seleccionar 2 opciones</p>
     </section>
     <section class="main-wrapper">
         
@@ -42,34 +42,7 @@
                         <label>RESTAURANTES</label>
                     </div>
                 </div>
-                <div class="choose">
-                    <i class="icon-centro-comercial icon-size-35"></i>
-                    <div class="footer">
-                        <input class="btn-choose" type="checkbox" name="c_comercial" value="1">
-                        <label>CENTRO COMERCIAL</label>
-                    </div>
-                </div>
-                <div class="choose">
-                    <i class="icon-tiendas icon-size-35"></i>
-                    <div class="footer">
-                        <input class="btn-choose" type="checkbox" name="oxxo" value="6">
-                        <label>TIENDAS OXXO/7ELEVEN</label>
-                    </div>
-                </div>
-                <div class="choose">
-                    <i class="icon-gym icon-size-35"></i>
-                    <div class="footer">
-                        <input class="btn-choose" type="checkbox" name="gym" value="2">
-                        <label>GYM</label>
-                    </div>
-                </div>
-                <div class="choose">
-                    <i class="icon-super-mercado icon-size-35"></i>
-                    <div class="footer">
-                        <input class="btn-choose" type="checkbox" name="supermercado" value="5">
-                        <label>SUPERMERCADOS</label>
-                    </div>
-                </div>
+               
                 <div class="choose">
                     <i class="icon-poco-transito icon-size-35"></i>
                     <div class="footer">
