@@ -180,8 +180,7 @@ label {
         <p class="text-center text">Queremos asegurarnos que la propiedad que buscas esté cerca de tus actividades principales. GYM, Oficina, escuela, etc.</p>
     </section>
     <section class="main-wrapper">
-        <article class="map">
-            <div id="map"></div>            
+        <article class="map" id="map">
         </article>
         <div>
             <p class="text-center text-legal">
