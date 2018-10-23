@@ -10,63 +10,87 @@
     <link rel="stylesheet" href="/dist/css/style.css">
 </head>
 
-<body>
-                    <div class="choose">
-                        <i class="icon-parques icon-size-35"></i>
-                        <div class="footer">
-                            <input class="btn-choose" type="checkbox" name="parque" value="3">
-                            <label>PARQUES</label>
-                        </div>
+<body><section class="top">
+        <progress class="component-progress" max="100" value="60"></progress>
+        <div class="pleca-roja">
+            <div class="main-wrapper">
+                <figure class="col-12">
+                    <img src="/dist/img/logo.png" alt="">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="main-wrapper">
+        <h1 class="topic text-center mr-bottom-20">¿Qué prefieres tener cerca?</h1>
+        <p class="text-center text">Sólo puedes seleccionar 3 opciones</p>
+    </section>
+    <section class="main-wrapper">
+        
+            <div class="grid-less space">
+                <div class="choose">
+                    <i class="icon-parques icon-size-35"></i>
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox" name="parque" value="3">
+                        <label>PARQUES</label>
                     </div>
-                    <div class="choose">
-                        <i class="icon-restaurantes icon-size-35"></i>
-                        <div class="footer">
-                            <input class="btn-choose" type="checkbox"  name="restaurante" value="4">
-                            <label>RESTAURANTES</label>
-                        </div>
+                </div>
+                <div class="choose">
+                    <i class="icon-restaurantes icon-size-35"></i>
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox"  name="restaurante" value="4">
+                        <label>RESTAURANTES</label>
                     </div>
-                    <div class="choose">
-                        <i class="icon-centro-comercial icon-size-35"></i>
-                        <div class="footer">
-                            <input class="btn-choose" type="checkbox" name="c_comercial" value="1">
-                            <label>CENTRO COMERCIAL</label>
-                        </div>
+                </div>
+                <div class="choose">
+                    <i class="icon-centro-comercial icon-size-35"></i>
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox" name="c_comercial" value="1">
+                        <label>CENTRO COMERCIAL</label>
                     </div>
-                    <div class="choose">
-                        <i class="icon-tiendas icon-size-35"></i>
-                        <div class="footer">
-                            <input class="btn-choose" type="checkbox" name="oxxo" value="6">
-                            <label>TIENDAS OXXO/7ELEVEN</label>
-                        </div>
+                </div>
+                <div class="choose">
+                    <i class="icon-tiendas icon-size-35"></i>
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox" name="oxxo" value="6">
+                        <label>TIENDAS OXXO/7ELEVEN</label>
                     </div>
-                    <div class="choose">
-                        <i class="icon-gym icon-size-35"></i>
-                        <div class="footer">
-                            <input class="btn-choose" type="checkbox" name="gym" value="2">
-                            <label>GYM</label>
-                        </div>
+                </div>
+                <div class="choose">
+                    <i class="icon-gym icon-size-35"></i>
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox" name="gym" value="2">
+                        <label>GYM</label>
                     </div>
-                    <div class="choose">
-                        <i class="icon-super-mercado icon-size-35"></i>
-                        <div class="footer">
-                            <input class="btn-choose" type="checkbox" name="supermercado" value="5">
-                            <label>SUPERMERCADOS</label>
-                        </div>
+                </div>
+                <div class="choose">
+                    <i class="icon-super-mercado icon-size-35"></i>
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox" name="supermercado" value="5">
+                        <label>SUPERMERCADOS</label>
                     </div>
-                    <div class="choose">
-                        <i class="icon-poco-transito icon-size-35"></i>
-                        <div class="footer">
-                            <input class="btn-choose" type="checkbox" name="poco_trafico" value="8">
-                            <label>ZONA DE POCO TRÁFICO</label>
-                        </div>
+                </div>
+                <div class="choose">
+                    <i class="icon-poco-transito icon-size-35"></i>
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox" name="poco_trafico" value="8">
+                        <label>ZONA DE POCO TRÁFICO</label>
                     </div>
-                    <div class="choose">
-                        <i class="icon-trasporte icon-size-35"></i>
-                        <div class="footer">
-                            <input class="btn-choose" type="checkbox" name="trans_pub" value="7">
-                            <label>TRANSPORTE PÚBLICO</label>
-                        </div>
+                </div>
+                <div class="choose">
+                    <i class="icon-trasporte icon-size-35"></i>
+                    <div class="footer">
+                        <input class="btn-choose" type="checkbox" name="trans_pub" value="7">
+                        <label>TRANSPORTE PÚBLICO</label>
                     </div>
+                </div>
+            </div>
+        
+            <div class="text-center mr-bottom-20">
+                <button class="btn-1">SIGUIENTE</button>
+            </div>
+            <div class="text-center">
+                <button><p class="text-details">OMITIR ESTE PASO ></p></button>
+            </div>
        
     <script type="text/javascript" src="/dist/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
