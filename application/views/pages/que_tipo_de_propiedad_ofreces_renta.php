@@ -70,10 +70,7 @@ label {
         </div>
     </section>
     <section class="main-wrapper">
-        <p class="text text-center xs-mr-40-lg-75">
-            Nuestro propósito es ayudarte a conectar con el mejor espacio disponible en el mercado, que se adapte a tus gustos y necesidades, es por eso que te haremos unas breves preguntas para conocerte mejor ¿estás listo? 
-        </p>
-        <h1 class="topic text-center xs-mr-40-lg-75">¿Qué tipo de propiedad necesitas?</h1>
+        <h1 class="topic text-center xs-mr-40-lg-75">¿Qué tipo de propiedad?</h1>
         <form class="tipo" id="Formtipo">
             <div class="items xs-mr-40-lg-75">
                 <div class="item-type" style="margin-bottom: 50px;">
