@@ -32,7 +32,7 @@
                     <i class="icon-departamento icon-size-35"></i>
                     <div class="footer">
                         <input class="btn-choose" type="checkbox" name="parque" value="9">
-                        <label>PARQUES</label>
+                        <label>BANCOS</label>
                     </div>
                 </div>
                 <div class="choose">
