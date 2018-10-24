@@ -596,4 +596,4 @@ label {
     
 </body>
 
-</html>vender_propietario
+</html>
