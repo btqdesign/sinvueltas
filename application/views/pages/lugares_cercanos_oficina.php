@@ -29,9 +29,9 @@
         
             <div class="grid-less space">
                 <div class="choose">
-                    <i class="icon-parques icon-size-35"></i>
+                    <i class="icon-departamento icon-size-35"></i>
                     <div class="footer">
-                        <input class="btn-choose" type="checkbox" name="parque" value="3">
+                        <input class="btn-choose" type="checkbox" name="parque" value="9">
                         <label>PARQUES</label>
                     </div>
                 </div>
