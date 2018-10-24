@@ -763,8 +763,6 @@ label {
     <script type="text/javascript">
         function AgregaDireccion()
         {
-            
-
             var campo = $('#direccion-1').val();
             var campo2 = $('#direccion-2').val();
             if(campo === ''){
