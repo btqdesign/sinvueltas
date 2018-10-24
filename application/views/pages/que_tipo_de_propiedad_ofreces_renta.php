@@ -8,6 +8,7 @@
     <title></title>
     <link rel="stylesheet" href="/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/dist/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <style type="text/css">
 [class*=formui] {
   border: 0;
@@ -166,7 +167,7 @@ label {
                         <i id="loginfacebook"  class="icon-facebook"></i>
                     </div>
                     <div class="circle" style="margin-left:10px">
-                        <i id="loginGoogle"  class="icon-facebook"></i>
+                        <i id="loginGoogle"   class="fab fa-google" ></i>
                     </div>
 
                 </div>
