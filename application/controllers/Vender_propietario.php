@@ -36,19 +36,6 @@ class Vender_propietario extends CI_Controller {
 			'id_usuario' => $identificador,
 			'ultima_modificacion' => $fecha,
 		);
-		$lugar2 = array(
-			'direccioncompleta' => $this->input->post('direccion-2'),
-			'id_usuario' => $identificador,
-			'ultima_modificacion' => $fecha,
-		);
-		$lugar3 = array(
-			'direccioncompleta' => $this->input->post('direccion-3'),
-			'id_usuario' => $identificador,
-			'ultima_modificacion' => $fecha,
-		);
-		$this->m->agregarLugar($lugar);
-		$this->m->agregarLugar($lugar2);
-		$this->m->agregarLugar($lugar3);
 		echo json_encode(array("status" => TRUE));		
 	}
 
