@@ -200,7 +200,7 @@ label {
                     <input class="" name="direccion-1" id="direccion-1" type="text" placeholder="Dirección" style="margin-bottom: 50px;">
                 </div>
                 <div class="col-12 col-sm-4 item-type-number">
-                    <input class="" name="direccion-2" name="direccion-2" type="text" placeholder="Dirección" style="margin-bottom: 50px;">
+                    <input class="" name="direccion-2" id="direccion-2" type="text" placeholder="Dirección" style="margin-bottom: 50px;">
                 </div>
                 <div class="col-12 col-sm-4 item-type-number">
                     <input class="" name="direccion-3" type="text" placeholder="Dirección" style="margin-bottom: 50px;">
