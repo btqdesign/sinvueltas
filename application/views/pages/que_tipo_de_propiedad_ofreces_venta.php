@@ -155,7 +155,7 @@ label {
     </section>
     <section class="main-wrapper">
         <h1 class="topic text-center mr-bottom-40">¡Queremos conocerte!</h1>
-        <p class="text-center text">Recopilaremos las propiedades ideales para ti. Ayúdanos con tus datos de contacto.</p>
+        <p class="text-center text">Nos gustaria ayudarte con la gestón de RENTA o VENTA de tu propiedad.</p>
         <div class="text-center">
             <button class="btn-red registrar">
                 <div class="content-registro">
@@ -224,7 +224,7 @@ label {
     </section>
     <section class="main-wrapper">
         <h1 class="topic text-center mr-bottom-40">¡Queremos conocerte!</h1>
-        <p class="text-center text">Recopilaremos las propiedades ideales para ti. Ayúdanos con tus datos de contacto.</p>
+        <p class="text-center text">Nos gustaria ayudarte con la gestón de RENTA o VENTA de tu propiedad. <br> Ayúdanos con tus datos de contacto.</p>
         <form action="" id="FormContacto">
             <div class="row mr-bottom-40">
                 <div class="col-12 col-sm-6 flex-center">
