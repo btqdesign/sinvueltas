@@ -117,8 +117,7 @@ label {
         <h1 class="topic text-center mr-bottom-20">¿En dónde está ubicada tu propiedad?</h1>
     </section>
     <section class="main-wrapper">
-        <article class="map">
-            
+        <article class="map" id="map">
         </article>
         <div>
             <p class="text-center text-legal">
@@ -127,13 +126,16 @@ label {
         </div>
         
         <form class="tipo mr-bottom-40" id="formDireccion">
+
             <div class="add input-group col-12 col-sm-8 offset-sm-2">
                 <input type="search" class="form-control" placeholder="Ingresa una dirección" aria-label="Ingresa una dirección"
-                    aria-describedby="basic-addon2">
+                    aria-describedby="basic-addon2" id="pac-input"  name="direccion-1">
                 <div class="input-group-append">
-                    <button class="agergar-btn input-group-text">+ agregar</button>
+                    <button class="agergar-btn input-group-text" >+ agregar</button>
                 </div>
-            </div><br>
+            </div>
+
+            <br>
             <div class="text-center mr-bottom-20">
                 <button class="btn-1">SIGUIENTE</button>
             </div>
@@ -230,7 +232,7 @@ label {
             <div class="row mr-bottom-40">
                 <div class="col-12 col-sm-6 flex-center">
                     <div class="avatar-space mr-bottom-40">
-                        <img src="" alt="" id="avatarID" style="border-radius: 90px">  
+                        <img src="" alt="" id="avatarID" style="border-radius: 90px"> 
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 item-type-number flex-center mr-bottom-40">
@@ -331,7 +333,7 @@ label {
                 document.getElementById("nombre2").value=user.name;
                 var formData = new FormData($('#usuarioForm')[0]);
                 $.ajax({
-                    url: 'https://sinvueltas.idevol.net/rentar/agregarUsuario/'+id,
+                    url: 'https://sinvueltas.idevol.net/vender_propietario/agregarUsuario/'+id,
                     type: 'POST',
                     data: formData,
                     contentType: false,
@@ -477,7 +479,80 @@ label {
          });
 
     </script>
+
+    <script>
+      
+
+      function initAutocomplete() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -33.8688, lng: 151.2195},
+          zoom: 13,
+          mapTypeId: 'roadmap'
+        });
+
+        // Create the search box and link it to the UI element.
+        var input = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(input);
+
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener('bounds_changed', function() {
+          searchBox.setBounds(map.getBounds());
+        });
+
+        var markers = [];
+        // Listen for the event fired when the user selects a prediction and retrieve
+        // more details for that place.
+        searchBox.addListener('places_changed', function() {
+          var places = searchBox.getPlaces();
+
+          if (places.length == 0) {
+            return;
+          }
+
+          // Clear out the old markers.
+          markers.forEach(function(marker) {
+            marker.setMap(null);
+          });
+          markers = [];
+
+          // For each place, get the icon, name and location.
+          var bounds = new google.maps.LatLngBounds();
+          places.forEach(function(place) {
+            if (!place.geometry) {
+              console.log("Returned place contains no geometry");
+              return;
+            }
+            var icon = {
+              url: place.icon,
+              size: new google.maps.Size(71, 71),
+              origin: new google.maps.Point(0, 0),
+              anchor: new google.maps.Point(17, 34),
+              scaledSize: new google.maps.Size(25, 25)
+            };
+
+            // Create a marker for each place.
+            markers.push(new google.maps.Marker({
+              map: map,
+              icon: icon,
+              title: place.name,
+              position: place.geometry.location
+            }));
+
+            if (place.geometry.viewport) {
+              // Only geocodes have viewport.
+              bounds.union(place.geometry.viewport);
+            } else {
+              bounds.extend(place.geometry.location);
+            }
+          });
+          map.fitBounds(bounds);
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf2bTKLZ2zOMi5LFzf2qvle68kcD6fbUk&libraries=places&callback=initAutocomplete"
+         async defer></script>
     
 </body>
 
-</html>
+</html>vender_propietario
