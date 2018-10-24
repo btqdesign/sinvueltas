@@ -258,7 +258,7 @@ class Rentar extends CI_Controller {
 		);
 		$this->m->updateContacto(array('id' => $identificador) ,$contacto);
 		echo json_encode(array("status" => TRUE));	
-		$cod_ver=rand(1000,999999);
+		$cod_ver=rand(10000,999999);
 
 		$codigo = array(			
 			'id' => $identificador,
