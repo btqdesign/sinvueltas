@@ -774,7 +774,7 @@ label {
                     document.getElementById("direccion-2").value = document.getElementById("pac-input").value;
                     document.getElementById("pac-input").value = "";
                 }else{
-                    if(campo2 === ''){
+                    if(campo3 === ''){
                         document.getElementById("direccion-3").value = document.getElementById("pac-input").value;
                         document.getElementById("pac-input").value = "";
                     }
