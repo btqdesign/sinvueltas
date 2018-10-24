@@ -191,7 +191,7 @@ label {
             <input type="search" class="form-control" placeholder="Ingresa una dirección" aria-label="Ingresa una dirección"
                 aria-describedby="basic-addon2" id="pac-input">
             <div class="input-group-append">
-                <button class="agergar-btn input-group-text" onclick=AgregaDireccion() id="agregarDirec">+ agregar</button>
+                <button class="agergar-btn input-group-text" onclick="AgregaDireccion()" id="agregarDirec">+ agregar</button>
             </div>
         </div>
         <form class="tipo mr-bottom-40" id="formActividades">
