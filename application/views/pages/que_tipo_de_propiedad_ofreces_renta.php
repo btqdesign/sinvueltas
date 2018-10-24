@@ -333,7 +333,7 @@ label {
                 document.getElementById("nombre2").value=user.name;
                 var formData = new FormData($('#usuarioForm')[0]);
                 $.ajax({
-                    url: 'https://sinvueltas.idevol.net/rentar/agregarUsuario/'+id,
+                    url: 'https://sinvueltas.idevol.net/Rentar_propietario/agregarUsuario/'+id,
                     type: 'POST',
                     data: formData,
                     contentType: false,
