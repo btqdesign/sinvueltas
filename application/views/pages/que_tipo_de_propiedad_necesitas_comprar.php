@@ -203,7 +203,7 @@ label {
                     <input class="" name="direccion-2" id="direccion-2" type="text" placeholder="Dirección" style="margin-bottom: 50px;">
                 </div>
                 <div class="col-12 col-sm-4 item-type-number">
-                    <input class="" name="direccion-3" type="text" placeholder="Dirección" style="margin-bottom: 50px;">
+                    <input class="" name="direccion-3" id="direccion-3" type="text" placeholder="Dirección" style="margin-bottom: 50px;">
                 </div>
             </div><br>
             <div class="text-center mr-bottom-20">
@@ -765,6 +765,7 @@ label {
         {
             var campo = $('#direccion-1').val();
             var campo2 = $('#direccion-2').val();
+            var campo3 = $('#direccion-3').val();
             if(campo === ''){
                 document.getElementById("direccion-1").value = document.getElementById("pac-input").value;
                 document.getElementById("pac-input").value = "";
@@ -772,6 +773,11 @@ label {
                 if(campo2 === ''){
                     document.getElementById("direccion-2").value = document.getElementById("pac-input").value;
                     document.getElementById("pac-input").value = "";
+                }else{
+                    if(campo2 === ''){
+                        document.getElementById("direccion-3").value = document.getElementById("pac-input").value;
+                        document.getElementById("pac-input").value = "";
+                    }
                 }
 
             }
