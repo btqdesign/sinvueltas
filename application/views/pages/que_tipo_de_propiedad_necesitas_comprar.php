@@ -763,7 +763,7 @@ label {
     <script type="text/javascript">
         function AgregaDireccion()
         {
-        document.getElementById("direccion-1").value = document.getElementById("agregarDirec").value;
+        document.getElementById("direccion-1").value = document.getElementById("pac-input").value;
         }
     </script>
     
