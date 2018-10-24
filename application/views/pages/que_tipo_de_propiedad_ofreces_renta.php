@@ -114,26 +114,18 @@ label {
         </div>
     </section>
     <section class="main-wrapper">
-        <h1 class="topic text-center mr-bottom-20">¿Qué lugares frecuentas?</h1>
-        <p class="text-center text">Queremos asegurarnos que la propiedad que buscas esté cerca de tus actividades principales. GYM, Oficina, escuela, etc.</p>
+        <h1 class="topic text-center mr-bottom-20">¿En dónde está ubicada tu propiedad?</h1>
     </section>
     <section class="main-wrapper">
         <article class="map" id="map">
         </article>
         <div>
             <p class="text-center text-legal">
-                *Puedes agregar hasta 3 direcciones distintas
+                *Puedes agregar una dirección en el campo de búsqueda
             </p>
         </div>
         
         <form class="tipo mr-bottom-40" id="formDireccion">
-            <div class="add input-group col-12 col-sm-8 offset-sm-2">
-                <input type="search" class="form-control" placeholder="Ingresa una dirección" aria-label="Ingresa una dirección"
-                    aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="agergar-btn input-group-text">+ agregar</button>
-                </div>
-            </div>
 
             <div class="add input-group col-12 col-sm-8 offset-sm-2">
                 <input type="search" class="form-control" placeholder="Ingresa una dirección" aria-label="Ingresa una dirección"
