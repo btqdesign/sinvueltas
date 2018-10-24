@@ -131,7 +131,7 @@ label {
                 <input type="search" class="form-control" placeholder="Ingresa una dirección" aria-label="Ingresa una dirección"
                     aria-describedby="basic-addon2" id="pac-input"  name="direccion-1">
                 <div class="input-group-append">
-                    <button class="agergar-btn input-group-text" >+ agregar</button>
+                    <button class="agergar-btn input-group-text" disabled>+ agregar</button>
                 </div>
             </div>
 
