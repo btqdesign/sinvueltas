@@ -245,6 +245,9 @@ label {
                     <div class="circle">
                         <i id="loginfacebook"  class="icon-facebook"></i>
                     </div>
+                    <div class="circle" style="margin-left:10px">
+                        <i id="loginGoogle"  class="icon-facebook"></i>
+                    </div>
 
                 </div>
             </button>
@@ -432,6 +435,34 @@ label {
                 alert("Error");
               }
             });
+
+        });
+    </script>
+    <script>
+      document.getElementById('loginGoogle').addEventListener('click', function() {
+              var provider = new firebase.auth.GoogleAuthProvider();
+              firebase.auth().signInWithPopup(provider).then(function(result) {
+                    var token = result.credential.accessToken;
+                   var user = result.user;
+                   var user = result.additionalUserInfo.profile;          
+
+                    document.getElementById("email").value=user.email;
+
+                    document.getElementById("nombre").value=user.given_name;
+
+                    document.getElementById("apellido").value=user.family_name;
+
+                    document.getElementById("avatarID").src = user.picture;
+
+                    document.getElementById("nombre2").value=user.name;
+
+                    console.log(result.additionalUserInfo.profile);
+             }).catch(function(error) {
+                   var errorCode = error.code;
+                   var errorMessage = error.message;
+                   var email = error.email;
+                   var credential = error.credential;
+             });
 
         });
     </script>
