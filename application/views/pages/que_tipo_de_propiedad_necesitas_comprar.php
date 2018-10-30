@@ -279,7 +279,7 @@ label {
                 
                 <div class="col-12">
                     <div class="check-item">
-                        <input class="styled-checkbox" id="styled-checkbox-terminos" type="checkbox" value="value1" >
+                        <input class="styled-checkbox" id="styled-checkbox-terminos" type="checkbox" value="value1" required>
                         <label for="styled-checkbox-terminos">He leído y acepto los</label> <a class="link-red" href="">Terminos y condiciones de uso</a>, y <a class="link-red" href="">políticas de privacidad</a>
                     </div>
                 </div>
@@ -342,9 +342,15 @@ label {
                         Tu número movil jamás será usado, compartido o vendido para usos diferentes a los de Plick.
                     </p>
                     <div class="check-item">
+                        <input class="styled-checkbox" id="styled-checkbox-terminos" type="checkbox" value="value1">
+                        <label for="styled-checkbox-terminos">He leído y acepto los</label> <a class="link-red" href="">Terminos y condiciones de uso</a>, y <a class="link-red" href="">políticas de privacidad</a>
+                    </div>
 
-                        <input class="styled-checkbox" id="styled-checkbox" type="checkbox" value="value1" >
-                        <label for="styled-checkbox">He leído y acepto los</label> <a class="link-red" href="">Terminos y condiciones de uso</a>, y <a class="link-red" href="">políticas de privacidad</a>
+                    <div class="col-12">
+                        <div class="check-item">
+                            <input class="styled-checkbox" id="styled-checkbox-terminos" type="checkbox" value="value1" required>
+                            <label for="styled-checkbox-terminos">He leído y acepto los</label> <a class="link-red" href="">Terminos y condiciones de uso</a>, y <a class="link-red" href="">políticas de privacidad</a>
+                        </div>
                     </div>
                 </div>
 
