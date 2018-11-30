@@ -308,18 +308,18 @@ label {
     <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="/dist/js/bundle.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
-    <script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+        <script>
         // Initialize Firebase
         var config = {
-            apiKey: "AIzaSyCLx6-K5j_jByYqV55mGjh-JBs2T9r1J18",
-            authDomain: "plick-front-end.firebaseapp.com",
-            databaseURL: "https://plick-front-end.firebaseio.com",
-            projectId: "plick-front-end",
-            storageBucket: "plick-front-end.appspot.com",
-            messagingSenderId: "518089985158"
+            apiKey: "AIzaSyBrCqmpkbqPhT38e-jIsdwA4eQLY4Al4A4",
+            authDomain: "sin-vueltas.firebaseapp.com",
+            databaseURL: "https://sin-vueltas.firebaseio.com",
+            projectId: "sin-vueltas",
+            storageBucket: "sin-vueltas.appspot.com",
+            messagingSenderId: "120921926662"
         };
-       firebase.initializeApp(config);
+        firebase.initializeApp(config);
         var provider = new firebase.auth.FacebookAuthProvider();
         provider.addScope('email');   
         var authService = firebase.auth();
